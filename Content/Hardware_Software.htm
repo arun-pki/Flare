@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1415" MadCap:lastWidth="842" MadCap:conditions="Primary.Hardware_Software">
+    <head>
+        <link href="Resources/TableStyles/TableStandard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1><a name="top"></a>Overview</h1>
+        <div class="Body">ChemDraw JS modularized ChemDraw functionality for the web! Built on JavaScript and HTML5, ChemDraw JS can be plugged into web browsers and internal applications that need to be chemicalized. Inside its lightweight packages, ChemDraw JS carries the core functionality of the ChemDraw family including: your favorite drawing capabilities, advanced Name to Structure, Structure to Name, Hotkeys/Shortcuts, Structure Templates and Structure Query Tools. ChemDraw JS is used within ChemDraw Cloud, Signals Notebook Individual Edition, Lead Discovery and PerkinElmer Signals Lead Discovery to provide a seamless web-based chemical drawing experience.
+</div>
+        <div class="Body">This guide will list software requirements and hardware requirements for following three components:</div>
+        <div class="Bullet1-inner"><b>ChemDraw JS JavaScript Library</b> is the core JavaScript library to support most of the functionalities. It is the only required component which runs in end user's browser.</div>
+        <div class="Bullet1-inner"><b>ChemDraw Web Clipboard</b> is an optional component for end users who need extended copy and paste functionality to exchange data between ChemDraw JS and external applications. It needs to be installed and enabled separately on the end users' machine.</div>
+        <div class="Bullet1-inner"><b>ChemDraw Web Service</b> runs on the server. The end users don't need to install it locally.</div>
+        <h1><a name="ChemDraw"></a>ChemDraw JS JavaScript Library</h1>
+        <h2><a name="Software"></a>Software Requirements</h2>
+        <h3>Supported Browsers</h3>
+        <div class="Bullet1-inner">Google Chrome 53 or later</div>
+        <div class="Bullet1-inner">Mozilla Firefox 50 or later</div>
+        <div class="Bullet1-inner">Apple Safari 11 or later</div>
+        <div class="Bullet1-inner">Microsoft Internet Explorer 11</div>
+        <div class="Bullet1-inner">Microsoft Edge 25 or later</div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;Note: &lt;/b&gt; ">ChemDraw JS 17.1 is not optimized for mobile platforms. Touch operations are not supported.</div>
+        <h3>Minimum Display Resolution</h3>
+        <div class="Bullet1-inner">640 x 360</div>
+        <h1><a name="ChemDraw2"></a>ChemDraw Web Clipboard</h1>
+        <h2>Supported Operating&#160;Systems</h2>
+        <div class="Bullet1-inner">Windows 7 or later (Microsoft .NET Framework 4.0 required)</div>
+        <div class="Bullet1-inner">macOS 10.12 or later</div>
+        <h2><a name="Browser"></a>Browser Exceptions</h2>
+        <p>The following old versions of browsers are not supported.</p>
+        <div class="Bullet1-inner">Mozilla Firefox: All versions prior to 50</div>
+        <div class="Bullet1-inner">Apple Safari: All versions prior to 11</div>
+        <p>Microsoft Internet Explorer 11 requires Java Runtime Environment 1.7 or later.</p>
+        <p>Microsoft Edge is not supported.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;Note: &lt;/b&gt; ">Without the ChemDraw Web Clipboard, the host application which uses ChemDraw JS can still provide extended copy and paste functionality by implementing the required interfaces within the host application. This is necessary when the ChemDraw JS JavaScript Library is used in a web browser control. Please refer to ChemDraw JS 17.1 Developers Guide for details.</div>
+        <h1><a name="ChemDraw3"></a>ChemDraw Web Service</h1>
+        <h2><a name="Software3"></a>Software Requirements</h2>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Category</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Supported Operating Systems</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">
+                        <p>Windows Server 2008 or later</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;Note: &lt;/b&gt; ">Windows server core and nano versions are not supported.</div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">Software Dependencies</td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">
+                        <div class="Bullet1-inner">Microsoft .NET Framework 4.5 or later</div>
+                        <div class="Bullet1-inner">Microsoft Visual C++ 2017 Redistributable Package (x86)</div>
+                        <div class="Bullet1-inner">PerkinElmer ChemDraw ActiveX Enterprise Constant 17.1</div>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;Note: &lt;/b&gt; ">The missing dependencies will be installed automatically with the installer of ChemDraw JS service.</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Hardware2"></a>Hardware Requirements</h2>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Category</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Minimum</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Recommended</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Processor</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">2 GHz, Multi-Core, 64-bit</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">2 GHz, Multi-Core, 64-bit or greater</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">RAM</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">4 GB</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">8 GB or greater</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">Free Disk Space</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">250 MB</td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

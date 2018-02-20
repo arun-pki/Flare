@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="14298" MadCap:lastWidth="829" MadCap:conditions="Primary.Help Only">
+    <head>
+        <link href="../Resources/TableStyles/TableStandard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Activating Extended Copy and Paste Functionality</h1>
+        <p>Extended Copy and Paste functionality in ChemDraw JS enables you to use the keyboard shortcut keys to perform copying and pasting of structures in ChemDraw JS. You can press <i>&lt;Ctrl&gt;+C</i> (<i>&lt;Command&gt;+C</i> on macOS) on your keyboard to copy selected structures from ChemDraw Desktop or any popular chemical editor and press <i>&lt;Ctrl&gt;+V</i> (<i>&lt;Command&gt;+V</i> on macOS) to paste the copied structure into ChemDraw JS. Similarly, you can press <i>&lt;Ctrl&gt;+C</i> (<i>&lt;Command&gt;+C</i> on macOS) on your keyboard to copy selected structures from ChemDraw JS and press <i>&lt;Ctrl&gt;+V</i> (<i>&lt;Command&gt;+V</i> on macOS) to paste the copied structure into ChemDraw Desktop or any popular chemical editor. The copied structure can also be pasted into Microsoft Office applications such as Microsoft Word, and Microsoft PowerPoint.</p>
+        <p>To activate this feature on your browser, you have to allow ChemDraw JS to access the system clipboard, install and enable the extensions for your browser according to the instruction.</p>
+        <h2><a name="System"></a>System Requirement</h2>
+        <h3>Supported Operating Systems</h3>
+        <div class="Bullet1-inner">Windows 7 or later</div>
+        <div class="Bullet1-inner">macOS 10.12 or later</div>
+        <h3>Supported Browsers</h3>
+        <div class="Bullet1-inner">Google Chrome 53 or later</div>
+        <div class="Bullet1-inner">Mozilla Firefox 50 or later</div>
+        <div class="Bullet1-inner">Apple Safari 11 or later</div>
+        <div class="Bullet1-inner">Microsoft Internet Explorer 11</div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;Note: &lt;/b&gt; ">Microsoft Edge will be supported in future.</div>
+        <p>In Microsoft Internet Explorer 11, the ChemDraw Web Clipboard applet should be enabled to support extended copy and paste. Java Runtime Environment(JRE) should be installed and enabled. If you use 32-bit and 64-bit browsers interchangeably, you will need to install both 32-bit and 64-bit Java in order to have the Java plug-in for both browsers. To check if a JRE is properly enabled, please open the page <a href="https://www.java.com/en/download/installed.jsp">https://www.java.com/en/download/installed.jsp</a> in IE to verify.</p>
+        <h2><a name="Determin"></a>Determining the Feature State</h2>
+        <p>If this feature is not activated, a message is displayed as shown below.</p>
+        <p>
+            <img src="../Resources/Images/clipboard_notenabledinfo.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 150px;" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </p>
+        <p>The color of the clipboard icon on the bottom-left corner of the canvas also indicates the state of the extended copy and paste feature.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/TableStandard.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Icon</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">State</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">
+                        <img src="../Resources/Images/clipboard_green_icon.gif" />
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Activated</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">
+                        <img src="../Resources/Images/clipboard_gray_clip.gif" />
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">Not Activated</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Allowing"></a>Allowing Access to the System Clipboard</h2>
+        <p>ChemDraw JS has to get your permission to access the system clipboard. You will be prompted to grant permission when accessing ChemDraw JS for the first time.</p>
+        <p style="font-weight: bold;">
+            <img src="../Resources/Images/clipboard_useragreement_ext.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 200px;" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </p>
+        <p>To allow access to the system clipboard, click <b>Allow</b>. Otherwise, click <b>Deny</b>.</p>
+        <h4>Withdrawing Permission</h4>
+        <p>After you allow access to the system clipboard, you can withdraw permission anytime you want. To withdraw permission, click the clipboard icon on the bottom-left corner of the canvas. The activation dialog-box appears.</p>
+        <p>
+            <img src="../Resources/Images/ActivatingExtendedCopyAndPasteFunctionality-576bc.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 200px;" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </p>
+        <p>Un-check the <b>Allow extension to run</b> check-box and click <b>OK</b>.</p>
+        <h2><a name="Installi"></a>Installing and Enabling ChemDraw Web Clipboard</h2>
+        <p style="font-weight: bold;">To install and enable the ChemDraw Web clipboard </p>
+        <div class="Body">1. From the bottom-left corner of the drawing window, click the gray clipboard icon <img src="../Resources/Images/gray_clip.gif" /> to view the detailed information and instruction to activate the feature.</div>
+        <div class="BodyInd">
+            <img src="../Resources/Images/clipboard_install_plugin.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 250px;" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;Note: &lt;/b&gt; ">The instructions may differ based on your web browser or operating system.</div>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Installing on Google Chrome or Mozilla Firefox 57+</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The ChemDraw Web Clipboard application and the browser extension needs to installed.</p>
+                <h3>Step 1. Installing ChemDraw Web Clipboard application</h3>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Installing on Windows</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="numlist1-1st" MadCap:autonum="1. ">Click the download link provided in the first step of the instructions to download the installer.</div>
+                        <p>
+                            <img src="../Resources/Images/ActivatingExtendedCopyAndPasteFunctionality-9d2dd.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 50px;width: 424px;height: 27px;border-left-style: solid;border-left-width: 1px;border-left-color: #dcdcdc;border-right-style: solid;border-right-width: 1px;border-right-color: #dcdcdc;border-top-style: solid;border-top-width: 1px;border-top-color: #dcdcdc;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #dcdcdc;" />
+                        </p>
+                        <div class="numlist1-inner" MadCap:autonum="2. ">Click <b>Next</b> to start the installation.</div>
+                        <div class="BodyInd">
+                            <img src="../Resources/Images/ActivatingExtendedCopyAndPasteFunctionality-a9e07.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 350px;" MadCap:mediastyle="@media print { max-width: 400px; }" />
+                        </div>
+                        <div class="numlist1-inner" MadCap:autonum="3. ">Accept the agreement and click <b>Next</b>.</div>
+                        <div class="BodyInd">
+                            <img src="../Resources/Images/ActivatingExtendedCopyAndPasteFunctionality-0a314.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 350px;" MadCap:mediastyle="@media print { max-width: 400px; }" />
+                        </div>
+                        <div class="numlist1-inner" MadCap:autonum="4. ">Specify the location where the ChemDraw Web Clipboard should be installed and then click <b>Next</b>.</div>
+                        <div class="BodyInd">
+                            <img src="../Resources/Images/ActivatingExtendedCopyAndPasteFunctionality-c59cd.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 350px;" MadCap:mediastyle="@media print { max-width: 400px; }" />
+                        </div>
+                        <div class="numlist1-inner" MadCap:autonum="5. ">Specify the program's shortcuts in the Start Menu and click <b>Next</b> .</div>
+                        <div class="BodyInd">
+                            <img src="../Resources/Images/ActivatingExtendedCopyAndPasteFunctionality-24438.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 350px;" MadCap:mediastyle="@media print { max-width: 400px; }" />
+                        </div>
+                        <div class="numlist1-inner" MadCap:autonum="6. ">Review the installation summary and click <b>Install</b>.</div>
+                        <div class="BodyInd">
+                            <img src="../Resources/Images/ActivatingExtendedCopyAndPasteFunctionality-c0be7.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 350px;" MadCap:mediastyle="@media print { max-width: 400px; }" />
+                        </div>
+                        <div class="numlist1-inner" MadCap:autonum="7. ">Click <b>Finish</b> to complete the installation.</div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Installing on macOS</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="numlist1-1st" MadCap:autonum="1. ">Click the download link provided in the first step of the instructions to download the installer.</div>
+                        <p>
+                            <img src="../Resources/Images/ActivatingExtendedCopyAndPasteFunctionality-9d2dd.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: #dcdcdc;border-right-style: solid;border-right-width: 1px;border-right-color: #dcdcdc;border-top-style: solid;border-top-width: 1px;border-top-color: #dcdcdc;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #dcdcdc;" />
+                        </p>
+                        <div class="numlist1-inner" MadCap:autonum="2. ">Run the downloaded file. The <i>Install ChemDraw Web Clipboard </i>wizard appears. <div class="Body"><p><img src="../Resources/Images/clipboard_nativeapp_mac.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 350px;" MadCap:mediastyle="@media print { max-width: 400px; }" /></p></div></div>
+                        <div class="numlist1-inner" MadCap:autonum="3. ">Click <b>Continue</b> to start installation.<div class="Body"><p><img src="../Resources/Images/clipboard_nativeapp_mac2.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 350px;" MadCap:mediastyle="@media print { max-width: 400px; }" /></p></div></div>
+                        <div class="numlist1-inner" MadCap:autonum="4. ">Specify how you want to install this software and click <b>Continue</b>.<div class="Body"><div class="Body"><p><img src="../Resources/Images/clipboard_nativeapp_mac3.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 350px;" MadCap:mediastyle="@media print { max-width: 400px; }" /></p></div></div></div>
+                        <div class="numlist1-inner" MadCap:autonum="5. ">Click <b>Install</b>.<div class="Body"><img src="../Resources/Images/clipboard_nativeapp_mac4.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 350px;" MadCap:mediastyle="@media print { max-width: 400px; }" /></div></div>
+                        <div class="numlist1-inner" MadCap:autonum="6. ">Click <b>Close</b> to complete the installation.</div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <h3>Step 2. Installing the Browser Extension</h3>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Installing on Google Chrome</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="numlist1-1st" MadCap:autonum="1. ">Click the download link provided in the second step of the instructions to install the extension.<p><img src="../Resources/Images/ActivatingExtendedCopyAndPasteFunctionality-9160a.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: #dcdcdc;border-right-style: solid;border-right-width: 1px;border-right-color: #dcdcdc;border-top-style: solid;border-top-width: 1px;border-top-color: #dcdcdc;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #dcdcdc;" /></p></div>
+                        <div class="numlist1-inner" MadCap:autonum="2. ">Click the <b>ADD TO CHROME</b> button to install the extension.<p><img src="../Resources/Images/ActivatingExtendedCopyAndPasteFunctionality-3b46b.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 350px;" MadCap:mediastyle="@media print { max-width: 650px; }" /></p></div>
+                        <div class="numlist1-inner" MadCap:autonum="3. ">Click the <b>Add extension</b> button to enable the extension.<p><img src="../Resources/Images/ActivatingExtendedCopyAndPasteFunctionality-4a986.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 250px;" MadCap:mediastyle="@media print { max-width: 650px; }" /></p></div>
+                        <div class="numlist1-inner" MadCap:autonum="4. ">ChemDraw Web Clipboard has been added to Chrome.<p><img src="../Resources/Images/ActivatingExtendedCopyAndPasteFunctionality-e2385.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 250px;" MadCap:mediastyle="@media print { max-width: 650px; }" /></p></div>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;Note: &lt;/b&gt; ">Internet connection is required to install the extension for Chrome.</div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Installing on Mozilla Firefox 57+</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="numlist1-1st" MadCap:autonum="1. ">Click the install link provided in the second step of the instructions to install the extension.<p><img src="../Resources/Images/ActivatingExtendedCopyAndPasteFunctionality-477b9.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: #dcdcdc;border-right-style: solid;border-right-width: 1px;border-right-color: #dcdcdc;border-top-style: solid;border-top-width: 1px;border-top-color: #dcdcdc;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #dcdcdc;" /></p></div>
+                        <div class="numlist1-inner" MadCap:autonum="2. ">Click the <b>Allow</b> button.</div>
+                        <div class="BodyInd">
+                            <img src="../Resources/Images/ActivatingExtendedCopyAndPasteFunctionality-7915a.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 200px;" />
+                        </div>
+                        <div class="numlist1-inner" MadCap:autonum="3. ">Click the <b>Install</b> button.<p><img src="../Resources/Images/ActivatingExtendedCopyAndPasteFunctionality-ab6a5.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 200px;" /></p></div>
+                        <div class="numlist1-inner" MadCap:autonum="4. ">ChemDraw Web Clipboard has been installed successfully.<p><img src="../Resources/Images/ActivatingExtendedCopyAndPasteFunctionality-17803.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 155px;" /></p></div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Installing on Apple Safari 11+</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The ChemDraw Web Clipboard application needs to be installed and the browser extension needs to be enabled.</p>
+                <p>
+                    <img src="../Resources/Images/clipboard_safari_instruction.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 250px;" MadCap:mediastyle="@media print { max-width: 650px; }" />
+                </p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Step 1. Installing the Application</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Click the download link provided in the first step of the instructions to download the installer.</p>
+                        <p>
+                            <img src="../Resources/Images/ActivatingExtendedCopyAndPasteFunctionality-9d2dd.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: #dcdcdc;border-right-style: solid;border-right-width: 1px;border-right-color: #dcdcdc;border-top-style: solid;border-top-width: 1px;border-top-color: #dcdcdc;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #dcdcdc;" />
+                        </p>
+                        <div class="numlist1-1st" MadCap:autonum="1. ">Click <b>Agree</b> to start the installation.<p><img src="../Resources/Images/clipboard_installsafariapp1.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 300px;" MadCap:mediastyle="@media print { max-width: 550px; }" /></p></div>
+                        <div class="numlist1-inner" MadCap:autonum="2. ">Drag ChemDraw Web Clipboard to your applications folder to install.<p><img src="../Resources/Images/clipboard_installsafariapp2.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 400px;" MadCap:mediastyle="@media print { max-width: 650px; }" /></p></div>
+                        <div class="numlist1-inner" MadCap:autonum="3. ">Close the installation window.</div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Step 2: Enabling the Extension</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="numlist1-1st" MadCap:autonum="1. ">Find and launch the ChemDraw Web Clipboard application.<p><img src="../Resources/Images/clipboard_safari_app.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 200px;" MadCap:mediastyle="@media print { max-width: 600px; }" /></p></div>
+                        <div class="numlist1-inner" MadCap:autonum="2. ">Click <b>Open</b>.<p><img src="../Resources/Images/clipboard_safariapp_prompt.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 150px;" /></p></div>
+                        <div class="numlist1-inner" MadCap:autonum="3. ">Click <b>Show Safari Preferences</b> to manage extensions.<p><img src="../Resources/Images/clipboard_installsafariapp3.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 250px;" MadCap:mediastyle="@media print { max-width: 650px; }" /></p></div>
+                        <div class="numlist1-inner" MadCap:autonum="4. ">Check ChemDraw Web Clipboard to enable the extension.<p><img src="../Resources/Images/clipboard_safari_extensions.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 400px;" MadCap:mediastyle="@media print { max-width: 500px; }" /></p></div>
+                        <div class="numlist1-inner" MadCap:autonum="5. ">The Safari extension is enabled.<p><img src="../Resources/Images/clipboard_installsafariapp4.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 250px;" /></p></div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Installing on Internet Explorer 11
+</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The ChemDraw Web Clipboard application needs to be installed and the Java plugin needs to be installed and enabled.</p>
+                <p>
+                    <img src="../Resources/Images/Activating plugin IE.png" />
+                </p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Step 1. Installing the Application</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="numlist1-1st" MadCap:autonum="1. ">Click the download link provided in the first step of the instructions to download the installer.<p><img src="../Resources/Images/Clipboard IE1.png" /></p></div>
+                        <div class="numlist1-inner" MadCap:autonum="2. ">Click <b>Run</b> to start the installation. The <i>License Agreement</i> window appears.</div>
+                        <div class="BodyInd">
+                            <img src="../Resources/Images/ClipboardIE2.png" />
+                        </div>
+                        <div class="numlist1-inner" MadCap:autonum="3. ">Accept the agreement and click <b>Next</b>. The <i>Select Destination Location</i> window appears.</div>
+                        <div class="BodyInd">
+                            <img src="../Resources/Images/ClipboardIE3.png" />
+                        </div>
+                        <div class="numlist1-inner" MadCap:autonum="4. ">Specify the location where the ChemDraw Web Clipboard should be installed and then click <b>Next</b>. The <i>Select Start Menu Folder</i> window appears.</div>
+                        <div class="BodyInd">
+                            <img src="../Resources/Images/ClipboardIE33.png" />
+                        </div>
+                        <div class="numlist1-inner" MadCap:autonum="5. ">Specify the program's shortcuts in the Start Menu and click <b>Next</b>. The <i>Ready to Install</i> window appears.</div>
+                        <div class="BodyInd">
+                            <img src="../Resources/Images/ClipboardIE5.png" />
+                        </div>
+                        <div class="numlist1-inner" MadCap:autonum="6. ">Review the installation summary and click <b>Install</b>.</div>
+                        <div class="BodyInd">
+                            <img src="../Resources/Images/ClipboardIE6.png" />
+                        </div>
+                        <div class="numlist1-inner" MadCap:autonum="7. ">Click <b>Finish</b> to complete the installation.</div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Step 2. Installing the Java plugin</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="numlist1-1st" MadCap:autonum="1. ">Click the <span style="color: #0055a6;">Click here</span> link provided in the second step of the instructions to open the Java Downloads web page.</div>
+                        <div class="BodyInd">
+                            <img src="../Resources/Images/Activating plugin IE2.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: #696969;border-right-style: solid;border-right-width: 1px;border-right-color: #696969;border-top-style: solid;border-top-width: 1px;border-top-color: #696969;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #696969;" />
+                        </div>
+                        <div class="numlist1-inner" MadCap:autonum="2. ">From the <i>Java Downloads for All Operating Systems</i> web page, follow the on-screen instructions to install a supported Java version.</div>
+                        <div class="numlist1-inner" MadCap:autonum="3. ">After Java is installed, click the <span style="color: #0055a6;">refresh </span>link  provided in the third step of the instructions to refresh the browser.</div>
+                        <div class="BodyInd">
+                            <img src="../Resources/Images/Activating plugin IE3.png" />
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Step 3. Enabling Java plugin</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="Body">After installing the Java plugin, you need to allow your browser to accept the Java plugin.</div>
+                        <div class="Body">
+                            <img src="../Resources/Images/Activating plugin IE1.png" />
+                        </div>
+                        <p>Click <b>Allow</b> to allow the applet running.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="Primary.Not in CDW">Possible Issues when Running Applet in Safari</h2>
+        <p MadCap:conditions="Primary.Not in CDW">For security reasons, Java applet may be blocked in your Safari by default. To make ChemDraw Web Clipboard applet work properly, please check Safari's plugin settings (<b>Safari &gt; Preference &gt; Security &gt; Plugin Settings &gt; Java</b>) and make sure Java is allowed for your current website and it does not run in Safe Mode.</p>
+        <p MadCap:conditions="Primary.Not in CDW">
+            <img src="../Resources/Images/clipboard_safari_java_safemode.png" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </p>
+        <p MadCap:conditions="Primary.Not in CDW">To turn off the safe mode, hold the Option key, then click the drop-down menu, un-check <b>Run in Safe Mode</b>, and then click <b>Trust</b> to allow Java running in unsafe mode.</p>
+        <p MadCap:conditions="Primary.Not in CDW">
+            <img src="../Resources/Images/clipboard_safari_trustjava.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 200px;" />
+        </p>
+        <div class="Note" MadCap:conditions="Primary.Not in CDW" MadCap:autonum="&lt;b&gt;Note: &lt;/b&gt; ">If the clipboard extension is still not working, go to <a href="https://www.java.com/" target="_blank">https://www.java.com</a> and verify the version of Java installed. Also, make sure that Java is installed correctly on the machine.</div>
+    </body>
+</html>

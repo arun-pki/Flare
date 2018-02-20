@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="2811" MadCap:lastWidth="907" MadCap:conditions="Primary.DevGuide Only">
+    <head>
+        <meta http-equiv="Content-Style-Type" content="text/css" /><title></title>
+        <style type="text/css">/*<![CDATA[*/
+code
+{
+	white-space: pre;
+}
+
+/*]]>*/</style>
+        <style type="text/css">/*<![CDATA[*/
+div.sourceCode
+{
+	overflow-x: auto;
+}
+table.sourceCode,
+tr.sourceCode,
+td.lineNumbers,
+td.sourceCode
+{
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	border: none;
+}
+table.sourceCode
+{
+	width: 100%;
+	line-height: 100%;
+}
+td.lineNumbers
+{
+	text-align: right;
+	padding-right: 4px;
+	padding-left: 4px;
+	color: #aaaaaa;
+	border-right: 1px solid #aaaaaa;
+}
+td.sourceCode
+{
+	padding-left: 5px;
+}
+code &gt; span.kw
+{
+	color: #007020;
+	font-weight: bold;
+}
+/* Keyword */
+code &gt; span.dt
+{
+	color: #902000;
+}
+/* DataType */
+code &gt; span.dv
+{
+	color: #40a070;
+}
+/* DecVal */
+code &gt; span.bn
+{
+	color: #40a070;
+}
+/* BaseN */
+code &gt; span.fl
+{
+	color: #40a070;
+}
+/* Float */
+code &gt; span.ch
+{
+	color: #4070a0;
+}
+/* Char */
+code &gt; span.st
+{
+	color: #4070a0;
+}
+/* String */
+code &gt; span.co
+{
+	color: #60a0b0;
+	font-style: italic;
+}
+/* Comment */
+code &gt; span.ot
+{
+	color: #007020;
+}
+/* Other */
+code &gt; span.al
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+/* Alert */
+code &gt; span.fu
+{
+	color: #06287e;
+}
+/* Function */
+code &gt; span.er
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+/* Error */
+code &gt; span.wa
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Warning */
+code &gt; span.cn
+{
+	color: #880000;
+}
+/* Constant */
+code &gt; span.sc
+{
+	color: #4070a0;
+}
+/* SpecialChar */
+code &gt; span.vs
+{
+	color: #4070a0;
+}
+/* VerbatimString */
+code &gt; span.ss
+{
+	color: #bb6688;
+}
+/* SpecialString */
+code &gt; span.im
+{
+	
+}
+/* Import */
+code &gt; span.va
+{
+	color: #19177c;
+}
+/* Variable */
+code &gt; span.cf
+{
+	color: #007020;
+	font-weight: bold;
+}
+/* ControlFlow */
+code &gt; span.op
+{
+	color: #666666;
+}
+/* Operator */
+code &gt; span.bu
+{
+	
+}
+/* BuiltIn */
+code &gt; span.ex
+{
+	
+}
+/* Extension */
+code &gt; span.pp
+{
+	color: #bc7a00;
+}
+/* Preprocessor */
+code &gt; span.at
+{
+	color: #7d9029;
+}
+/* Attribute */
+code &gt; span.do
+{
+	color: #ba2121;
+	font-style: italic;
+}
+/* Documentation */
+code &gt; span.an
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Annotation */
+code &gt; span.cv
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* CommentVar */
+code &gt; span.in
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Information */
+
+/*]]>*/</style>
+    </head>
+    <body>
+        <h2 id="loading-getting-reaction-data"><a name="Loading3" xmlns="http://www.w3.org/1999/xhtml"></a>Loading and Getting Reaction Data</h2>
+        <h3 id="loading-reaction-data"><a name="Loading4" xmlns="http://www.w3.org/1999/xhtml"></a>Loading Reaction Data</h3>
+        <div class="Body">Similar to the <i xmlns="http://www.w3.org/1999/xhtml">loadCDXML</i> API, the following APIs can be used to add products, reactants, and reagents.</div>
+        <div class="Bullet1-inner">addProduct</div>
+        <div class="Bullet1-inner">addReactant</div>
+        <div class="Bullet1-inner">addReagent</div>
+        <div class="figure">
+            <img src="images/LoadingReactionData.png" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <div class="Body">The fragments of the reaction are aligned automatically. A solid arrow and plus signs are added automatically.</div>
+        <h3 id="getting-stoichiometry-data-of-the-reaction"><a name="Getting" xmlns="http://www.w3.org/1999/xhtml"></a>Getting Stoichiometry Data of the Reaction</h3>
+        <div class="Bullet1-inner">findReactions</div>
+        <p>It returns the following stoichiometry data:</p>
+        <div class="Bullet1-inner">Structure name</div>
+        <div class="Bullet1-inner">Formula</div>
+        <div class="Bullet1-inner">Molecule weight</div>
+        <div class="Bullet1-inner">InChI</div>
+        <div class="Bullet1-inner">SMILES</div>
+        <div class="Body">Example of data returned</div><pre class="prettyprint"><p class="code">[
+  {
+    "STEPS": [
+      {
+        "REACTANTS": [
+          {
+            "ID": "5",
+            "NAME": "benzene",
+            "FORMULA": "C&lt;sub&gt;6&lt;/sub&gt;H&lt;sub&gt;6&lt;/sub&gt;",
+            "MW": "78.1140000006 g/mol",
+            "EM": 78.0469501926,
+            "INCHI": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H",
+            "SMILES": "C1=CC=CC=C1"
+          }
+        ],
+        "REAGENTS": [],
+        "PRODUCTS": [
+          {
+            "ID": "24",
+            "NAME": "benzene",
+            "FORMULA": "C&lt;sub&gt;6&lt;/sub&gt;H&lt;sub&gt;6&lt;/sub&gt;",
+            "MW": "78.1140000006 g/mol",
+            "EM": 78.0469501926,
+            "INCHI": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H",
+            "SMILES": "C1=CC=CC=C1"
+          }
+        ]
+      }
+    ]
+  }
+]</p></pre>
+        <div class="Body">This API requires the <strong xmlns="http://www.w3.org/1999/xhtml">ChemDraw Web Service</strong>.</div>
+        <h3 id="getting-information-of-each-fragment-in-the-reaction"><a name="Getting2" xmlns="http://www.w3.org/1999/xhtml"></a>Getting Information of Each Fragment in the Reaction</h3>
+        <div class="Bullet1-inner">getAllFragmentsInfo</div>
+        <div class="Bullet1-inner">getSelectedFragmentsInfo</div>
+        <div class="Body">These two APIs return the information of all fragments or selected fragments.</div>
+        <p>For each fragment, it returns the following information:</p>
+        <div class="Bullet1-inner">Fragment ID in the document</div>
+        <div class="Bullet1-inner">The CDXML data</div>
+        <div class="Bullet1-inner">The thumbnail png image data encoded in Base64</div>
+        <div class="Bullet1-inner">The bounding (x, y, width, height in internal unit)</div>
+        <div class="Body">Example of data returned</div><pre class="prettyprint"><p class="code">[
+  {
+    "id": 5,
+    "x": 4531.251547645475,
+    "y": 2958.405357889362,
+    "width": 510.83023804238474,
+    "height": 589.855950887943,
+    "image": "data:image/png;base64,...",
+    "cdxml": "CDXMLCONTENT"
+  },
+  {
+    "id": 23,
+    "x": 6194.081297406609,
+    "y": 2958.405357889362,
+    "width": 510.83023804238474,
+    "height": 589.855950887943,
+    "image": "data:image/png;base64,...",
+    "cdxml": "CDXMLCONTENT"
+  }
+]</p></pre>
+        <h3 id="labelling-reaction-fragments"><a name="Labellin" xmlns="http://www.w3.org/1999/xhtml"></a>Labelling Reaction Fragments</h3>
+        <div class="Bullet1-inner">labelFragments</div>
+        <p><i>labelFragments</i> API is used to add labels (Roman numerals) under the reactant, reagents or products to number the structures.</p>
+        <div class="figure">
+            <img src="images/LabelFragments.png" MadCap:mediastyle="@media print { max-width: 650px; }" style="border-left-style: solid;border-left-width: 1px;border-left-color: #a9a9a9;border-right-style: solid;border-right-width: 1px;border-right-color: #a9a9a9;border-top-style: solid;border-top-width: 1px;border-top-color: #a9a9a9;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #a9a9a9;" />
+        </div>
+    </body>
+</html>

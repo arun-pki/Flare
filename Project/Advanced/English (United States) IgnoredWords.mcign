@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IgnoredWordsDictionary>
+    <Word Comment="">FragmentInfo</Word>
+    <Word Comment="">boolean</Word>
+    <Word Comment="">HTMLElement</Word>
+    <Word Comment="">hotkeys-atom</Word>
+    <Word Comment="">PerkinElmer</Word>
+    <Word Comment="">Pre-release</Word>
+    <Word Comment="">CDD</Word>
+    <Word Comment="">APIs</Word>
+    <Word Comment="">Stoichiometry</Word>
+    <Word Comment="">API</Word>
+    <Word Comment="">GetFragmentsInfoOptions</Word>
+    <Word Comment="">AttachOptions</Word>
+    <Word Comment="">GetTextContentCallback</Word>
+    <Word Comment="">GetNumberCallback</Word>
+    <Word Comment="">LoadDocumentCallback</Word>
+    <Word Comment="">ConfigLoadCallback</Word>
+    <Word Comment="">SetCanvasSizeOptions</Word>
+    <Word Comment="">ContentChangedHandler</Word>
+    <Word Comment="">AttachCallback</Word>
+    <Word Comment="">ApplicationProperties</Word>
+    <Word Comment="">ToolsLayout</Word>
+    <Word Comment="">ToolGroup</Word>
+    <Word Comment="">ContentChangedEvent</Word>
+    <Word Comment="">ErrorCallback</Word>
+    <Word>scrollbar</Word>
+</IgnoredWordsDictionary>

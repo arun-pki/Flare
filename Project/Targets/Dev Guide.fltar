@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="ChemDraw JS 17.1 Developer's Guide"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/DevelopersGuide.fltoc"
+  MasterPageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+  ConditionTagExpression="include[&quot;Primary.DevGuide Only&quot; or &quot;Primary.PDF Only&quot;] exclude[&quot;Primary.API Only&quot; or &quot;Primary.Help Only&quot; or Primary.InstallOnly or &quot;Primary.Not in CDW&quot; or Primary.RN] "
+  PatchHeadingLevels="false"
+  MasterStylesheet="/Content/Resources/Stylesheets/API.css"
+  OutputFile="ChemDrawJS 2.1 Developer's Guide">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="false" />
+  <PDF
+    ImageCompression="JPEG"
+    InitialMagnification="100"
+    PageLayout="OneColumn"
+    TitleBar="DocumentTitle"
+    ShowUsedBookmarks="false"
+    JPEGQuality="100" />
+  <DocumentProperties
+    Title="ChemDraw JS 17.1 Developer's Guide"
+    Author="PKI Documentation Team" />
+  <Variables>
+    <Variable
+      Name="Primary/GuideName">Developer's Guide</Variable>
+    <Variable
+      Name="Primary/LastUpdated">February 01, 2018</Variable>
+    <Variable
+      Name="Primary/ProductName">ChemDraw JS as a Service 17.1</Variable>
+  </Variables>
+</CatapultTarget>

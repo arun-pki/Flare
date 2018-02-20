@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="1440" MadCap:lastWidth="797" MadCap:conditions="Primary.DevGuide Only">
+    <head>
+        <meta http-equiv="Content-Style-Type" content="text/css" /><title></title>
+        <style type="text/css">/*<![CDATA[*/
+code
+{
+	white-space: pre;
+}
+
+/*]]>*/</style>
+        <style type="text/css">/*<![CDATA[*/
+div.sourceCode
+{
+	overflow-x: auto;
+}
+table.sourceCode,
+tr.sourceCode,
+td.lineNumbers,
+td.sourceCode
+{
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	border: none;
+}
+table.sourceCode
+{
+	width: 100%;
+	line-height: 100%;
+}
+td.lineNumbers
+{
+	text-align: right;
+	padding-right: 4px;
+	padding-left: 4px;
+	color: #aaaaaa;
+	border-right: 1px solid #aaaaaa;
+}
+td.sourceCode
+{
+	padding-left: 5px;
+}
+code &gt; span.kw
+{
+	color: #007020;
+	font-weight: bold;
+}
+/* Keyword */
+code &gt; span.dt
+{
+	color: #902000;
+}
+/* DataType */
+code &gt; span.dv
+{
+	color: #40a070;
+}
+/* DecVal */
+code &gt; span.bn
+{
+	color: #40a070;
+}
+/* BaseN */
+code &gt; span.fl
+{
+	color: #40a070;
+}
+/* Float */
+code &gt; span.ch
+{
+	color: #4070a0;
+}
+/* Char */
+code &gt; span.st
+{
+	color: #4070a0;
+}
+/* String */
+code &gt; span.co
+{
+	color: #60a0b0;
+	font-style: italic;
+}
+/* Comment */
+code &gt; span.ot
+{
+	color: #007020;
+}
+/* Other */
+code &gt; span.al
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+/* Alert */
+code &gt; span.fu
+{
+	color: #06287e;
+}
+/* Function */
+code &gt; span.er
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+/* Error */
+code &gt; span.wa
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Warning */
+code &gt; span.cn
+{
+	color: #880000;
+}
+/* Constant */
+code &gt; span.sc
+{
+	color: #4070a0;
+}
+/* SpecialChar */
+code &gt; span.vs
+{
+	color: #4070a0;
+}
+/* VerbatimString */
+code &gt; span.ss
+{
+	color: #bb6688;
+}
+/* SpecialString */
+code &gt; span.im
+{
+	
+}
+/* Import */
+code &gt; span.va
+{
+	color: #19177c;
+}
+/* Variable */
+code &gt; span.cf
+{
+	color: #007020;
+	font-weight: bold;
+}
+/* ControlFlow */
+code &gt; span.op
+{
+	color: #666666;
+}
+/* Operator */
+code &gt; span.bu
+{
+	
+}
+/* BuiltIn */
+code &gt; span.ex
+{
+	
+}
+/* Extension */
+code &gt; span.pp
+{
+	color: #bc7a00;
+}
+/* Preprocessor */
+code &gt; span.at
+{
+	color: #7d9029;
+}
+/* Attribute */
+code &gt; span.do
+{
+	color: #ba2121;
+	font-style: italic;
+}
+/* Documentation */
+code &gt; span.an
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Annotation */
+code &gt; span.cv
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* CommentVar */
+code &gt; span.in
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Information */
+
+/*]]>*/</style>
+    </head>
+    <body>
+        <h1 id="understanding-cdd-components"><a name="Understa" xmlns="http://www.w3.org/1999/xhtml"></a>Understanding ChemDraw JS Components</h1>
+        <h2 id="components-overview"><a name="Componen" xmlns="http://www.w3.org/1999/xhtml"></a>Components Overview</h2>
+        <div class="Body">ChemDraw JS consists of three components.</div>
+        <div class="Bullet1-inner">ChemDraw JS JavaScript Library</div>
+        <div class="Bullet1-inner">ChemDraw Web Clipboard</div>
+        <div class="Bullet1-inner">ChemDraw Web Service</div>
+        <div class="figure">
+            <img src="images/CDDComponents.png" />
+        </div>
+        <p>The ChemDraw JS JavaScript library is the core component and is required to support client side functionality.</p>
+        <div class="Body">ChemDraw Web Clipboard is an optional component. It should be installed on the client side if the extended copy and paste feature needs to be enabled.</div>
+        <p>Please refer to the <b xmlns="http://www.w3.org/1999/xhtml">ChemDraw JS 17.1 User Guide</b> about how to enable the ChemDraw Web Clipboard on browsers.</p>
+        <p>ChemDraw Web Service is an optional server-side component. It is required only if any of the following features are needed.</p>
+        <div class="Bullet1-inner">Tool: Structure to Name</div>
+        <div class="Bullet1-inner">Tool: Name to Structure</div>
+        <div class="Bullet1-inner">API: findReactions</div>
+        <div class="Bullet1-inner">API: getProperties</div>
+        <div class="Bullet1-inner">API: getSVG</div>
+        <div class="Bullet1-inner">API: getMolecularWeight</div>
+        <div class="Bullet1-inner">API: nameToStructure</div>
+        <div class="Bullet1-inner">API: structureToName</div>
+        <p>Please refer to <a href="Configuring ChemDraw Direct.html#configuringchemDrawdirect" xmlns="http://www.w3.org/1999/xhtml">Configuring ChemDraw JS</a> about how to enable or disable features.</p>
+        <h2 id="chemdraw-direct-javascript-library"><a name="ChemDraw" xmlns="http://www.w3.org/1999/xhtml"></a>ChemDraw JS JavaScript Library</h2>
+        <div class="Body">The library includes core javascript files, images, and chemical resources. To load the library, the web page should load the script <strong xmlns="http://www.w3.org/1999/xhtml">chemdrawweb.js</strong>. This script will load all the other required resources.</div><pre class="prettyprint"><p class="code">&lt;script src="https://your-own-url/js/chemdrawweb/chemdrawweb.js"&gt;
+&lt;/script&gt;</p></pre>
+        <div class="Body">The URL of the library should be changed to the actual URL of your own ChemDraw JS deployment.</div>
+        <p>The library can run on all modern desktop browsers such as Chrome, Firefox, Safari, Edge, and IE. However, it is not optimized for mobile browsers. Please refer to the <b xmlns="http://www.w3.org/1999/xhtml">ChemDraw JS 17.1 Hardware and Software Requirements Guide</b> for details.</p>
+        <h2 id="chemdraw-web-clipboard"><a name="ChemDraw2" xmlns="http://www.w3.org/1999/xhtml"></a>ChemDraw Web Clipboard</h2>
+        <div class="Body">To exchange chemical data with other programs, such as ChemDraw Desktop, Marvin, BIOVIA Draw, etc, via system clipboard, the end user has to install and enable ChemDraw Web Clipboard extension or applet in the web browser.</div>
+        <div class="Body">The ChemDraw Web Clipboard extension is supported in the following browsers.</div>
+        <div class="Bullet1-inner">Google Chrome 53 or later</div>
+        <div class="Bullet1-inner">Mozilla Firefox 50 or later</div>
+        <div class="Bullet1-inner">Apple Safari 11 or later (macOS 10.12 or later)</div>
+        <p>In Microsoft Internet Explorer 11, the ChemDraw Web Clipboard applet should be enabled to support extended copy and paste. Java Runtime Environment(JRE) should also be installed and enabled. To check if a JRE is properly enabled, please open the page <a href="https://www.java.com/en/download/installed.jsp" xmlns="http://www.w3.org/1999/xhtml">https://www.java.com/en/download/installed.jsp</a> in IE.</p>
+        <p>The following browsers are no longer supported.</p>
+        <div class="Bullet1-inner"><b>Microsoft Internet Explorer</b>: All versions prior to 11</div>
+        <div class="Bullet1-inner"><b>Mozilla Firefox</b>: All versions prior to 50</div>
+        <div class="Bullet1-inner"><b>Apple Safari</b>: All versions prior to 11</div>
+        <div class="Bullet1-inner"><b>Microsoft Edge</b> is not supported</div>
+        <h2 id="chemdraw-web-service"><a name="ChemDraw3" xmlns="http://www.w3.org/1999/xhtml"></a>ChemDraw Web Service</h2>
+        <div class="Body">ChemDraw Web Service offers RESTful APIs to process chemical data so that it can support more powerful image rendering, chemical property calculation, etc. RESTful APIs are not exposed to the public. To invoke the web service functions from the web page, the ChemDraw JS library should be loaded. Please refer to the <b xmlns="http://www.w3.org/1999/xhtml">ChemDraw JS 17.1 API Reference Guide</b> for details.</div>
+    </body>
+</html>

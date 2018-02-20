@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="ChemDraw JS 17.1 Installation Guide"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/Installation_Guide.fltoc"
+  MasterPageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+  ConditionTagExpression="include[Primary.InstallOnly or &quot;Primary.PDF Only&quot;] exclude[&quot;Primary.API Only&quot; or &quot;Primary.DevGuide Only&quot; or Primary.Hardware_Software or &quot;Primary.Help Only&quot; or Primary.Internal_Readme or &quot;Primary.Not in CDW&quot; or Primary.RN] "
+  PatchHeadingLevels="true"
+  MasterStylesheet="/Content/Resources/Stylesheets/Cambridgesoft1.css"
+  OutputFile="ChemDraw JS 17.1 Installation Guide">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="false" />
+  <PDF
+    ImageCompression="Automatic"
+    InitialMagnification="100"
+    PageLayout="OneColumn"
+    TitleBar="DocumentTitle"
+    ShowUsedBookmarks="false" />
+  <DocumentProperties
+    Title="ChemDraw JS 17.1 Installation Guide"
+    Author="PKI Documentation Team" />
+  <Variables>
+    <Variable
+      Name="Primary/GuideName">Installation Guide</Variable>
+    <Variable
+      Name="Primary/LastUpdated">January 22, 2018</Variable>
+    <Variable
+      Name="Primary/ProductName">ChemDraw JS as a Service 17.1</Variable>
+  </Variables>
+</CatapultTarget>

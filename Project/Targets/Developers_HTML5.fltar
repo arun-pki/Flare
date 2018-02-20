@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="Developer's Guide"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/DevelopersGuide.fltoc"
+  MasterStylesheet="/Content/Resources/Stylesheets/API.css"
+  Skin="/Project/Skins/HTML5_Developers.flskn"
+  InsertMOTW="true"
+  MasterPage="/Content/Resources/MasterPages/APIPage.flmsp"
+  Medium="non-print"
+  OutputFile="Developers Guide"
+  ConditionTagExpression="include[&quot;Primary.DevGuide Only&quot;] exclude[&quot;Primary.API Only&quot; or Primary.Hardware_Software or &quot;Primary.Help Only&quot; or Primary.InstallOnly or Primary.Internal_Readme or &quot;Primary.Not in CDW&quot; or &quot;Primary.PDF Only&quot; or Primary.RN] ">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+</CatapultTarget>

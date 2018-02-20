@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="TitlePage"
+    Link="/Content/TitlePage.htm"
+    conditions="Primary.PDF Only"
+    BreakType="pageLayout"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl"
+    PageType="title" />
+  <TocEntry
+    Title="TOC"
+    Link="/Content/TOC.htm"
+    conditions="Primary.PDF Only"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  <TocEntry
+    Title="Global Objects"
+    Link="/Content/API Reference.html#global-objects"
+    StartSection="false"
+    BreakType="chapter"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue">
+    <TocEntry
+      Title="perkinelmer.ChemdrawWebManager"
+      Link="/Content/API Reference.html#perkinelmerchemdrawwebmanager">
+      <TocEntry
+        Title="attach(options) : void"
+        Link="/Content/API Reference.html#attachoptions--void" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Classes"
+    Link="/Content/API Reference.html#classes"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="ChemDrawDirect"
+      Link="/Content/API Reference.html#chemdrawdirect">
+      <TocEntry
+        Title="addProduct(cdxml) : number"
+        Link="/Content/API Reference.html#addproductcdxml--number" />
+      <TocEntry
+        Title="addReactant(cdxml) : number"
+        Link="/Content/API Reference.html#addreactantcdxml--number"></TocEntry>
+      <TocEntry
+        Title="addReagent(cdxml) : number"
+        Link="/Content/API Reference.html#addreagentcdxml--number" />
+      <TocEntry
+        Title="clear() : void"
+        Link="/Content/API Reference.html#clear--void" />
+      <TocEntry
+        Title="convertToCDXML(content, mimeType, callback) : void"
+        Link="/Content/API Reference.html#converttocdxmlcontent-mimetype-callback--void" />
+      <TocEntry
+        Title="findReactions(callback) : void"
+        Link="/Content/API Reference.html#findreactionscallback--void" />
+      <TocEntry
+        Title="fitToContainer() : void"
+        Link="/Content/API Reference.html#fittocontainer--void" />
+      <TocEntry
+        Title="getAllFragmentsInfo() : Array&lt;FragmentInfo&gt;"
+        Link="/Content/API Reference.html#getallfragmentsinfooptions--arrayfragmentinfo" />
+      <TocEntry
+        Title="getB64CDX() : string"
+        Link="/Content/API Reference.html#getB64CDX()-string" />
+      <TocEntry
+        Title="getCDXML() : string"
+        Link="/Content/API Reference.html#getcdxml--string" />
+      <TocEntry
+        Title="getCanvasSize() : Size"
+        Link="/Content/API Reference.html#getcanvassize--size" />
+      <TocEntry
+        Title="getDocumentName() : string"
+        Link="/Content/API Reference.html#getdocumentname--string" />
+      <TocEntry
+        Title="getErrors() : Array&lt;string&gt;"
+        Link="/Content/API Reference.html#geterrors--arraystring" />
+      <TocEntry
+        Title="getFragmentsInfo() : Array&lt;FragmentInfo&gt;"
+        Link="/Content/API Reference.html#getfragmentsinfooptions--arrayfragmentinfo" />
+      <TocEntry
+        Title="getImgUrl() : string"
+        Link="/Content/API Reference.html#getimgurl--string" />
+      <TocEntry
+        Title="getInChI(callback) : void"
+        Link="/Content/API Reference.html#getinchicallback--void" />
+      <TocEntry
+        Title="getInChIKey(callback) : void"
+        Link="/Content/API Reference.html#getinchikeycallback--void" />
+      <TocEntry
+        Title="getMOL(callback) : void"
+        Link="/Content/API Reference.html#getmolcallback--void" />
+      <TocEntry
+        Title="getMOLV3000(callback) : void"
+        Link="/Content/API Reference.html#getmolv3000callback--void" />
+      <TocEntry
+        Title="getMolecularWeight(content, mimeType, callback) : void"
+        Link="/Content/API Reference.html#getmolecularweightcontent-mimetype-callback--void" />
+      <TocEntry
+        Title="getProperties(callback) : void"
+        Link="/Content/API Reference.html#getpropertiescallback--void" />
+      <TocEntry
+        Title="getRXN(callback) : void"
+        Link="/Content/API Reference.html#getrxncallback--void"></TocEntry>
+      <TocEntry
+        Title="getRXNV3000(callback) : void"
+        Link="/Content/API Reference.html#getrxnv3000callback--void" />
+      <TocEntry
+        Title="getSMILES(callback) : void"
+        Link="/Content/API Reference.html#getsmilescallback--void" />
+      <TocEntry
+        Title="getSVG(callback) : void"
+        Link="/Content/API Reference.html#getsvgcallback--void" />
+      <TocEntry
+        Title="getSelectedFragmentsInfo() : Array&lt;FragmentInfo&gt;"
+        Link="/Content/API Reference.html#getselectedfragmentsinfooptions--arrayfragmentinfo" />
+      <TocEntry
+        Title="getVersion() : string"
+        Link="/Content/API Reference.html#getversion--string" />
+      <TocEntry
+        Title="isBlankStructure() : boolean"
+        Link="/Content/API Reference.html#isblankstructure--boolean" />
+      <TocEntry
+        Title="isSaved() : boolean"
+        Link="/Content/API Reference.html#issaved--boolean" />
+      <TocEntry
+        Title="labelFragments(ids) : void"
+        Link="/Content/API Reference.html#labelfragmentsids--void" />
+      <TocEntry
+        Title="loadB64CDX(b64CDX, callback) : void"
+        Link="/Content/API Reference.html#loadb64cdxb64cdx-callback--void" />
+      <TocEntry
+        Title="loadCDXML(cdxml) : void"
+        Link="/Content/API Reference.html#loadcdxmlcdxml--void" />
+      <TocEntry
+        Title="loadConfig(config) : void"
+        Link="/Content/API Reference.html#loadconfigconfig--void" />
+      <TocEntry
+        Title="loadConfigFromUrl(url, callback) : void"
+        Link="/Content/API Reference.html#loadconfigfromurlurl-callback--void" />
+      <TocEntry
+        Title="loadMOL(mol, callback) : void"
+        Link="/Content/API Reference.html#loadmolmol-callback--void" />
+      <TocEntry
+        Title="loadSMILES(smiles, callback) : void"
+        Link="/Content/API Reference.html#loadsmilessmiles-callback--void" />
+      <TocEntry
+        Title="markAsSaved() : void"
+        Link="/Content/API Reference.html#markassaved--void" />
+      <TocEntry
+        Title="nameToStructure(name, callback) : void"
+        Link="/Content/API Reference.html#nametostructurename-callback--void"></TocEntry>
+      <TocEntry
+        Title="setCanvasSize(size[, options]) : void"
+        Link="/Content/API Reference.html#setcanvassizesize-options--void" />
+      <TocEntry
+        Title="setContentChangedHandler(handler) : void"
+        Link="/Content/API Reference.html#setcontentchangedhandlerhandler--void" />
+      <TocEntry
+        Title="setDocumentName(name) : void"
+        Link="/Content/API Reference.html#setdocumentnamename--void" />
+      <TocEntry
+        Title="setViewOnly(viewOnly) : void"
+        Link="/Content/API Reference.html#setviewonlyviewonly--void" />
+      <TocEntry
+        Title="structureToName(cdxml, callback) : void"
+        Link="/Content/API Reference.html#structuretonamecdxml-callback--void" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="JSON Structures"
+    Link="/Content/API Reference.html#json-structures"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="ApplicationProperties"
+      Link="/Content/API Reference.html#applicationproperties" />
+    <TocEntry
+      Title="AttachOptions"
+      Link="/Content/API Reference.html#attachoptions" />
+    <TocEntry
+      Title="Configuration"
+      Link="/Content/API Reference.html#configuration" />
+    <TocEntry
+      Title="ContentChangedEvent"
+      Link="/Content/API Reference.html#contentchangedevent" />
+    <TocEntry
+      Title="Features"
+      Link="/Content/API Reference.html#features" />
+    <TocEntry
+      Title="FragmentInfo"
+      Link="/Content/API Reference.html#fragmentinfo" />
+    <TocEntry
+      Title="GetFragmentsInfoOptions"
+      Link="/Content/API Reference.html#getfragmentsinfooptions"
+      StartSection="false" />
+    <TocEntry
+      Title="SetCanvasSizeOptions"
+      Link="/Content/API Reference.html#setcanvassizeoptions" />
+    <TocEntry
+      Title="Size"
+      Link="/Content/API Reference.html#size" />
+    <TocEntry
+      Title="Tool"
+      Link="/Content/API Reference.html#tool" />
+    <TocEntry
+      Title="ToolGroup"
+      Link="/Content/API Reference.html#toolgroup" />
+    <TocEntry
+      Title="ToolsLayout"
+      Link="/Content/API Reference.html#toolslayout" />
+  </TocEntry>
+  <TocEntry
+    Title="Callbacks"
+    Link="/Content/API Reference.html#callbacks"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="AttachCallback"
+      Link="/Content/API Reference.html#attachcallback" />
+    <TocEntry
+      Title="ConfigLoadCallback"
+      Link="/Content/API Reference.html#configloadcallback" />
+    <TocEntry
+      Title="ContentChangedHandler"
+      Link="/Content/API Reference.html#contentchangedhandler" />
+    <TocEntry
+      Title="ErrorCallback"
+      Link="/Content/API Reference.html#errorcallback" />
+    <TocEntry
+      Title="GetNumberCallback"
+      Link="/Content/API Reference.html#getnumbercallback" />
+    <TocEntry
+      Title="GetTextContentCallback"
+      Link="/Content/API Reference.html#gettextcontentcallback" />
+    <TocEntry
+      Title="LoadDocumentCallback"
+      Link="/Content/API Reference.html#loaddocumentcallback" />
+  </TocEntry>
+</CatapultToc>

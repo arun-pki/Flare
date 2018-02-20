@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.RN" MadCap:lastBlockDepth="5" MadCap:lastHeight="3351" MadCap:lastWidth="861">
+    <head>
+        <link href="../Resources/TableStyles/TableStandard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>ChemDraw Direct 2.0 Overview</h1>
+        <p>ChemDraw Direct (CDD) is a lightweight JavaScript-based chemical drawing tool built using modern web technologies that can be easily integrated into web-based applications such as PerkinElmer Signals ™ Notebook via its published API.</p>
+        <h2><a name="What's"></a>What's New in This Release</h2>
+        <p>ChemDraw Direct 2.0 is the most recent version of the application and it provides significant feature enhancements as described below.</p>
+        <h3>Chemical Data Format Support</h3>
+        <p>CDD 2.0 has been enhanced to have the same capability with ChemDraw Desktop to handle the following chemical data formats.</p>
+        <div class="Bullet1-inner">CDX</div>
+        <div class="Bullet1-inner">CDXML</div>
+        <div class="Bullet1-inner">MOLFILE 2K</div>
+        <div class="Bullet1-inner">MOLFILE 3K</div>
+        <div class="Bullet1-inner">SMILES</div>
+        <p>Compared to CDD 1.x, the data integrity is guaranteed in processing CDX/CDXML data.  ChemDraw Web Service is not required any longer to load the data in CDX/MOLFILE/SMILES.</p>
+        <h3>Rendering</h3>
+        <p>CDD 1.x has limitations to render complex objects. CDD 2.0 has been enhanced to behave the same with ChemDraw Desktop in rendering.</p>
+        <p>Following are typical objects newly supported in CDD 2.0.</p>
+        <div class="Bullet1-inner">Complex text style or layout</div>
+        <div class="Bullet1-inner">Complex shapes, including all pre-defined templates</div>
+        <div class="Bullet1-inner">HELM data</div>
+        <div class="Bullet1-inner">Other objects which were not supported in CDD 1.x, such as tables, spectra, constraints, plates, plasmid maps, ellipsoid arcs, stoichiometry grids, bioshapes, and R-logic results</div>
+        <p>Besides the newly supported objects, CDD 2.0 has much better display quality on Retina (High-DPI) displays.</p>
+        <h3>Nicknames</h3>
+        <p>All the 518 nicknames pre-defined in ChemDraw Desktop are available in CDD 2.0. Operations on nicknames such as editing, rendering, expanding are supported. In CDD 1.x, only 169 nicknames were supported.</p>
+        <h3>Drawing Tools</h3>
+        <p>CDD 2.0 implemented more drawing tools which behave the same with ChemDraw Desktop.</p>
+        <h4>Bond</h4>
+        <p>All of the 20 bond tools which are available in ChemDraw Desktop are available in CDD 2.0. The following are the newly added bond tools in CDD 2.0.</p>
+        <div class="Bullet1-inner">Quadruple bond</div>
+        <div class="Bullet1-inner">Hashed bond</div>
+        <div class="Bullet1-inner">Wavy bond</div>
+        <div class="Bullet1-inner">Bold double bond</div>
+        <div class="Bullet1-inner">Dashed double bond</div>
+        <div class="Bullet1-inner">Double dashed double bond</div>
+        <div class="Bullet1-inner">Double either bond</div>
+        <div class="Bullet1-inner">Dative bond</div>
+        <div class="Bullet1-inner">Any bond</div>
+        <div class="Bullet1-inner">Double or Aromatic Bond</div>
+        <div class="Bullet1-inner">Single or Aromatic Bond</div>
+        <div class="Bullet1-inner">Single or Double Bond</div>
+        <h4>Ring</h4>
+        <p>All of the 10 ring tools which are available in ChemDraw Desktop are available in CDD 2.0. The following are the newly added ring tools in CDD 2.0.</p>
+        <div class="Bullet1-inner">Cycloheptane Ring</div>
+        <div class="Bullet1-inner">Cyclooctane Ring</div>
+        <div class="Bullet1-inner">Cyclopentadiene Ring</div>
+        <h4>Arrow</h4>
+        <p>All of the 56 arrow tools which are available in ChemDraw Desktop are available in CDD 2.0. In CDD 1.x, only five basic arrows were supported.</p>
+        <h4>Templates</h4>
+        <p>All templates that are pre-defined in ChemDraw Desktop are supported in CDD 2.0.</p>
+        <h3>Extended Copy and Paste</h3>
+        <p>In CDD 1.x, the back-end ChemDraw Web Service is required to support exchanging structures with external programs with copying and pasting. In CDD 2.0, the copying and pasting is done on client side only.</p>
+        <h1><a name="Dependen"></a>Dependencies</h1>
+        <p>Please refer to <b>ChemDraw Direct 2.0 Hardware and Software Requirements Guide</b> for details.</p>
+        <h1><a name="Qualific"></a>Qualification</h1>
+        <h2>Scope of Testing</h2>
+        <p>PerkinElmer QA group has scripted test cases and conducted ad-hoc testing on ChemDraw Direct 2.0 in the test environments listed below to ensure high quality.</p>
+        <h2>Testing Environments</h2>
+        <h3>ChemDraw Direct JavaScript Library</h3>
+        <table style="mc-table-style: url('../Resources/TableStyles/TableStandard.css');margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1">Operating Systems</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1">Browser</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Windows 7 Enterprise SP1 (64-bit)</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">MS Internet Explorer 11</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Windows 7 Enterprise SP1 (64-bit)</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Mozilla Firefox 54.0</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Windows 7 Enterprise SP1 (64-bit)</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Google Chrome 60.0</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Windows 10 Enterprise</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">MS Edge 25</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Windows 10 Enterprise</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Google Chrome 60.0</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Ubuntu 16.04 LTS</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Google Chrome 60.0</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Ubuntu 16.04 LTS</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Mozilla Firefox 54.0</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Mac OS X 10.11</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Safari 9.1.3</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">macOS 10.12</td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">Safari 10.1.2</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>ChemDraw Web Clipboard</h3>
+        <table style="mc-table-style: url('../Resources/TableStyles/TableStandard.css');margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1">Operating Systems</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1">Browser</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Windows 7 Enterprise SP1 (64-bit)</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">MS Internet Explorer 11</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Windows 7 Enterprise SP1 (64-bit)</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Mozilla Firefox 54.0</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Windows 7 Enterprise SP1 (64-bit)</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Google Chrome 60.0</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Windows 10 Enterprise</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">MS Edge 25</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Windows 10 Enterprise</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Google Chrome 60.0</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Ubuntu 16.04 LTS</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Google Chrome 60.0</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Ubuntu 16.04 LTS</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Mozilla Firefox 54.0</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Mac OS X 10.11</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Safari 9.1.3</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">macOS 10.12</td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">Safari 10.1.2</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>ChemDraw Web Service</h3>
+        <p style="font-weight: bold;">Operating Systems</p>
+        <div class="Bullet1-inner">Windows Server 2008 R2 Datacenter (64-bit)</div>
+        <div class="Bullet1-inner">Windows Server 2012 R2 Standard (64-bit)</div>
+        <div class="Bullet1-inner">Windows Server 2016 Datacenter (64-bit)</div>
+        <h2>Out of Scope</h2>
+        <div class="Bullet1-inner">Support on touch-screen devices and tablets</div>
+        <div class="Bullet1-inner">Operating Systems in other languages other than English</div>
+        <h1><a name="Installa"></a>Installation Instructions</h1>
+        <h2>Installation</h2>
+        <p>Please refer to <b>ChemDraw Direct 2.0 Installation Guide</b> for details.</p>
+        <h2>Distribution Package Components</h2>
+        <p>This software package includes:</p>
+        <p><b>Goods</b>
+        </p>
+        <div class="Bullet1-inner">Software</div>
+        <div class="Bullet2-inner">ChemDraw Direct-2.0.exe</div>
+        <div class="Bullet2-inner">chemdrawdirect-2.0-library.zip</div>
+        <div class="Bullet1-inner">Documentation</div>
+        <div class="Bullet2-inner">ChemDraw Direct 2.0 User Guide.pdf</div>
+        <div class="Bullet2-inner">ChemDraw Direct 2.0 Developers Guide.pdf</div>
+        <div class="Bullet2-inner">ChemDraw Direct 2.0 API Reference.pdf</div>
+        <div class="Bullet2-inner">ChemDraw Direct 2.0 Hardware and Software Requirements Guide.pdf</div>
+        <div class="Bullet2-inner">ChemDraw Direct 2.0 Installation Guide.pdf</div>
+        <div class="Bullet2-inner">ChemDraw Direct 2.0 Release Notes.pdf (this document)</div>
+        <h1><a name="Major"></a>Limitations and Known Issues</h1>
+        <div class="Bullet1-inner">GetCDXML action takes significant time to get the CDXML of complex structures. This issue appears only in Internet Explorer 11 browser</div>
+        <div class="Bullet1-inner">The cursor icon always shows a hand icon when a bond / ring tool is selected</div>
+        <div class="Bullet1-inner">The number in atom label changes to sub-script in the svg file generated using the getSVG option</div>
+        <div class="Bullet1-inner">No notifications appear on Dev Console while performing Group and Integral operations</div>
+        <div class="Bullet1-inner">Single bond attached to the Nickname "FRNAC" is not displayed properly in the ChemDraw Element</div>
+        <div class="Bullet1-inner">Structures with square brackets are not getting cleaned up properly when using the Clean Up tool</div>
+        <div class="Bullet1-inner">Structures with brackets are not getting cleaned up properly when using the Structure Clean Up tool</div>
+        <div class="Bullet1-inner">Stoichiometry table is not expanding vertically when multiple reactants / products are entered</div>
+        <div class="Bullet1-inner">Reagents are getting moved into the Reactant side when an RXN file is imported</div>
+        <div class="Bullet1-inner">Captions are missing after RXN file export, when it is above or below the reaction arrow</div>
+        <div class="Bullet1-inner">Reagent below the arrow is missing after RXN file export, when it is used before the slash symbol </div>
+        <div class="Bullet1-inner">The bond length between two isotopic atom labels get reduced when the bond is drawn in horizontal position</div>
+        <div class="Bullet1-inner">Once the text box is opened (editing mode), it does not close automatically unless any drawing action is taken. This can lead to data loss when the drawing is exported using any API command.</div>
+        <h1>Technical Support</h1>
+        <p>This software is supported by PerkinElmer Informatics Support.</p>
+        <p><a href="http://www.perkinelmer.com/informatics/support" target="_blank">www.perkinelmer.com/informatics/support</a>
+        </p>
+        <p style="font-weight: bold;">PerkinElmer Inc. | <span style="color: #0055a6;">For the Better</span></p>
+        <p style="font-weight: bold;"><span style="color: #00a1de;">HUMAN HEALTH</span>| <span style="color: #6cb442;">ENVIRONMENTAL HEALTH</span></p>
+        <p>940 Winter Street | Waltham, MA 02451</p>
+    </body>
+</html>

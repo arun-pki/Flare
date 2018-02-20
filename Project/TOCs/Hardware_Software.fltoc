@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="TitlePage"
+    Link="/Content/TitlePage.htm"
+    conditions="Primary.PDF Only"
+    StartSection="false"
+    BreakType="pageLayout"
+    PageType="title"
+    PageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl" />
+  <TocEntry
+    Title="TOC"
+    Link="/Content/TOC.htm"
+    conditions="Primary.PDF Only"
+    BreakType="pageLayout"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  <TocEntry
+    Title="Overview"
+    Link="/Content/Hardware_Software.htm#top">
+    <TocEntry
+      Title="ChemDraw JS JavaScript Library"
+      Link="/Content/Hardware_Software.htm#ChemDraw">
+      <TocEntry
+        Title="Software Requirements"
+        Link="/Content/Hardware_Software.htm#Software" />
+      <TocEntry
+        Title="Hardware Requirements"
+        Link="/Content/Hardware_Software.htm#Hardware" />
+    </TocEntry>
+    <TocEntry
+      Title="ChemDraw Web Clipboard"
+      Link="/Content/Hardware_Software.htm#ChemDraw2">
+      <TocEntry
+        Title="Operating System Exceptions"
+        Link="/Content/Hardware_Software.htm#Software2"></TocEntry>
+      <TocEntry
+        Title="Browser Exceptions"
+        Link="/Content/Hardware_Software.htm#Browser" />
+    </TocEntry>
+    <TocEntry
+      Title="ChemDraw Web Service"
+      Link="/Content/Hardware_Software.htm#ChemDraw3">
+      <TocEntry
+        Title="Software Requirements"
+        Link="/Content/Hardware_Software.htm#Software3" />
+      <TocEntry
+        Title="Hardware Requirements"
+        Link="/Content/Hardware_Software.htm#Hardware2" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

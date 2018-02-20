@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.InstallOnly" MadCap:lastBlockDepth="4" MadCap:lastHeight="408" MadCap:lastWidth="894">
+    <head>
+    </head>
+    <body>
+        <h1>Preparing ChemDraw JS License</h1>
+        <p>ChemDraw JS requires a license. A license can be loaded into ChemDraw JS by either a URL to a valid license file which can be accessed by ChemDraw JS library or the license content in plain text format.</p>
+        <h2>Exposing ChemDraw JS License with a URL</h2>
+        <p>To enable ChemDraw JS load a license file from a URL, the <b>ChemDraw-JS-License.xml</b> file need to be put with in a HTTP server with the following capabilities:</p>
+        <div class="Bullet1-inner">Cross-Origin Resource Sharing (CORS)</div>
+        <div class="Bullet1-inner">GET static .xml files</div>
+        <div class="Body">If the host application runs in an HTTPs server, the ChemDraw JS license file also has to be placed in an HTTPs server.</div>
+        <p>The URL to the license file will be used when writing the code of your host application which creates and attaches ChemDraw JS instances. Please refer to <b>ChemDraw JS 17.1 Developers Guide</b> for details.</p>
+        <h2>Using ChemDraw JS License in Plain Text</h2>
+        <p>ChemDraw JS also accepts a ChemDraw JS license in plain text. It means the host application can implement its own mechanism to load the license content into ChemDraw JS when attaching.</p>
+    </body>
+</html>

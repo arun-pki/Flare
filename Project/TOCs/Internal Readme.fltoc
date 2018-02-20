@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="TitlePage"
+    Link="/Content/TitlePage.htm"
+    BreakType="pageLayout"
+    PageType="title"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl" />
+  <TocEntry
+    Title="TOC"
+    Link="/Content/TOC.htm"
+    BreakType="chapter"
+    StartSection="true"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    PageNumberReset="continue" />
+  <TocEntry
+    Title="ChemDraw Direct 2.0 Overview"
+    Link="/Content/Readme/Internal Readme.htm"
+    BreakType="chapter"
+    StartSection="true"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ReplaceMergeNode="false">
+    <TocEntry
+      Title="What's New in This Release"
+      Link="/Content/Readme/Internal Readme.htm#What's"
+      StartSection="false" />
+    <TocEntry
+      Title="Distribution Package Components"
+      Link="/Content/Readme/Internal Readme.htm#Distribu" />
+  </TocEntry>
+  <TocEntry
+    Title="Dependencies"
+    Link="/Content/Readme/Internal Readme.htm#Dependen" />
+  <TocEntry
+    Title="Qualification"
+    Link="/Content/Readme/Internal Readme.htm#Qualific" />
+  <TocEntry
+    Title="Installation Instructions"
+    Link="/Content/Readme/Internal Readme.htm#Installa" />
+  <TocEntry
+    Title="List of Resolved and Fixed Issues"
+    Link="/Content/Readme/Internal Readme.htm#List" />
+  <TocEntry
+    Title="Major Known Issues"
+    Link="/Content/Readme/Internal Readme.htm#Major" />
+</CatapultToc>

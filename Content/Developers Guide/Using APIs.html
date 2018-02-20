@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="1176" MadCap:lastWidth="907" MadCap:conditions="Primary.DevGuide Only">
+    <head>
+        <meta http-equiv="Content-Style-Type" content="text/css" /><title></title>
+        <style type="text/css">/*<![CDATA[*/
+code
+{
+	white-space: pre;
+}
+
+/*]]>*/</style>
+        <style type="text/css">/*<![CDATA[*/
+div.sourceCode
+{
+	overflow-x: auto;
+}
+table.sourceCode,
+tr.sourceCode,
+td.lineNumbers,
+td.sourceCode
+{
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	border: none;
+}
+table.sourceCode
+{
+	width: 100%;
+	line-height: 100%;
+}
+td.lineNumbers
+{
+	text-align: right;
+	padding-right: 4px;
+	padding-left: 4px;
+	color: #aaaaaa;
+	border-right: 1px solid #aaaaaa;
+}
+td.sourceCode
+{
+	padding-left: 5px;
+}
+code &gt; span.kw
+{
+	color: #007020;
+	font-weight: bold;
+}
+/* Keyword */
+code &gt; span.dt
+{
+	color: #902000;
+}
+/* DataType */
+code &gt; span.dv
+{
+	color: #40a070;
+}
+/* DecVal */
+code &gt; span.bn
+{
+	color: #40a070;
+}
+/* BaseN */
+code &gt; span.fl
+{
+	color: #40a070;
+}
+/* Float */
+code &gt; span.ch
+{
+	color: #4070a0;
+}
+/* Char */
+code &gt; span.st
+{
+	color: #4070a0;
+}
+/* String */
+code &gt; span.co
+{
+	color: #60a0b0;
+	font-style: italic;
+}
+/* Comment */
+code &gt; span.ot
+{
+	color: #007020;
+}
+/* Other */
+code &gt; span.al
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+/* Alert */
+code &gt; span.fu
+{
+	color: #06287e;
+}
+/* Function */
+code &gt; span.er
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+/* Error */
+code &gt; span.wa
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Warning */
+code &gt; span.cn
+{
+	color: #880000;
+}
+/* Constant */
+code &gt; span.sc
+{
+	color: #4070a0;
+}
+/* SpecialChar */
+code &gt; span.vs
+{
+	color: #4070a0;
+}
+/* VerbatimString */
+code &gt; span.ss
+{
+	color: #bb6688;
+}
+/* SpecialString */
+code &gt; span.im
+{
+	
+}
+/* Import */
+code &gt; span.va
+{
+	color: #19177c;
+}
+/* Variable */
+code &gt; span.cf
+{
+	color: #007020;
+	font-weight: bold;
+}
+/* ControlFlow */
+code &gt; span.op
+{
+	color: #666666;
+}
+/* Operator */
+code &gt; span.bu
+{
+	
+}
+/* BuiltIn */
+code &gt; span.ex
+{
+	
+}
+/* Extension */
+code &gt; span.pp
+{
+	color: #bc7a00;
+}
+/* Preprocessor */
+code &gt; span.at
+{
+	color: #7d9029;
+}
+/* Attribute */
+code &gt; span.do
+{
+	color: #ba2121;
+	font-style: italic;
+}
+/* Documentation */
+code &gt; span.an
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Annotation */
+code &gt; span.cv
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* CommentVar */
+code &gt; span.in
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Information */
+
+/*]]>*/</style>
+    </head>
+    <body>
+        <h1 id="using-apis"><a name="Using" xmlns="http://www.w3.org/1999/xhtml"></a>Using APIs</h1>
+        <div class="Body">ChemDraw JS provides five groups of APIs for the following purposes.</div>
+        <div class="Bullet1-inner">Managing ChemDraw JS</div>
+        <div class="Bullet1-inner">Loading and Getting Chemical Data</div>
+        <div class="Bullet1-inner">Loading and Getting Reaction Data</div>
+        <div class="Bullet1-inner">Managing Document</div>
+        <div class="Bullet1-inner">Utilities</div>
+        <div class="Body">The following sections introduce the functionalities of these APIs. Please refer to the <strong xmlns="http://www.w3.org/1999/xhtml">ChemDraw JS 17.1 API Reference Guide</strong> for instructions on how to use the APIs.</div>
+        <div class="Body">The object <strong xmlns="http://www.w3.org/1999/xhtml">perkinelmer.ChemdrawwebManager</strong> is a global javascript object, so that it can be accessed everywhere after the ChemDraw JS library is loaded. The only API this object exposes is <strong xmlns="http://www.w3.org/1999/xhtml">attach</strong> which creates and attaches a new ChemDraw JS instance to the specified HTML DOM node.</div>
+        <div class="Body">All of the other APIs are exposed by a ChemDraw JS instance which is created in the <strong xmlns="http://www.w3.org/1999/xhtml">attach</strong> function and passed to the host application in the callback function of <strong xmlns="http://www.w3.org/1999/xhtml">attach</strong>. Then it is the host application's responsibility to keep the instances and invoke the APIs when necessary.</div>
+        <h2 id="managing-chemdraw-direct"><a name="Managing" xmlns="http://www.w3.org/1999/xhtml"></a>Managing ChemDraw JS</h2>
+        <h3 id="creating-attaching-a-cdd-instance"><a name="Creating" xmlns="http://www.w3.org/1999/xhtml"></a><a name="creatingandattachingacDDinstance" xmlns="http://www.w3.org/1999/xhtml"></a>Creating and Attaching a ChemDraw JS Instance</h3>
+        <div class="Bullet1-inner">perkinelmer.ChemdrawwebManager.attach</div><pre class="prettyprint"><p class="code">var chemdrawjsAttached = function (chemdraw) {
+  // you need to keep the chemdraw variable in order to use it elsewhere
+};
+
+perkinelmer.ChemdrawWebManager.attach({
+  id: 'chemdrawjs-container',
+  callback: chemdrawjsAttached,
+  licenseUrl: './license.xml'
+});</p></pre>
+        <div class="Body">In the sample code above, the <strong xmlns="http://www.w3.org/1999/xhtml">ChemdrawWebManager</strong> attaches a new ChemDraw JS instance to the HTML node whose <b>id</b> is "chemdrawjs-container". The "chemdrawjs-container" node is the actual parent node of the ChemDraw JS node in the DOM tree.</div>
+        <div class="Body">The attach function accepts an object of <strong xmlns="http://www.w3.org/1999/xhtml">AttachOptions</strong> which specifies the parameters for initializing a ChemDraw JS instance.</div>
+        <div class="Body">After the ChemDraw JS is successfully attached to the specified container, the specified callback function <b xmlns="http://www.w3.org/1999/xhtml">chemdrawjsAttached</b> is called.</div>
+        <div class="Body">In the callback function <b xmlns="http://www.w3.org/1999/xhtml">chemdrawjsAttached</b>, the only input parameter is an instance of ChemDraw JS. The host application should keep the new instance properly, so that the APIs of ChemDraw JS could be called when necessary.</div>
+        <div class="Body">Either <b xmlns="http://www.w3.org/1999/xhtml">license</b> or <b xmlns="http://www.w3.org/1999/xhtml">licenseUrl</b> needs to be set in the <b xmlns="http://www.w3.org/1999/xhtml">AttachOptions</b>, so that ChemDraw JS can read and validate the license.</div>
+        <div class="Body">Multiple ChemDraw JS instances can be attached to the same web page. Again, the host application should manage the created instances properly, so that the right instance could be accessed.</div>
+        <h3 id="loading-applying-configuration"><a name="Loading" xmlns="http://www.w3.org/1999/xhtml"></a>Loading and Applying Configuration</h3>
+        <div class="Bullet1-inner">loadConfig</div>
+        <div class="Bullet1-inner">loadConfigFromUrl</div>
+        <div class="Body">ChemDraw JS allows the host application to configure a ChemDraw JS instance with a <strong xmlns="http://www.w3.org/1999/xhtml">Configuration</strong> object, or a URL string to the configuration file. If no configuration is specified, the default configuration will be loaded.</div>
+        <div class="Body">ChemDraw JS can load configuration in the <strong xmlns="http://www.w3.org/1999/xhtml">AttachOptions</strong> object when attaching an instance. After the instance is attached, the APIs <strong xmlns="http://www.w3.org/1999/xhtml">loadConfig</strong> &amp; <strong xmlns="http://www.w3.org/1999/xhtml">loadConfigFromURL</strong> can also be called.</div>
+        <div class="Body">Please refer to <strong xmlns="http://www.w3.org/1999/xhtml"><a href="Configuring ChemDraw Direct.html#configuringchemDrawdirect" xmlns="http://www.w3.org/1999/xhtml">Configuring ChemDraw JS</a></strong> for details about the internal structure of ChemDraw JS configuration.</div>
+        <h3 id="others"><a name="Others" xmlns="http://www.w3.org/1999/xhtml"></a>Retrieving the Version of the Library</h3>
+        <div class="Bullet1-1st">getVersion</div>
+        <div class="Body">ChemDraw JS allows the host application to know which version of ChemDraw JS is being loaded.</div>
+    </body>
+</html>

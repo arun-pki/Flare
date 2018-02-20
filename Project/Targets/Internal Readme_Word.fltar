@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="ChemDraw Direct 2.0 Internal Readme"
+  Type="MsWord"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  ConditionTagExpression="include[Primary.Internal_Readme or &quot;Primary.PDF Only&quot;] exclude[Primary.RN] "
+  MasterToc="/Project/TOCs/Internal Readme.fltoc"
+  MasterPageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/Cambridgesoft1.css"
+  OutputFile="ChemDraw Direct 2.0 Internal Readme"
+  MasterPage="/Content/Resources/MasterPages/NewPage.flmsp">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Variables>
+    <Variable
+      Name="Primary/GuideName">Internal Readme</Variable>
+    <Variable
+      Name="Primary/LastUpdated">August 30, 2017</Variable>
+  </Variables>
+</CatapultTarget>

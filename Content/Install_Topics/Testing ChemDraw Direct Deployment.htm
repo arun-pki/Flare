@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2297" MadCap:lastWidth="914" MadCap:conditions="Primary.InstallOnly">
+    <head>
+    </head>
+    <body>
+        <h1>Verifying ChemDraw JS Deployment</h1>
+        <p>The sample page of ChemDraw JS can be used to verify the deployment.</p>
+        <p>If ChemDraw JS is deployed using the installer, the sample page can be opened directly if the <i>Show ChemDraw JS Sample Page</i> option is checked at the last step of the installation wizard.</p>
+        <p>Or a menu item is available in Windows Startup menu to open <b>ChemDraw JS Sample Page 17.1.0</b></p>
+        <p>
+            <img src="Images/ChemDrawJSSamplePageOnStartupMenu.png" />
+        </p>
+        <h2><a name="Loading"></a>Loading ChemDraw JS License on the Sample Page</h2>
+        <p>The sample page also needs a valid ChemDraw JS license. A dialog will be shown on the sample page.</p>
+        <p>
+            <img src="Images/InstallLicenseRequired.png" MadCap:mediastyle="@media print { max-width: 600px; }" />
+        </p>
+        <p>Please copy <b>ChemDraw-JS-License.xml</b> to the same folder of the sample page.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;Note: &lt;/b&gt; ">Installing a license for the sample page only allows sample page to run. The host application should still contain the code to load the license into ChemDraw JS when attaching. Please refer to the <b>ChemDraw JS 17.1 Developers Guide</b> for details.</div>
+        <p>After the license is loaded, the sample page should show the ChemDraw toolbar.</p>
+        <p>
+            <img src="Images/LicenseLoadedOnSamplePage.png" MadCap:mediastyle="@media print { max-width: 600px; }" />
+        </p>
+        <h2 id="testing-chemdraw-direct-service" xmlns="http://www.w3.org/1999/xhtml">Testing ChemDraw JS Service</h2>
+        <p>The tool <b>Name to Structure</b> can be used to test installation.</p>
+        <div xmlns="http://www.w3.org/1999/xhtml" class="numlist1-inner" MadCap:autonum="1. ">Click the <b xmlns="">Name to Structure</b> tool button in toolbar.<p xmlns="http://www.w3.org/1999/xhtml"><img src="Images/TestingService-toolbar.png" alt="Name to Struct tool button" xmlns="http://www.w3.org/1999/xhtml" style="mc-thumbnail: popup;mc-thumbnail-max-width: 600px;mc-thumbnail-max-height: 100px;" MadCap:mediastyle="@media print { max-width: 600px; }" /></p></div>
+        <div xmlns="http://www.w3.org/1999/xhtml" class="numlist1-inner" MadCap:autonum="2. ">Type "water"  and click <b xmlns="">OK</b>.<p xmlns="http://www.w3.org/1999/xhtml"><img src="Images/TestingService-water.png" alt="water" xmlns="http://www.w3.org/1999/xhtml" style="mc-thumbnail: popup;mc-thumbnail-max-width: auto;mc-thumbnail-max-height: 300px;" MadCap:mediastyle="@media print { max-width: 600px; }" /></p></div>
+        <div xmlns="http://www.w3.org/1999/xhtml" class="numlist1-inner" MadCap:autonum="3. ">ChemDraw JS Service works as expected if H-O-H shows on the canvas<p xmlns="http://www.w3.org/1999/xhtml"><img src="Images/TestingService-done.png" alt="done" xmlns="http://www.w3.org/1999/xhtml" style="mc-thumbnail: popup;mc-thumbnail-max-height: 250px;border-left-style: solid;border-left-width: 1px;border-left-color: #a9a9a9;border-right-style: solid;border-right-width: 1px;border-right-color: #a9a9a9;border-top-style: solid;border-top-width: 1px;border-top-color: #a9a9a9;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #a9a9a9;" MadCap:mediastyle="@media print { max-width: 600px; }" /></p></div>
+    </body>
+</html>

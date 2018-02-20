@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="2634" MadCap:lastWidth="666" MadCap:conditions="Primary.Help Only">
+    <head>
+    </head>
+    <body>
+        <h1>Struct=Name</h1>
+        <p>ChemDraw JS includes two features for generating structures and chemical names-Name&gt;Struct and Struct&gt;Name. Collectively, these features are called Struct=Name. Struct&gt;Name generates the names of chemical structures using the Cahn-Ingold-Prelog rules for stereochemistry. Using this option, you can generate the name of structures you have drawn. Name&gt;Struct lets you convert chemical names into their corresponding chemical structures. It is designed to interpret chemical names as they are used by chemists. In other words, it recognizes the shorthand and slang of everyday usage, in addition to recognizing most of the official IUPAC, IUBMB, and CAS rules and recommendations.</p>
+        <h2><a name="Struct&gt;N"></a>Struct&gt;Name</h2>
+        <p>Struct&gt;Name can interpret a variety of chemical structures. This means that you can draw a structure and Struct&gt;Name will provide its name. It also updates the name when you modify the structure.</p>
+        <h3><a name="Using"></a>Using Struct&gt;Name</h3>
+        <p>To generate the name of your structure:</p>
+        <div class="numlist1-1st" MadCap:autonum="1. ">Select the structure.</div>
+        <div class="numlist1-inner" MadCap:autonum="2. ">Click the Structure to Name tool in toolbar. The name appears under the structure.</div>
+        <h4>Supported Structures</h4>
+        <p>However, Struct&gt;Name will interpret:</p>
+        <div class="Bullet1-inner">Stereochemistry</div>
+        <p>Principal Group in Rings and Chains Carboxylic Acids S, Se, and Te Acids Peroxy acids S, Se, and Te Esters Amide derivatives of acids S, Se, and Te Acid Halides Carbonic acids S, Se, and Te Amides Nitric acids Sulfides and chalcogen analogs Acid Halides Sulfoxides and chalcogen analogs Carboxylic Esters Heteroatomic acids (P, B, As) SAlts Heteroatomic esters Anhydrides Heteroatomic acid halides Hydrazides Aldehydes and chalcogen analogs Imides Ketones and chalcogen analogs Amides Alcohols and chalcogen analogs Hydrazines Hydroperoxides Nitriles Peroxides Amines and Imines</p>
+        <h3>Non-Ringed Structures</h3>
+        <div class="Bullet1-inner">Isolating and naming the functional groups</div>
+        <div class="Bullet1-inner">Identifying the base chain of the molecule</div>
+        <div class="Bullet1-inner">Identifying and building substituents</div>
+        <div class="Bullet1-inner">Nomenclature of groups cited only by prefixes</div>
+        <div class="Bullet1-inner">Heteroacyclic compounds</div>
+        <div class="Bullet1-inner">Naming of substituent groups</div>
+        <div class="Bullet1-inner">Locants</div>
+        <div class="Bullet1-inner">Name generation (alphabetization, punctuation, etc. )</div>
+        <h3>Ringed Structures</h3>
+        <p>Struct&gt;Name supports the these types of ringed structures:</p>
+        <div class="Bullet1-inner">Carbomonocyclic structures</div>
+        <div class="Bullet1-inner">Heteromonocyclic structures</div>
+        <div class="Bullet1-inner">Fused polycyclic structures:</div>
+        <div class="Bullet1-inner">Fused polycyclic trivially-named structures</div>
+        <div class="Bullet1-inner">Ring fusions of multiple rings</div>
+        <div class="Bullet1-inner">Ring fusions of two multiple ring systems</div>
+        <div class="Bullet1-inner">Ring fusions of more than two ring systems</div>
+        <div class="Bullet1-inner">Bridged monocyclic structures</div>
+        <div class="Bullet1-inner">Spiro ring systems</div>
+        <div class="Body">Some of these ring structures are defined below.</div>
+        <div class="Body"><b>Ring Assemblies:</b> A ring assembly has two or more identical cyclic systems joined together by single or double bonds. All the cyclic systems are either a single ring, fused system, alicyclic von Baeyer system, spiro system, phane system, or fullerene.</div>
+        <div class="Body">
+            <img src="../Resources/Images/10_3.jpg" style="border-left-style: solid;border-left-width: 1px;border-left-color: #dcdcdc;border-right-style: solid;border-right-width: 1px;border-right-color: #dcdcdc;border-top-style: solid;border-top-width: 1px;border-top-color: #dcdcdc;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #dcdcdc;" />
+        </div>
+        <div class="Body" style="font-style: italic;">An example of a ring assembly structure: 1,1':2',1''-terphenyl.</div>
+        <p><b>Fused Ring Systems</b> Struct&gt;Name supports fused ring systems of two or more rings, such as the structure below.</p>
+        <p>
+            <img src="../Resources/Images/10_2.jpg" style="border-left-style: solid;border-left-width: 1px;border-left-color: #dcdcdc;border-right-style: solid;border-right-width: 1px;border-right-color: #dcdcdc;border-top-style: solid;border-top-width: 1px;border-top-color: #dcdcdc;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #dcdcdc;" />
+        </p>
+        <div class="Body" style="font-style: italic;">cyclopenta[ij] pentaleno[2,1,6-cde] azulene is a fused ring system.</div>
+        <div class="Body"><b>Bridged Fused Ring Systems</b> ChemDraw JS supports bipodal (both bivalent and polyvalent) simple acyclic (chained) homogeneous (atoms of only one element) independent bridged fused ring systems. For example:</div>
+        <div class="Body">
+            <img src="../Resources/Images/10_1.jpg" style="border-left-style: solid;border-left-width: 1px;border-left-color: #dcdcdc;border-right-style: solid;border-right-width: 1px;border-right-color: #dcdcdc;border-top-style: solid;border-top-width: 1px;border-top-color: #dcdcdc;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #dcdcdc;" />
+        </div>
+        <div class="Body" style="font-style: italic;">The bridged fused ring system 9, 10-epidioxyanthracene.</div>
+        <p><b>Polymers</b> Polymer structures cannot be expressed by SMILES. However, Struct&gt;Name supports many homopolymers, copolymers, and Alternating polymers. For example:</p>
+        <p>
+            <img src="../Resources/Images/polymerstruct.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: #dcdcdc;border-right-style: solid;border-right-width: 1px;border-right-color: #dcdcdc;border-top-style: solid;border-top-width: 1px;border-top-color: #dcdcdc;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #dcdcdc;" />
+        </p>
+        <div class="Body" style="font-style: italic;">polyaziridine compound with sulfamic acid (1:1)</div>
+        <h4>Other Compounds</h4>
+        <div class="Bullet1-inner">Phosphorous and Arsenic compounds</div>
+        <div class="Bullet1-inner">Si, Ge, Sn, and Pb compounds</div>
+        <div class="Bullet1-inner">Boron compounds</div>
+        <div class="Bullet1-inner">Organometallic compounds</div>
+        <p>Struct&gt;Name generates names with proper CIP stereochemistry descriptors. Struct&gt;Name provides direct support for stoichoimetry specified as bracket properties, including fractional stoichiometry. Also, the manner in which the stoichiometry of 0. 5 ("hemi") and 1. 5 ("sesqui") is handled is improved. For example:</p>
+        <p>
+            <img src="../Resources/Images/stoichstruct2name.png" />
+        </p>
+        <div class="Body">Struct&gt;Name follows IUPAC rules as closely as possible when generating chemical names. However, while handling indicated hydrogens, it conforms to CAS nomenclature recommendations. For example, the carbon atom between two oxygen atoms in 1,3-dioxole can never form double bonds as its two neighbors (oxygen atoms) have no free valences. While preferred IUPAC (PIN) name for that structure is 2H-1,3-dioxole, Struct&gt;Name generates the name 1,3-dioxole. The name produced by Struct&gt;Name conforms to CAS nomenclature recommendations in this regard.</div>
+        <h3>Unsupported Structures </h3>
+        <p>This feature has a few limitations for interpreting some structures such as:</p>
+        <div class="Bullet1-inner">Sulfones and chalcogen analogs</div>
+        <div class="Bullet1-inner">Isotopically modified compounds</div>
+        <div class="Bullet1-inner">Radicals, ions, and radical ions</div>
+    </body>
+</html>

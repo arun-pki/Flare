@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  Skin="/Project/Skins/HTML5_Elements.flskn"
+  MasterToc="/Project/TOCs/Help Guide.fltoc"
+  DefaultUrl="/Content/CDD/Getting Started.htm"
+  InsertMOTW="true"
+  MoveOutputContentToRoot="false"
+  MasterPage="/Content/Resources/MasterPages/NewPage.flmsp"
+  Medium="non-print"
+  OutputFile="ChemDraw JS 17.1"
+  ConditionTagExpression="include[&quot;Primary.Help Only&quot;] exclude[&quot;Primary.API Only&quot; or &quot;Primary.DevGuide Only&quot; or Primary.Hardware_Software or Primary.InstallOnly or Primary.Internal_Readme or &quot;Primary.Not in CDW&quot; or &quot;Primary.PDF Only&quot; or Primary.RN] "
+  MasterStylesheet="/Content/Resources/Stylesheets/Cambridgesoft1.css">
+  <PrintedOutput
+    CollapseMargins="true" />
+</CatapultTarget>

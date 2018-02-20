@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.InstallOnly" MadCap:lastBlockDepth="6" MadCap:lastHeight="982" MadCap:lastWidth="868">
+    <head>
+        <link href="../Resources/TableStyles/TableStandard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Installing ChemDraw JS JavaScript Library Only</h1>
+        <p>If the host application only uses the basic drawing tool of the ChemDraw JS, only the JavaScript library needs to be deployed within the host application.</p>
+        <div class="figure" xmlns="http://www.w3.org/1999/xhtml">
+            <img src="Images/InstallLibraryOnly.png" alt="InstallLibraryOnly" />
+        </div>
+        <h2 id="software-prerequisites" xmlns="http://www.w3.org/1999/xhtml">Software Prerequisites</h2>
+        <p xmlns="http://www.w3.org/1999/xhtml">The following files are needed to perform installation:</p>
+        <div class="Bullet1-inner">ChemDraw-JS-Library-17.1.zip</div>
+        <div class="Bullet1-inner">ChemDraw-JS-License.xml</div>
+        <h2 id="deployment" xmlns="http://www.w3.org/1999/xhtml">Deployment</h2>
+        <table style="mc-table-style: url('../Resources/TableStyles/TableStandard.css');border-top-left-radius: 5px;border-top-right-radius: 5px;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" style="width: 8%;" />
+            <col class="TableStyle-TableStandard-Column-Column1" style="width: 50%;" />
+            <col class="TableStyle-TableStandard-Column-Column1" style="width: 45%;" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Step</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">User Input / User Action</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Expected Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">1</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Unzip <b>ChemDraw-JS-Library-17.1.zip</b></td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">
+                        <p>Three sub-folders can be seen. </p>
+                        <div class="Bullet1-inner">chemdrawweb</div>
+                        <div class="Bullet1-inner">docs</div>
+                        <div class="Bullet1-inner">sample</div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">2</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Copy the three sub-folders to the folder which the host application loads scripts.</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">
+                        <p>The two folders are accessible with the URLs below:</p>
+                        <p><a href="https://your-server-url/...scriptsurl/chemdrawweb/">https://your-server-url/...scriptsurl.../chemdrawweb/</a>
+                        </p>
+                        <p><a href="https://your-server-url/...scriptsurl/sample/">https://your-server-url/...scriptsurl.../sample/</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">3</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">
+                        <p>Open the browser and navigate to the sample page. </p>
+                        <p>e.g. <a href="https://your-server-url/...scriptsurl/sample/index.html">https://your-server-url/...scriptsurl.../sample/index.html</a></p>
+                        <p>
+                            <img src="Images/SamplePage.png" alt="SamplePage" xmlns="http://www.w3.org/1999/xhtml" style="mc-thumbnail: popup;mc-thumbnail-max-height: 200px;" MadCap:mediastyle="@media print { max-width: 320px; }" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">The sample page shows with the license dialog.</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="Note" MadCap:autonum="&lt;b&gt;Note: &lt;/b&gt; ">To try the sample page, please refer to <a href="Testing ChemDraw Direct Deployment.htm#Loading">Loading ChemDraw JS License on the Sample Page</a> for details.</div>
+    </body>
+</html>

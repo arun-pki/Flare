@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Help Only" MadCap:lastBlockDepth="5" MadCap:lastHeight="9766" MadCap:lastWidth="627">
+    <head>
+        <link href="../Resources/TableStyles/TableStandard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Query Structures</h1>
+        <p>A query is a search for information that is stored in a database. If you have ever searched the Internet using a Web browser, then you have performed a simple query.</p>
+        <p>
+
+A query structure is a parameter you use to search a chemical database (the database must include structures for the query to be useful). The query structure can include bond and atom properties that you specify to narrow or broaden the list of search results. </p>
+        <p>Below are two query structure examples:</p>
+        <p>
+            <img src="../Resources/Images/QueryStructures_examples.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: #a9a9a9;border-right-style: solid;border-right-width: 1px;border-right-color: #a9a9a9;border-top-style: solid;border-top-width: 1px;border-top-color: #a9a9a9;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #a9a9a9;" />
+        </p>
+        <p style="font-weight: bold;">A) The results include any connected atom at the location specified by ‘R’;</p>
+        <p style="font-weight: bold;">B) The results include either a single or double bond at the location specified by ‘S/D’.</p>
+        <p>To perform a query, you first draw the query structure in ChemDraw JS. You then enter the structure in a database application such as ChemFinder. The application searches one or more databases that you specify and returns the query results.</p>
+        <h2><a name="Search"></a>Search Limitations</h2>
+        <p>Several factors determine the search results that are returned. To get the results you expect, you must first ensure that the structure you draw accurately represents the query you want to perform. For example, if your query structure requires that no carbon atoms in an aromatic structure can be part of any ring, you are likely to return no results or an error, depending on the query system used.</p>
+        <p>The search application you use can also affect your query. If the application does not accurately interpret your query structure, or the structures in the database, you could receive inaccurate results.</p>
+        <h2><a name="Generic"></a>Generic Labels</h2>
+        <p>A generic label represents a nonspecific attachment. It can be either an unspecified atom, functional group, or structural feature. When you perform a query, the query looks for structures based on the type of generic label you use and where it is in the query structure. Records that match the query structure are returned in the search results.</p>
+        <p>For example, the query structure below uses the letter ‘Q’ to indicate that a nonhydrogen, noncarbon atom must appear at the specified location.</p>
+        <p>
+            <img src="../Resources/Images/QueryStructures_genericLabels.png" />
+        </p>
+        <p>You can use other generic labels to indicate other types of query criteria. The generic labels that ChemOffice supports are listed below (all are recognized as chemically significant).</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Labels</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Meaning</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">A</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Represents any non hydrogen.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">M</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Represents a metal.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Q</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Represents an atom that is neither hydrogen nor carbon.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">X</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Represents any halide.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">R</td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">Unrestricted; represents one or more connected atoms of any kind.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>To add a generic label to a structure, do the following:</p>
+        <div class="Bullet1-last">Double-click the atom to open a text box, and type in the nickname.</div>
+        <h3><a name="Reaxys"></a>Reaxys</h3>
+        <p>Reaxys is a web-based chemical search engine designed for synthetic and medical chemists. The Reaxys database includes chemical properties, structures, reactions and experimental data. Using ChemDraw for Reaxys® with ChemDraw JS, you can draw query structures to search the Reaxys database.</p>
+        <p>In addition to A, M, Q, X, and R, Reaxys recognizes several other generic atoms.</p>
+        <p>To add a Reaxys generic label to a structure:</p>
+        <div class="Bullet1-last">Double-click the atom to open a text box, and type in the nickname.</div>
+        <p>The table below lists the labels and their meaning.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Labels</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Meaning</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">AH</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Any or H</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">MH</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Metal or H</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">QH</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Any, except Carbon or H</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">XH</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Halogen or H</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">G</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Unspecified</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">GH</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Unspecified or H</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">G*</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Unspecified, ring closure allowed</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">GH*</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Unspecified, ring closure allowed or H</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">ACY</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Acyclic</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">ACH</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Acyclic or H</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">ABC</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Carbacyclic</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">ABH</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Carbacyclic or H</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">AYL</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Alkynyl</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">AYH</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Alkynyl or H</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">ALK</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Alkyl</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">ALH</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Alkyl or H</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">AEL</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Alkenyl</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">AEH</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Alkenyl or H</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">AHC</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Hetero acyclic</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">AHH</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Hetero acyclic or H</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">AOX</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Alkoxy</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">AOH</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Alkoxy or H</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">CYC</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Cyclic</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">CYH</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Cyclic or H</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">CBC</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Carbocyclic</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">CBH</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Carbocyclic or H</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">ARY</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Aryl</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">ARH</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Aryl or H</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">CAL</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Cycloalkyl</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">CAH</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Cycloalkyl or H</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">CEL</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Cycloalkenyl</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">CEH</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Cycloalkenyl or H</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">CHC</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Heterocyclic</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">CHH</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Heterocyclic or H</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">HAR</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Hetero aryl</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">HAH</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Hetero aryl or H</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">CXX</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">No carbon</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">CXH</td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">No carbon or H</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Atom"></a>Atom Properties</h2>
+        <p>Atom properties determine the structural features allowed at the site of an atom. For example, you can specify that a carbon atom must be part of a ring, have at least two attachments, have no attachments, or perhaps be a specific isotope.</p>
+        <h3><a name="Assignin"></a>Assigning Atom Properties</h3>
+        <div class="Note" MadCap:autonum="&lt;b&gt;Note: &lt;/b&gt; ">Atom properties cannot be set in <MadCap:variable name="Primary.ProductName" />. You can copy the structure with atom propertires setting into <MadCap:variable name="Primary.ProductName" />.</div>
+        <h3><a name="Query"></a>Query Indicators</h3>
+        <p>Query indicators display the atom properties you assign to a structure, as shown below. If more than one property is assigned, an indicator for each property appears adjacent to the atom.</p>
+        <p>
+            <img src="../Resources/Images/QueryStructures_atomProperties.png" />
+        </p>
+        <p>This structure illustrates several possible atom properties.</p>
+        <p>The list below describes each indicator:</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Indicator</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Atom Query Property</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">*</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Substituents: Free Sites (Followed by the number of free sites)</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">U</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Substituents: Up to (Followed by the maximum number of substituents)</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">X</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Substituents: Exactly (Followed by the number of substituents)</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">H</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Implicit Hydrogens.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">R</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Ring Bond Count</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">S</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Unsaturation</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">C</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Reaction Change</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">T</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Reaction Stereo</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">L</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Translation</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">(none)</td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">Abnormal Valence</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Bond"></a>Bond Properties</h2>
+        <p>An indicator appears next to a bond for each property you assign.</p>
+        <h3><a name="Assignin2"></a>Assigning Bond Properties</h3>
+        <p>To define bond properties:</p>
+        <div class="numlist1-1st" MadCap:autonum="1. ">Hover on one or select more bonds in a structure.</div>
+        <div class="numlist1-inner" MadCap:autonum="2. ">Press the hotkey “/ ”. The Bond Properties dialog appears.</div>
+        <div class="numlist1-inner" MadCap:autonum="3. ">In the Bond Properties dialog, select the properties to associate with the selected atoms. Click OK.</div>
+        <p>The indicators are:</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Indicator</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Bond Query Property</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Any</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Bond Types: Any</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">S/D</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Bond Types: Single or Double</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">D/A</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Bond Types: Double or Aromatic</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">S/A</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Bond Types: Single or Aromatic</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Rng</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Topology: The bond must be part of a ring.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Chn</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Topology: The bond must be part of a chain and not part of a ring.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">R/C</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Topology: The bond may be part of a ring or chain.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">Rxn</td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">Reaction Center: The bond must be part of a reaction center.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>See <a href="#bondtypes">Bond Types</a>, <a href="#topology">Topology</a> and <a href="#reactioncenter">Reaction Center</a>.</p>
+        <h3><a name="Viewing"></a>Viewing Bond Properties
+
+</h3>
+        <p>The descriptor for the Reaction Center query property indicates the property is applied, but not the value of the property.</p>
+        <p>To find the value of a query bond property setting:</p>
+        <div class="numlist1-1st" MadCap:autonum="1. ">Select the bond.</div>
+        <div class="numlist1-inner" MadCap:autonum="2. ">Press the hotkey “/ ”. The Bond Properties dialog appears, and select to a property.</div>
+        <h3><a name="Removing"></a>Removing Bond Properties</h3>
+        <p>To remove all query properties from one or more bonds:</p>
+        <div class="numlist1-1st" MadCap:autonum="1. ">Select the bonds.</div>
+        <div class="numlist1-inner" MadCap:autonum="2. ">Press the hotkey “/ ”. The Bond Properties dialog appears.</div>
+        <div class="numlist1-inner" MadCap:autonum="3. ">Click <b>Use Defaults</b>. </div>
+        <div class="numlist1-inner" MadCap:autonum="4. ">Click <b>OK</b>.</div>
+        <p>To remove specific bond properties:</p>
+        <div class="numlist1-1st" MadCap:autonum="1. ">Select the bond.</div>
+        <div class="numlist1-inner" MadCap:autonum="2. ">Press the hotkey “/ ”. The Bond Properties dialog appears. </div>
+        <div class="numlist1-inner" MadCap:autonum="3. ">Click the property to remove. </div>
+        <div class="numlist1-inner" MadCap:autonum="4. ">Click <b>OK</b>.</div>
+        <h3><a name="Bond2"></a>Bond Property Options</h3>
+        <p>The properties you can assign to bonds are described below.</p>
+        <h4><a name="bondtypes"></a>Bond Types</h4>
+        <p>This property specifies the bond type of the selected bonds.</p>
+        <p>The Default bond type corresponds to the current type of the bond (single, double, and so on) as drawn.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Bond Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Meaning</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Single (all) and Dative</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Finds compounds with the bond type you select for the selected bonds.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Double or Double Bold</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Finds compounds whose selected bonds are double.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Double Either</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Finds compounds whose selected bonds are double bonds and have either cis/trans stereochemical configuration.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Aromatic</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Finds compounds whose selected bonds are aromatic.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Tautomeric</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Finds compounds whose selected bonds are tautomeric.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Triple</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Finds compounds whose selected bonds are triple.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Quadruple</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Finds compounds whose selected bonds are quadruple.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Any</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Finds any compound, regardless of the bond type of the selected bonds.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">S/D</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Finds compounds whose selected bonds are single or double.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">D/A</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Finds compounds whose selected bonds are double or aromatic.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">S/A</td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">Finds compounds whose selected bonds are single or aromatic.</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="Note" MadCap:autonum="&lt;b&gt;Note: &lt;/b&gt; ">Not all bond types are supported in all file formats. When an unsupported bond type is saved to a given file format, it is converted to the closest equivalent that is supported.</div>
+        <h4>Topology<a name="topology"></a></h4>
+        <p>The Topology property specifies the ring environment of the selected bonds.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Topology</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Meaning</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Unspecified(Default)</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Finds compounds regardless of topology.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Ring</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Finds compounds where the selected bonds are part of a ring.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Chain</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Finds compounds where the selected bonds are part of a chain (but not part of a ring).</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">Ring or Chain</td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">Finds compounds where the selected bonds are part of either a ring or a chain.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4><a name="reactioncenter"></a>Reaction Center
+</h4>
+        <p>The Reaction Center property specifies how the selected bonds are affected in a reaction. This property is meaningful only when searching a database containing chemical reactions.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Reaction Center</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Meaning</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Unspecified(Default)</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Finds compounds regardless of whether the selected bonds are affected by the reaction.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Center</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Finds compounds where the selected bonds are affected by a reaction, but the type of change is unspecified.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Make/Break</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Finds compounds where the selected bonds are either broken or created in a reaction.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Change</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Finds compounds where the bond order of the selected bonds changes in a reaction.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Make &amp; Change</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Finds compounds where the selected bonds are formed, broken, or undergo a change in bond order.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Not Center</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Finds compounds where the selected bonds are not part of the reaction center.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Not Modified</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Finds compounds where the selected bondâ€™s orders do not change, but may (or may not) be part of the reaction center.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">Unmapped</td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">Finds all compounds.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Element"></a>Element Lists</h2>
+        <p>An element list is a list of atoms allowed at a specified location. For example, the query structure below allows bromobenzene, Iodobenzene, or chlorobenzene to be returned. An example of an element list is:</p>
+        <p>
+            <img src="../Resources/Images/QueryStructures_elementExample.png" />
+        </p>
+        <p>The elements in the list must be separated by commas. A space after each comma and brackets are optional.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;Note: &lt;/b&gt; ">An element list may contain only atomic symbols, plus D (deuterium) and T (tritium).</div>
+        <p>To create an element list:</p>
+        <div class="numlist1-1st" MadCap:autonum="1. ">Double-click the atom to open a text box.</div>
+        <div class="numlist1-inner" MadCap:autonum="2. ">Type an open bracket ("[") followed by a list of elements separated by commas (“Cl, Br, I”), followed by a close bracket ("]"), for example: [Cl, Br, I].</div>
+        <div class="numlist1-inner" MadCap:autonum="3. ">Type enter to close the text box.</div>
+        <p>The figure below shows a query structure created to find compounds matching the following criteria:</p>
+        <p>
+            <img src="../Resources/Images/QueryStructures_elementListsQuery.png" />
+        </p>
+        <div class="Bullet1-inner">(A) indicates that the atom must match any atom except hydrogen.</div>
+        <div class="Bullet1-inner">The Indicator (B) near the bond indicates that the bond must be single or double, S/D.</div>
+        <div class="Bullet1-inner">The element list (C) specifies that one of these elements must match in the target structures.</div>
+        <h3><a name="Element2"></a>Element NOT Lists</h3>
+        <p>The element not-list specifies that the elements in the list are not allowed in the search results. Commas must separate the elements in the element not-list. A space after each comma and brackets are optional.</p>
+        <p>The word NOT must be in all-caps and must be followed by a space. Alternatively, you can replace the word NOT with a minus sign.</p>
+        <p>For example:</p>
+        <p>
+            <img src="../Resources/Images/QueryStructures_elementNotLists.png" />
+        </p>
+        <p>An element not-list may contain only atomic elements, plus D (deuterium) and T (tritium).</p>
+        <p>To create an element NOT list:</p>
+        <div class="numlist1-1st" MadCap:autonum="1. ">Open an atom label text box.</div>
+        <div class="numlist1-inner" MadCap:autonum="2. ">Type an open bracket "[", the word NOT, and a space, for example: [NOT , followed by a list of elements.</div>
+        <h2><a name="Polymers"></a>Polymers</h2>
+        <p>You can indicate polymers using either brackets, parentheses, or braces that enclose repeating structures, or structural fragments. The bracket properties lets you specify the context and orientation of the repeating units.</p>
+        <p>For example:</p>
+        <p>
+            <img src="../Resources/Images/QueryStructures_polymersExample.png" />
+        </p>
+        <p>To enclose structures with brackets:</p>
+        <div class="numlist1-1st" MadCap:autonum="1. ">On the toolbar, click Bracket tool and select one of the double bracket tools.</div>
+        <div class="numlist1-inner" MadCap:autonum="2. ">To draw the brackets, click and drag across the structure to enclose.</div>
+        <p>This gives default value for component order, multiple group repeat count, or single repeating unit label.</p>
+        <h3><a name="Setting"></a>Setting Bracket Properties</h3>
+        <p>To set the Bracket Properties:</p>
+        <div class="numlist1-1st" MadCap:autonum="1. ">Select or hover on a bracket and press hotkey “/ ”.</div>
+        <div class="numlist1-inner" MadCap:autonum="2. ">The Bracket Properties dialog appears.</div>
+        <p>The Flip Type option appears only for ladder polymers. See <a href="#fliptype">Flip Type</a>.</p>
+        <p>You can customize the text that appears to the bottom right of the bracket for these bracket types:</p>
+        <div class="Bullet1-inner">Component (c#): the component order must be a non-negative integer, and is displayed as the letter “c” followed by an integer (or “c” alone if an order of zero is specified).</div>
+        <div class="Bullet1-inner">Multiple Group (#): the repeat count must be a positive integer.</div>
+        <div class="Bullet1-inner">SRU (n): the SRU label can be any text.</div>
+        <p>You can also edit the text for these bracket usage types in the document using the Text tool. You cannot edit the text displayed for other bracket usage types.</p>
+        <h3><a name="Bracket"></a>Bracket Usage</h3>
+        <p>Polymer Representations are either structure-based or source-based. The type of bracket you use depends on the type of representation.</p>
+        <h4>Structure-based Polymers</h4>
+        <p>Structure-based representations enclose only part of a structure within brackets. One or more bonds cross each of the enclosing brackets. The crossing bonds “match up”, making the polymer structure more explicit.</p>
+        <p>You represent a structure-based polymer by enclosing a portion of a structure in brackets with a bracket type of SRU(n). IUPAC recommends the subscript “n” to denote structure-based representations of unknown size, but you can edit the text using the text tool.</p>
+        <p>A structure-based representation of poly(vinyl chloride) is shown below:</p>
+        <p>
+            <img src="../Resources/Images/QueryStructures_structureBasedPolymer.png" />
+        </p>
+        <p>You can also use the bracket usage types “Crosslink (xl)”, “Graft (grf)”, and “Modification (mod)” to represent types of repeating units in a structure-based representation.</p>
+        <h4>Source-based Polymers</h4>
+        <p>Source-based polymer representations enclose a discrete chemical substance in brackets. The mode of polymerization may be obvious from context or be unknown. Source-based representations are useful when describing processes</p>
+        <p>where the starting materials are known, but the exact structure of the reaction product is not.</p>
+        <p>You can create a source-based representation by enclosing a structure in “Monomer (mon)” brackets.</p>
+        <p>A source-based representation of poly(vinyl chloride) is shown below:</p>
+        <p>
+            <img src="../Resources/Images/QueryStructures_sourceBasedPolymer.png" />
+        </p>
+        <p>You can use “Mer (mer)” brackets for components of a copolymer where those individual components are known not to repeat themselves or they alternate with other components. For example:</p>
+        <p>
+            <img src="../Resources/Images/QueryStructures_sourceBasedPolymer2.png" />
+        </p>
+        <p>Copolymers represent substances with more than one repeating unit. In general, you can use bracket type “Component(co)”. You can also use “Copolymer, alternating (alt)”, “Copolymer, random (ran)”, and “Copolymer, block (blk)” to represent different copolymer types in a source-based representation.</p>
+        <p>The bracket type, “Mixture, unordered (mix)” may be used to represent a collection of substances that may all be present, but not necessarily in known amounts. Bracket type “Component (c)” indicates each mixture element, as shown below:</p>
+        <p>
+            <img src="../Resources/Images/QueryStructures_sourceBasedPolymer3.png" />
+        </p>
+        <p>Bracket type “Mixture, ordered (f)” is primarily used to describe manufacturing processes, where component order is critical. As with unordered mixtures, individual elements of an ordered mixture should be surrounded by brackets with a bracket usage of “Component (c)”. However, components of ordered mixtures must be numbered to show their order. You can do this by editing the “c” label with the text tool to include a number (“c1”, “c2”, and so on.)</p>
+        <h4>Multiple Groups</h4>
+        <p>You use the bracket type, “Multiple Group (#)” to indicate that the enclosed items are repeated a known number of times. Multiple group brackets may enclose entire structures, or part of the structures. Some examples are:</p>
+        <p>
+            <img src="../Resources/Images/QueryStructures_multipleGroupsPolymer.png" />
+        </p>
+        <p>Because multiple group brackets represent a specific repeat count, you can display the molecular weights (and related data) for the enclosed structures in the Analysis window.</p>
+        <h4>Repeat Pattern</h4>
+        <p>For simple linear polymers, the repeating units may connect head-to-tail or head-to-head (or their repeat pattern might be a mixture or unknown). You can also assign this property to brackets.</p>
+        <p>The head-to-tail type is the default repeat pattern, as shown below:</p>
+        <p>
+            <img src="../Resources/Images/QueryStructures_repeatPatternPolymer.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: #a9a9a9;border-right-style: solid;border-right-width: 1px;border-right-color: #a9a9a9;border-top-style: solid;border-top-width: 1px;border-top-color: #a9a9a9;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #a9a9a9;" />
+        </p>
+        <p style="font-weight: normal;">A and B represent the polymers shown. C represents a mixture of A and B.</p>
+        <p style="font-weight: bold;">Removing Bracket Usage Labels</p>
+        <p>To remove the bracket usage labels, do one of the following:</p>
+        <div class="Bullet1-inner">Hover on the label and press <i>&lt;Delete&gt;</i>.</div>
+        <div class="Bullet1-inner">Use the Eraser tool to delete the label.</div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;Note: &lt;/b&gt; ">Setting the bracket usage type to 'Unspecified' removes any specific bracket usage assignment.</div>
+        <h4>Link Nodes</h4>
+        <p>You can specify a variable-length chain, or ring, by indicating that one of the atoms can repeat a number of times using link nodes.</p>
+        <p>Link nodes must have exactly two connecting bonds.</p>
+        <div class="Body">The atom label must meet these conditions:</div>
+        <div class="Bullet1-inner">It must consist of a generic name, or no more than one element symbol.</div>
+        <div class="Bullet1-inner">The last part of the label must be in the form: number hyphen number, with the numbers and hyphen subscripted.</div>
+        <div class="Bullet1-inner">Parentheses or braces can be used instead of brackets.</div>
+        <div class="NoteInd" MadCap:autonum="&lt;b&gt;Note: &lt;/b&gt; ">ChemFinder supports only brackets,’[ ]’, for link nodes. Parentheses or braces cannot be used for link nodes in ChemFinder.</div>
+        <div class="Bullet1-inner">Brackets can be omitted, if not required for clarity, for example with O1-3</div>
+        <p>To create a link node:</p>
+        <div class="numlist1-1st" MadCap:autonum="1. ">Open an atom label text box.</div>
+        <div class="numlist1-inner" MadCap:autonum="2. ">Type the link node in this format: [CH2]3-7</div>
+        <h4><a name="fliptype"></a>Flip Type</h4>
+        <p>For ladder polymers (polymers with two connecting bonds on each side) the connection order may be undefined. You can assign the Flip Type property to define it. This property is only for brackets with exactly two crossing bonds.</p>
+        <p>Because of its prevalence, the No Flip type does not receive special annotation. The example below illustrates a flip type in ladder polymers.</p>
+        <p>
+            <img src="../Resources/Images/QueryStructures_flipTypePolymer.png" />
+        </p>
+    </body>
+</html>

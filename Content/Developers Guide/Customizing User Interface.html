@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="9866" MadCap:lastWidth="881" MadCap:conditions="Primary.DevGuide Only">
+    <head>
+        <link href="../Resources/TableStyles/TableStandard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta http-equiv="Content-Style-Type" content="text/css" /><title></title>
+        <style type="text/css">/*<![CDATA[*/
+code
+{
+	white-space: pre;
+}
+
+/*]]>*/</style>
+        <style type="text/css">/*<![CDATA[*/
+div.sourceCode
+{
+	overflow-x: auto;
+}
+table.sourceCode,
+tr.sourceCode,
+td.lineNumbers,
+td.sourceCode
+{
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	border: none;
+}
+table.sourceCode
+{
+	width: 100%;
+	line-height: 100%;
+}
+td.lineNumbers
+{
+	text-align: right;
+	padding-right: 4px;
+	padding-left: 4px;
+	color: #aaaaaa;
+	border-right: 1px solid #aaaaaa;
+}
+td.sourceCode
+{
+	padding-left: 5px;
+}
+code &gt; span.kw
+{
+	color: #007020;
+	font-weight: bold;
+}
+/* Keyword */
+code &gt; span.dt
+{
+	color: #902000;
+}
+/* DataType */
+code &gt; span.dv
+{
+	color: #40a070;
+}
+/* DecVal */
+code &gt; span.bn
+{
+	color: #40a070;
+}
+/* BaseN */
+code &gt; span.fl
+{
+	color: #40a070;
+}
+/* Float */
+code &gt; span.ch
+{
+	color: #4070a0;
+}
+/* Char */
+code &gt; span.st
+{
+	color: #4070a0;
+}
+/* String */
+code &gt; span.co
+{
+	color: #60a0b0;
+	font-style: italic;
+}
+/* Comment */
+code &gt; span.ot
+{
+	color: #007020;
+}
+/* Other */
+code &gt; span.al
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+/* Alert */
+code &gt; span.fu
+{
+	color: #06287e;
+}
+/* Function */
+code &gt; span.er
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+/* Error */
+code &gt; span.wa
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Warning */
+code &gt; span.cn
+{
+	color: #880000;
+}
+/* Constant */
+code &gt; span.sc
+{
+	color: #4070a0;
+}
+/* SpecialChar */
+code &gt; span.vs
+{
+	color: #4070a0;
+}
+/* VerbatimString */
+code &gt; span.ss
+{
+	color: #bb6688;
+}
+/* SpecialString */
+code &gt; span.im
+{
+	
+}
+/* Import */
+code &gt; span.va
+{
+	color: #19177c;
+}
+/* Variable */
+code &gt; span.cf
+{
+	color: #007020;
+	font-weight: bold;
+}
+/* ControlFlow */
+code &gt; span.op
+{
+	color: #666666;
+}
+/* Operator */
+code &gt; span.bu
+{
+	
+}
+/* BuiltIn */
+code &gt; span.ex
+{
+	
+}
+/* Extension */
+code &gt; span.pp
+{
+	color: #bc7a00;
+}
+/* Preprocessor */
+code &gt; span.at
+{
+	color: #7d9029;
+}
+/* Attribute */
+code &gt; span.do
+{
+	color: #ba2121;
+	font-style: italic;
+}
+/* Documentation */
+code &gt; span.an
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Annotation */
+code &gt; span.cv
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* CommentVar */
+code &gt; span.in
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Information */
+
+/*]]>*/</style>
+    </head>
+    <body>
+        <h1 id="customizing-user-interface"><a name="Customiz" xmlns="http://www.w3.org/1999/xhtml"></a>Customizing User Interface</h1>
+        <div class="Body">The user interface of ChemDraw JS 17.1 can be customized from the following two aspects.</div>
+        <div class="Bullet1-inner">Customizing toolbar layout by modifying ChemDraw JS's configuration</div>
+        <div class="Bullet1-inner">Customizing look and feel of ChemDraw JS elements by overriding the CSS rules</div>
+        <h2 id="customizing-toolbar-layout"><a name="Customiz2" xmlns="http://www.w3.org/1999/xhtml"></a><a name="customizingtoolbarlayout" xmlns="http://www.w3.org/1999/xhtml"></a>Customizing Toolbar Layout</h2>
+        <div class="Body">The layout of the ChemDraw JS toolbar can be customized by modifying the configuration. Please refer to <strong xmlns="http://www.w3.org/1999/xhtml"><a href="Configuring ChemDraw Direct.html#configuringchemDrawdirect" xmlns="http://www.w3.org/1999/xhtml">Configuring ChemDraw JS</a></strong> for details about how to modify the configuration of ChemDraw JS.</div>
+        <h3 id="toolbar-orientation"><a name="Toolbar" xmlns="http://www.w3.org/1999/xhtml"></a>Toolbar Orientation</h3>
+        <div class="Body">The orientation of the ChemDraw JS toolbar can be horizontal or vertical.</div>
+        <div class="figure">
+            <img src="images/ConfiguringOrientation.png" alt="ConfiguringOrientation" />
+        </div>
+        <div class="Body"><strong xmlns="http://www.w3.org/1999/xhtml">Configuration.layout.orientation = "Horizontal"</strong>
+        </div>
+        <div class="figure">
+            <img src="images/Horizontal.png" alt="Horizontal" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <div class="Body"><strong xmlns="http://www.w3.org/1999/xhtml">Configuration.layout.orientation = "Vertical"</strong>
+        </div>
+        <div class="figure">
+            <img src="images/Vertical.png" alt="Vertical" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <h3 id="visbility-of-a-tool-or-a-tool-group"><a name="Visibili" xmlns="http://www.w3.org/1999/xhtml"></a>Visibility of a Tool or a Tool Group</h3>
+        <div class="Body">A tool can be shown or hidden by modifying the order property of the ChemDraw JS configuration.</div>
+        <div class="Body">Each tool or tool group defined in the array of the order property will be visible. To hide a tool or a tool group, remove the tool item from the order array.</div>
+        <div class="Body"><em xmlns="http://www.w3.org/1999/xhtml"><b>Hint</b>: The sample configuration file "chemdrawweb\configuration-sample.json" contains all supported tools.</em>
+        </div>
+        <div class="figure">
+            <img src="images/ConfigurationToolsOrder.png" alt="ConfigurationToolsOrder" MadCap:mediastyle="@media print { max-height: 700px; }" />
+        </div>
+        <div class="Body"><strong xmlns="http://www.w3.org/1999/xhtml">Example: Removed all tool groups</strong>
+        </div>
+        <div class="figure">
+            <img src="images/ConfigurationRemovedAllToolGroups.png" alt="ConfigurationRemovedAllToolGroups" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <div class="Body">All tool groups are removed from the configuration.</div>
+        <div class="figure">
+            <img src="images/ConfigurationFileRemovedAllToolGroups.png" alt="ConfigurationFileRemovedAllToolGroups" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <h3 id="position-of-a-tool-or-a-tool-group"><a name="Position" xmlns="http://www.w3.org/1999/xhtml"></a>Position of a Tool or a Tool Group</h3>
+        <div class="Body">The position of a tool or a tool group can be managed by modifying the position of the target item in the order array of the configuration.</div>
+        <h3 id="collapsing-a-tool-group"><a name="Collapsi" xmlns="http://www.w3.org/1999/xhtml"></a>Collapsing a Tool Group</h3>
+        <div class="Body">The tool groups can be collapsed according to the rule specified in the configuration.</div>
+        <div class="figure">
+            <img src="images/ConfigurationToolGroupExampleUI.png" alt="ConfigurationToolGroupExampleUI" />
+        </div>
+        <div class="Body">The rule could be changed by specifying the value of the <strong xmlns="http://www.w3.org/1999/xhtml">collapse</strong> property of the target tool group.</div>
+        <div class="figure">
+            <img src="images/ConfigurationToolGroupExample.png" alt="ConfigurationToolGroupExampleFile" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <div class="Body">Three rules are supported.</div>
+        <div class="Bullet1-inner"> <strong xmlns="http://www.w3.org/1999/xhtml">auto</strong>: The target tool group is collapsed if the toolbar is not big enough to hold all tools.</div>
+        <div class="Bullet1-inner"> <strong xmlns="http://www.w3.org/1999/xhtml">always</strong>: The target tool group is always collapsed.</div>
+        <div class="Bullet1-inner"> <strong xmlns="http://www.w3.org/1999/xhtml">never</strong>: The target tool group is never collapsed.</div>
+        <div class="Body">If not specified, the <i>auto</i> rule will be applied.</div>
+        <h2 id="customizing-looks-and-feel-of-cdd-elements"><a name="Customiz3" xmlns="http://www.w3.org/1999/xhtml"></a>Customizing Look and Feel of ChemDraw JS Elements</h2>
+        <div class="Body">The look and feel of ChemDraw JS elements can be customized by overriding the default CSS rules. Conceptually, developers can inspect the DOM tree of ChemDraw JS with browsers' developer tools and find out the CSS rules to be overridden. However, it is recommended to refer to the key CSS classes below to avoid future upgrading problems. Because the other CSS classes or DOM IDs are not guaranteed to be unchanged in future versions.</div>
+        <h3 id="overriding-a-css-rule"><a name="Overridi" xmlns="http://www.w3.org/1999/xhtml"></a>Overriding a CSS Rule</h3>
+        <p>To override the default CSS rules, the new rule should be defined in the CSS stylesheet files of the host application with the same class name with the prefix <i>.cdd.cddroot</i> and a white-space.</p>
+        <div class="Body">Example: Changing the font of the messages.</div><pre class="prettyprint"><p class="code">.cdd.cddroot .cdd-font {
+  font-family: "Sans";
+}</p></pre>
+        <h3 id="recommended-css-classes"><a name="Recommen" xmlns="http://www.w3.org/1999/xhtml"></a>Recommended CSS Classes</h3>
+        <h4 id="cdd-toolbar-container">.cdd-toolbar-container</h4>
+        <div class="figure">
+            <img src="images/CSSToolbarContainer.png" alt="CSSToolbarContainer" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <div class="Body">Example/Default styles</div><pre class="prettyprint"><p class="code">border: 1px solid #ccc;</p><p class="code">background-color: #ededed;</p></pre>
+        <h4 id="cdd-workspace-container">.cdd-workspace-container</h4>
+        <div class="figure">
+            <img src="images/CSSWorkspaceContainer.png" alt="CSSWorkspaceContainer" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <div class="Body">Example/Default styles</div><pre class="prettyprint"><p class="code">background-color: #ddd;</p></pre>
+        <h4 id="cdd-progress-indicator">.cdd-progress-indicator</h4>
+        <div class="figure">
+            <img src="images/CSSProgressIndicator.png" alt="CSSProgressIndicator" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <div class="Body">Example/Default styles</div><pre class="prettyprint"><p class="code">z-index: 10;</p><p class="code">background-color: hsla(0,0%,100%,.5);</p><p class="code">cursor: wait;</p></pre>
+        <h4 id="cdd-logo">.cdd-logo</h4>
+        <div class="figure">
+            <img src="images/CSSCDDLogo.png" alt="CSSCDDLogo" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <div class="Body">Example/Default styles</div><pre class="prettyprint"><p class="code">display: block;
+position: absolute;
+right: 20px;
+bottom: 10px;
+opacity: .5;
+width: 65px;
+height: 65px;
+transition: opacity .5s,width .5s,height .5s;
+z-index: 4;
+user-select: none;
+background-image: url(data:image/png;base64,...);
+background-position: 50%;
+background-size: contain;
+background-repeat: no-repeat;</p></pre>
+        <h4 id="cdd-clipboard-icon">.cdd-clipboard-icon</h4>
+        <div class="figure">
+            <img src="images/CSSCDDClipboardIcon.png" alt="CSSCDDClipboardIcon" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <div class="Body">Example/Default styles</div><pre class="prettyprint"><p class="code">display: block;
+position: absolute;
+left: 10px;
+bottom: 20px;
+z-index: 4;
+opacity: .5;
+user-select: none;</p></pre>
+        <h5 id="cdd-clipboard-icon-image-enabled">.cdd-clipboard-icon-image-enabled</h5>
+        <div class="Body">Example/Default styles</div><pre class="prettyprint"><p class="code">border-color: #4caf50;
+background-image: url(data:image/svg+xml;base64,...);
+background-size: cover;</p></pre>
+        <h5 id="cdd-clipboard-icon-image-disabled">.cdd-clipboard-icon-image-disabled</h5>
+        <div class="Body">Example/Default styles</div><pre class="prettyprint"><p class="code">border-color: #ccc;
+background-image: url(data:image/svg+xml;base64,...);
+background-size: cover;</p></pre>
+        <h4 id="cdd-tool-image">.cdd-tool-image</h4>
+        <div class="figure">
+            <img src="images/CSSCDDToolImage.png" alt="CSSCDDToolImage" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <div class="Body">Example/Default styles</div><pre class="prettyprint"><p class="code">position: relative;
+width: 30px;
+height: 30px;
+pointer-events: none;
+background: 50% no-repeat;</p></pre>
+        <h5 id="cdd-tool-image-toolname">.cdd-tool-image-{ToolName}</h5>
+        <div class="Body">The image of one tool could be customized by overriding the corresponding CSS class. The tool names are consistent with the ones defined in ChemDraw JS's configuration.</div>
+        <div class="Body">Example/Default styles</div><pre class="prettyprint"><p class="code">background-image: url(data:image/png;base64,...);</p></pre>
+        <h4 id="cdd-message">.cdd-message</h4>
+        <div class="figure">
+            <img src="images/CSSCDDMessagePresenter.png" alt="CSSCDDMessage" MadCap:mediastyle="@media print { max-width: 650px; }" style="border-left-style: solid;border-left-width: 1px;border-left-color: #dcdcdc;border-right-style: solid;border-right-width: 1px;border-right-color: #dcdcdc;border-top-style: solid;border-top-width: 1px;border-top-color: #dcdcdc;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #dcdcdc;" />
+        </div>
+        <div class="Body">Example/Default styles</div><pre class="prettyprint"><p class="code">top: 100px;
+z-index: 10;
+cursor: default;
+position: absolute;
+width: 100%;
+height: 0;
+text-align: center;</p></pre>
+        <h4 id="cdd-dialog-container">.cdd-dialog-container</h4>
+        <h5 id="cdd-dialog-title">.cdd-dialog-title</h5>
+        <div class="figure">
+            <img src="images/CSSCDDDialogTitle.png" alt="CSSCDDDialogTitle" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <div class="Body">Example/Default styles</div><pre class="prettyprint"><p class="code">font-size: 16px;
+font-weight: 700;
+padding-bottom: 10px;
+text-align: center;</p></pre>
+        <h5 id="cdd-dialog-content">.cdd-dialog-content</h5>
+        <div class="figure">
+            <img src="images/CSSCDDDialogContent.png" alt="CSSCDDDialogContent" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <div class="Body">Example/Default styles</div><pre class="prettyprint"><p class="code">width: auto;</p><p class="code">height: auto;</p></pre>
+        <h5 id="cdd-dialog-button-panel">.cdd-dialog-button-panel</h5>
+        <div class="Body">Example/Default styles</div><pre class="prettyprint"><p class="code">text-align: center;</p></pre>
+        <h6 id="cdd-button-okcanceldanger">.cdd-button-[ok|cancel|danger]</h6>
+        <div class="Body">Example/Default styles</div><pre class="prettyprint"><p class="code">border: 1px solid #7fb451;
+color: #fff;
+background-color: #6cb442;</p></pre>
+        <h4 id="cdd-font">.cdd-font</h4>
+        <div class="Body">Defines the global font style of tooltips, messages, dialogs.</div>
+        <div class="Body">Example/Default styles</div><pre class="prettyprint"><p class="code">font-family: Arial;</p><p class="code">font-size: 14px;</p></pre>
+        <h3 id="sample-customization-cases"><a name="Sample" xmlns="http://www.w3.org/1999/xhtml"></a>Sample Customization Cases</h3>
+        <table style="mc-table-style: url('../Resources/TableStyles/TableStandard.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStandard" cellspacing="0">
+            <col style="width: 250px;" class="TableStyle-TableStandard-Column-Column1" />
+            <col style="width: 250px;" class="TableStyle-TableStandard-Column-Column1" />
+            <col style="width: 250px;" class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Use Case</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">CSS Class</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Rules</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Change the font of the message text</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">.cdd-font</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">font-family, font-size</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Remove the logo of ChemDraw JS</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">.cdd-logo</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">display</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Replace the image of a tool</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">.cdd-tool-image-{ToolName}</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">background-image</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Change the background of the toolbar</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">.cdd-toolbar-container</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">background-color</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Change the font size of the dialog title</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">.cdd-dialog-title</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">font-size</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">Change the color of the dialog buttons</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">.cdd-button-[ok|cancel|danger]</td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">background-color</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

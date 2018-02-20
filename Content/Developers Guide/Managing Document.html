@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="4767" MadCap:lastWidth="1012" MadCap:conditions="Primary.DevGuide Only">
+    <head>
+        <meta http-equiv="Content-Style-Type" content="text/css" /><title></title>
+        <style type="text/css">/*<![CDATA[*/
+code
+{
+	white-space: pre;
+}
+
+/*]]>*/</style>
+        <style type="text/css">/*<![CDATA[*/
+div.sourceCode
+{
+	overflow-x: auto;
+}
+table.sourceCode,
+tr.sourceCode,
+td.lineNumbers,
+td.sourceCode
+{
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	border: none;
+}
+table.sourceCode
+{
+	width: 100%;
+	line-height: 100%;
+}
+td.lineNumbers
+{
+	text-align: right;
+	padding-right: 4px;
+	padding-left: 4px;
+	color: #aaaaaa;
+	border-right: 1px solid #aaaaaa;
+}
+td.sourceCode
+{
+	padding-left: 5px;
+}
+code &gt; span.kw
+{
+	color: #007020;
+	font-weight: bold;
+}
+/* Keyword */
+code &gt; span.dt
+{
+	color: #902000;
+}
+/* DataType */
+code &gt; span.dv
+{
+	color: #40a070;
+}
+/* DecVal */
+code &gt; span.bn
+{
+	color: #40a070;
+}
+/* BaseN */
+code &gt; span.fl
+{
+	color: #40a070;
+}
+/* Float */
+code &gt; span.ch
+{
+	color: #4070a0;
+}
+/* Char */
+code &gt; span.st
+{
+	color: #4070a0;
+}
+/* String */
+code &gt; span.co
+{
+	color: #60a0b0;
+	font-style: italic;
+}
+/* Comment */
+code &gt; span.ot
+{
+	color: #007020;
+}
+/* Other */
+code &gt; span.al
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+/* Alert */
+code &gt; span.fu
+{
+	color: #06287e;
+}
+/* Function */
+code &gt; span.er
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+/* Error */
+code &gt; span.wa
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Warning */
+code &gt; span.cn
+{
+	color: #880000;
+}
+/* Constant */
+code &gt; span.sc
+{
+	color: #4070a0;
+}
+/* SpecialChar */
+code &gt; span.vs
+{
+	color: #4070a0;
+}
+/* VerbatimString */
+code &gt; span.ss
+{
+	color: #bb6688;
+}
+/* SpecialString */
+code &gt; span.im
+{
+	
+}
+/* Import */
+code &gt; span.va
+{
+	color: #19177c;
+}
+/* Variable */
+code &gt; span.cf
+{
+	color: #007020;
+	font-weight: bold;
+}
+/* ControlFlow */
+code &gt; span.op
+{
+	color: #666666;
+}
+/* Operator */
+code &gt; span.bu
+{
+	
+}
+/* BuiltIn */
+code &gt; span.ex
+{
+	
+}
+/* Extension */
+code &gt; span.pp
+{
+	color: #bc7a00;
+}
+/* Preprocessor */
+code &gt; span.at
+{
+	color: #7d9029;
+}
+/* Attribute */
+code &gt; span.do
+{
+	color: #ba2121;
+	font-style: italic;
+}
+/* Documentation */
+code &gt; span.an
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Annotation */
+code &gt; span.cv
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* CommentVar */
+code &gt; span.in
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Information */
+
+/*]]>*/</style>
+    </head>
+    <body>
+        <h2 id="managing-document"><a name="Managing2" xmlns="http://www.w3.org/1999/xhtml"></a>Managing Document</h2>
+        <h3 id="managing-the-drawings"><a name="Managing3" xmlns="http://www.w3.org/1999/xhtml"></a>Managing the Drawings</h3>
+        <div class="Bullet1-inner">clear</div>
+        <div class="Bullet1-inner">isBlankStructure</div>
+        <p>The <i xmlns="http://www.w3.org/1999/xhtml">clear</i> API removes all objects from the document. After the document is cleared, the <i xmlns="http://www.w3.org/1999/xhtml">isBlankStructure</i> API returns true.</p>
+        <h3 id="managing-the-size-of-the-canvas-or-drawings"><a name="Managing4" xmlns="http://www.w3.org/1999/xhtml"></a>Managing the Size of the Canvas or Drawings</h3>
+        <div class="Bullet1-inner">fitToContainer</div>
+        <div class="Bullet1-inner">getCanvasSize</div>
+        <div class="Bullet1-inner">setCanvasSize</div>
+        <div class="Body">The previous chapter <strong xmlns="http://www.w3.org/1999/xhtml"><a href="Understanding CDD View.html" xmlns="http://www.w3.org/1999/xhtml">Understanding ChemDraw JS View</a></strong> introduced the concept of ChemDraw JS container, toolbar, workspace and canvas. ChemDraw JS exposes APIs to manage the size of the ChemDraw JS canvas. The ChemDraw JS workspace and toolbar will fill the space within the container.</div>
+        <div class="Body">It is the responsibility of the host application to manage  the size of the ChemDraw JS container. After the size of the container is changed, the size or the scale ratio of the canvas may need to be updated accordingly in some scenarios. So that the drawings on the canvas could be displayed properly.</div>
+        <div class="Body">The <i xmlns="http://www.w3.org/1999/xhtml">fitToContainer</i> API will resize or scale the canvas to fit the container which depends on the view mode of the ChemDraw JS instance.</div>
+        <p>If the <b xmlns="http://www.w3.org/1999/xhtml">PreservePageInfo</b> mode is enabled, after loading an existing ChemDraw document, ChemDraw JS renders the document at the same scale ratio with the ratio used when it was saved. It means that the canvas/document may not be fully visible in the workspace, and scrollbars may be visible.</p>
+        <div class="figure">
+            <img src="images/FitToContainerPreservePageInfo.png" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <div class="Body">In this mode, the scale ratio of the canvas is adjusted after the <i xmlns="http://www.w3.org/1999/xhtml">fitToContainer</i> API is called. Then the whole canvas is visible within the container and no scrollbar is visible. However, this does not affect the bounding box of the page in the resulting CDXML.</div>
+        <div class="figure">
+            <img src="images/FitToContainerPreservePageInfo2.png" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <p>If the <b xmlns="http://www.w3.org/1999/xhtml">PreservePageInfo</b> mode is disabled, after the document is loaded, it is still rendered at the same scale ratio with the ratio used when it was saved. The scrollbar also shows when necessary, but the grey area of the workspace is actually not visible.</p>
+        <div class="figure">
+            <img src="images/FitToContainerPreservePageInfoDisabled.png" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <div class="Body">In this mode, the scale ratio is adjusted to make all drawings visible after the <i xmlns="http://www.w3.org/1999/xhtml">fitToContainer</i> API is called. The bounding box of the page in the resulting CDXML is also altered.</div>
+        <div class="Body">
+            <img src="images/FitToContainerPreservePageInfoDisabled2.png" xmlns="http://www.w3.org/1999/xhtml" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <div class="Body"><strong xmlns="http://www.w3.org/1999/xhtml">Getter and Setter for Canvas Size</strong>
+        </div>
+        <div class="Body">The <i xmlns="http://www.w3.org/1999/xhtml">fitToContainer</i> API provides an easy way to make the canvas fit the ChemDraw JS container that is managed by the host application. If necessary, the host application can set or get the canvas size directly.</div>
+        <div class="Body">This is helpful when the host application wants to make the container fit to the drawings, so that all the drawings can be visible and be rendered at the same ratio with the one used when it was saved. To achieve this goal, the host application need to get the size of the canvas first and then resize the ChemDraw JS container.</div>
+        <div class="Body">The <i xmlns="http://www.w3.org/1999/xhtml">setCanvasSize</i> API can be used if the host application wants to change the canvas size (only meaningful if <i xmlns="http://www.w3.org/1999/xhtml">Preserve PageInfo Mode</i> is enabled). Also this is useful for testing purpose.</div>
+        <h3 id="managing-the-metadata-of-the-document"><a name="Managing5" xmlns="http://www.w3.org/1999/xhtml"></a>Managing the Metadata of the Document</h3>
+        <div class="Bullet1-inner">getDocumentName</div>
+        <div class="Bullet1-inner">setDocumentName</div>
+        <div class="Body">The CDX/CDXML data contains the name of the document. The name in CDX/CDXML is set when the file is saved in ChemDraw Desktop. ChemDraw JS exposes the getter and setter for the document name so that the host application can access this metadata.</div>
+        <div class="figure">
+            <img src="images/GetterAndSetterForDocumentName.png" MadCap:mediastyle="@media print { max-width: 650px; }" style="mc-thumbnail: popup;mc-thumbnail-max-height: 300px;mc-thumbnail-max-width: 600px;" />
+        </div>
+        <h3 id="managing-the-state-of-the-document"><a name="Managing6" xmlns="http://www.w3.org/1999/xhtml"></a>Managing the State of the Document</h3>
+        <div class="Bullet1-last">getErrors</div>
+        <div class="Body">ChemDraw has the intelligence to detect chemical errors. You can also configure the types of errors to be detected. Please refer to <strong xmlns="http://www.w3.org/1999/xhtml"><a href="Configuring ChemDraw Direct.html#configuringchemDrawdirect" xmlns="http://www.w3.org/1999/xhtml">Configuring ChemDraw JS</a></strong> for details about how to enable or disable them. </div>
+        <p>If there are any errors in the drawing, users can see a red box over the error. Also, a tool-tip with an error message is displayed when the mouse cursor is placed over the error.</p>
+        <div class="Body">The <i xmlns="http://www.w3.org/1999/xhtml">getErrors</i> API enables host applications to check if the current drawings contain any chemical errors. The host application can then implement its own way to notify the end user.</div>
+        <div class="figure">
+            <img src="images/CDDErrors.png" MadCap:mediastyle="@media print { max-width: 650px; }" style="mc-thumbnail: popup;mc-thumbnail-max-height: 400px;" />
+        </div>
+        <div class="Bullet1-inner">isSaved</div>
+        <div class="Bullet1-inner">markAsSaved</div>
+        <div class="Body">The ChemDraw JS library does not have the capability to persist data. If the host application needs to save the ChemDraw JS data, it is important to know if the ChemDraw JS instance contains any change not saved since last saving.</div>
+        <div class="Body">After a ChemDraw JS instance is created and attached to the host web page, if the result of <i xmlns="http://www.w3.org/1999/xhtml">isSaved</i> is false which means the current data is never saved.</div>
+        <div class="Body">Only after the <i xmlns="http://www.w3.org/1999/xhtml">markAsSaved</i> API is called, then the <i xmlns="http://www.w3.org/1999/xhtml">isSaved</i> API returns the value as 'true'.</div>
+        <p>After you make any new changes to the document, the <i>isSaved</i> API returns the value as 'false'.</p>
+        <div class="Bullet1-1st">setContentChangedHandler</div>
+        <div class="Body">The <i xmlns="http://www.w3.org/1999/xhtml">setContentChangedHandler</i> API provides another option to the host application to get a real-time notification about any changes in the document. Based on this information, the host application can update the data to other dependent applications.</div>
+        <div class="Bullet1-inner">setViewOnly</div>
+        <div class="Body">ChemDraw JS supports a viewonly state in which the end user can only view the drawings and nothing on the canvas could be altered. Also, the toolbar is hidden in this viewonly mode.</div>
+        <div class="Body"><strong xmlns="http://www.w3.org/1999/xhtml">setViewOnly(false)</strong>
+        </div>
+        <div class="figure">
+            <img src="images/SetViewOnlyFalse.png" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <div class="Body"><strong xmlns="http://www.w3.org/1999/xhtml">setViewOnly(true)</strong>
+        </div>
+        <div class="figure">
+            <img src="images/SetViewOnlyTrue.png" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <h2 id="utilities"><a name="Utilitie" xmlns="http://www.w3.org/1999/xhtml"></a>Utilities</h2>
+        <div class="Bullet1-inner">getMolecularWeight</div>
+        <div class="Bullet1-inner">nameToStructure</div>
+        <div class="Bullet1-inner">structureToName</div>
+        <div class="Body">ChemDraw JS provides several utility APIs as mentioned above (some of them may rely on ChemDraw Web Service). These APIs does not depend on the drawings on the canvas, and after they are called, the drawings on the canvas are not affected either.</div>
+        <div class="Body">These APIs offer the host application more chemical functions so that the host application can process some chemical data with ChemDraw's chemical intelligence but without affecting the canvas.</div>
+    </body>
+</html>

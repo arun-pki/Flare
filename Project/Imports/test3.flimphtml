@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HtmlImport
+  KeepSourceLinks="true"
+  ProjectName="ChemDraw"
+  ProjectFolder="C:\Users\arun.joy\Desktop\WORKING\CDD 2.0 Workspace Local\Source File\"
+  AutoSync="false"
+  SourceFolders=""
+  ImportResources="false"
+  ImportResourcesLocation="NoImport"
+  ImportTopics="content"
+  ImportLinkedHtmlFiles="false"
+  LastImport="2017-07-06T12:07:46.7586776+05:30"
+  ImportTopicsLocation="Content/">
+  <Files>
+    <Url
+      Source="../../../../../test3.html"
+      AbsoluteSource="file:///C:/Users/arun.joy/Desktop/test3.html" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/test3.html"
+      TimeStamp="06-07-2017 12:07:43 PM" />
+    <Url
+      Source="../TOCs/test3.fltoc"
+      TimeStamp="06-07-2017 12:07:46 PM" />
+  </GeneratedFiles>
+</HtmlImport>

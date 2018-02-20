@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="TitlePage"
+    Link="/Content/TitlePage.htm"
+    conditions="Primary.PDF Only"
+    StartSection="false"
+    BreakType="pageLayout"
+    PageType="title"
+    PageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl" />
+  <TocEntry
+    Title="Table of Contents"
+    Link="/Content/TOC.htm"
+    conditions="Primary.PDF Only"
+    StartSection="false"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false"
+    BreakType="pageLayout"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  <TocEntry
+    Title="Getting Started"
+    Link="/Content/CDD/Getting Started.htm"
+    BreakType="chapter"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    ReplaceMergeNode="false"
+    StartSection="false"
+    PageNumber="1"
+    ChapterNumberReset="reset"
+    ChapterNumber="1"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same">
+    <TocEntry
+      Title="ChemDraw JS User Interface"
+      Link="/Content/CDD/Getting Started.htm#ChemDraw" />
+    <TocEntry
+      Title="ChemDraw JS Toolbar"
+      Link="/Content/CDD/Getting Started.htm#ChemDraw2" />
+  </TocEntry>
+  <TocEntry
+    Title="Page Layout"
+    Link="/Content/CDD/Page Layout.htm"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="Magnification"
+      Link="/Content/CDD/Page Layout.htm#Magnific" />
+  </TocEntry>
+  <TocEntry
+    Title="Shortcuts and Hotkeys"
+    Link="/Content/CDD/Shortcuts and Hotkeys.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="Atom Hotkeys"
+      Link="/Content/CDD/Atom Hotkeys.htm" />
+    <TocEntry
+      Title="Bond Hotkeys"
+      Link="/Content/CDD/Bond Hotkeys.htm" />
+    <TocEntry
+      Title="Generic Hotkeys"
+      Link="/Content/CDD/Generic Hotkeys.htm" />
+    <TocEntry
+      Title="Modified Hotkeys"
+      Link="/Content/CDD/Modified Hotkeys.htm" />
+    <TocEntry
+      Title="Drawing Reactions Using Hotkeys"
+      Link="/Content/CDD/Drawing Reactions Using Hotkeys.htm" />
+    <TocEntry
+      Title="Shortcuts"
+      Link="/Content/CDD/Shortcuts.htm" />
+    <TocEntry
+      Title="Nicknames"
+      Link="/Content/CDD/Nicknames.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Basic Drawing"
+    Link="/Content/CDD/Drawing Structures.htm#3-Drawing_10_2361279446_1208922"
+    BreakType="chapter"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    PageNumberReset="continue">
+    <TocEntry
+      Title="Bonds"
+      Link="/Content/CDD/Bonds.htm#3-Drawing_10_2361279446_1261445">
+      <TocEntry
+        Title="Drawing Bonds"
+        Link="/Content/CDD/Bonds.htm#Drawing">
+        <TocEntry
+          Title="Single Bonds"
+          Link="/Content/CDD/Bonds.htm#Single" />
+        <TocEntry
+          Title="Double Bonds"
+          Link="/Content/CDD/Bonds.htm#Double" />
+        <TocEntry
+          Title="Double Either Bonds"
+          Link="/Content/CDD/Bonds.htm#Double2" />
+        <TocEntry
+          Title="Triple Bonds"
+          Link="/Content/CDD/Bonds.htm#Triple" />
+        <TocEntry
+          Title="Quadruple Bonds"
+          Link="/Content/CDD/Bonds.htm#Quadrupl"></TocEntry>
+        <TocEntry
+          Title="Dative Bonds"
+          Link="/Content/CDD/Bonds.htm#Dative" />
+        <TocEntry
+          Title="Wedged Bonds"
+          Link="/Content/CDD/Bonds.htm#Wedged" />
+      </TocEntry>
+      <TocEntry
+        Title="Changing Bonds"
+        Link="/Content/CDD/Bonds.htm#Changing" />
+      <TocEntry
+        Title="Fixed Bonds"
+        Link="/Content/CDD/Bonds.htm#Fixed" />
+    </TocEntry>
+    <TocEntry
+      Title="Atoms"
+      Link="/Content/CDD/Atoms.htm">
+      <TocEntry
+        Title="Repeating Atom Labels"
+        Link="/Content/CDD/Atoms.htm#Repeatin" />
+      <TocEntry
+        Title="Deleting Labels"
+        Link="/Content/CDD/Atoms.htm#Deleting" />
+    </TocEntry>
+    <TocEntry
+      Title="Captions"
+      Link="/Content/CDD/Captions.htm">
+      <TocEntry
+        Title="Caption Size"
+        Link="/Content/CDD/Captions.htm#Caption" />
+      <TocEntry
+        Title="Using Hotkeys"
+        Link="/Content/CDD/Captions.htm#Using" />
+      <TocEntry
+        Title="Nicknames"
+        Link="/Content/CDD/Captions.htm#Nickname" />
+    </TocEntry>
+    <TocEntry
+      Title="Drawing Rings"
+      Link="/Content/CDD/Drawing Rings.htm">
+      <TocEntry
+        Title="Spiro and Sprout Rings"
+        Link="/Content/CDD/Drawing Rings.htm#Spiro" />
+      <TocEntry
+        Title="Cyclohexane Chair Rings"
+        Link="/Content/CDD/Drawing Rings.htm#Cyclohex" />
+      <TocEntry
+        Title="Aromatic Structures"
+        Link="/Content/CDD/Drawing Rings.htm#Aromatic" />
+    </TocEntry>
+    <TocEntry
+      Title="Chains"
+      Link="/Content/CDD/Chains.htm">
+      <TocEntry
+        Title="Acyclic Chains"
+        Link="/Content/CDD/Chains.htm#acyclicchains" />
+    </TocEntry>
+    <TocEntry
+      Title="Objects"
+      Link="/Content/CDD/Objects.htm">
+      <TocEntry
+        Title="Arrows"
+        Link="/Content/CDD/Objects.htm#Arrows" />
+      <TocEntry
+        Title="Brackets"
+        Link="/Content/CDD/Objects.htm#Brackets" />
+      <TocEntry
+        Title="Selecting Objects"
+        Link="/Content/CDD/Objects.htm#Selectin" />
+      <TocEntry
+        Title="Resizing Objects"
+        Link="/Content/CDD/Objects.htm#Resizing" />
+      <TocEntry
+        Title="Rotating Objects"
+        Link="/Content/CDD/Objects.htm#Rotating" />
+      <TocEntry
+        Title="Moving Objects"
+        Link="/Content/CDD/Objects.htm#Moving" />
+      <TocEntry
+        Title="Copying Objects"
+        Link="/Content/CDD/Objects.htm#Copying" />
+      <TocEntry
+        Title="Deleting Objects"
+        Link="/Content/CDD/Objects.htm#Deleting" />
+      <TocEntry
+        Title="Grouping Objects"
+        Link="/Content/CDD/Objects.htm#Grouping" />
+    </TocEntry>
+    <TocEntry
+      Title="Clean Up Structure"
+      Link="/Content/CDD/Structure Cleanup.htm" />
+    <TocEntry
+      Title="Chemical Warnings"
+      Link="/Content/CDD/Chemical Warnings.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="BioDraw"
+    Link="/Content/CDD/BioDraw.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="BioDraw Templates"
+      Link="/Content/CDD/BioDraw.htm#BioDraw" />
+  </TocEntry>
+  <TocEntry
+    Title="Advanced Drawing Techniques"
+    Link="/Content/CDD/Advanced Drawing Techniques.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="Labels"
+      Link="/Content/CDD/Labels.htm">
+      <TocEntry
+        Title="Creating Labels"
+        Link="/Content/CDD/Labels.htm#Creating" />
+      <TocEntry
+        Title="Expanding Labels"
+        Link="/Content/CDD/Labels.htm#Expandin" />
+      <TocEntry
+        Title="Multiple Atoms"
+        Link="/Content/CDD/Labels.htm#Multiple" />
+    </TocEntry>
+    <TocEntry
+      Title="Atom Numbering"
+      Link="/Content/CDD/Atom Numbering.htm">
+      <TocEntry
+        Title="Showing Atom Numbers"
+        Link="/Content/CDD/Atom Numbering.htm#Showing" />
+      <TocEntry
+        Title="Formatting Atom Numbers"
+        Link="/Content/CDD/Atom Numbering.htm#Formatti" />
+    </TocEntry>
+    <TocEntry
+      Title="Drawing Reactions"
+      Link="/Content/CDD/Drawing Reactions.htm">
+      <TocEntry
+        Title="Drawing an Arrow"
+        Link="/Content/CDD/Drawing Reactions.htm#Drawing" />
+      <TocEntry
+        Title="Drawing the Product"
+        Link="/Content/CDD/Drawing Reactions.htm#Drawing2" />
+      <TocEntry
+        Title="Clean Up Reactions"
+        Link="/Content/CDD/Drawing Reactions.htm#Clean" />
+      <TocEntry
+        Title="Electron and Radical Pushing"
+        Link="/Content/CDD/Drawing Reactions.htm#Electron" />
+    </TocEntry>
+    <TocEntry
+      Title="Templates"
+      Link="/Content/CDD/Templates.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Struct=Name"
+    Link="/Content/CDD/Struct=Name.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="Struct&gt;Name"
+      Link="/Content/CDD/Struct=Name.htm#Using" />
+    <TocEntry
+      Title="Name&gt;Struct"
+      Link="/Content/CDD/Name_Struct.htm">
+      <TocEntry
+        Title="Converting Names to Structures"
+        Link="/Content/CDD/Name_Struct.htm#Converti" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Query Structures"
+    Link="/Content/CDD/Query Structures.htm">
+    <TocEntry
+      Title="Search Limitations"
+      Link="/Content/CDD/Query Structures.htm#Search" />
+    <TocEntry
+      Title="Generic Labels"
+      Link="/Content/CDD/Query Structures.htm#Generic">
+      <TocEntry
+        Title="Reaxys"
+        Link="/Content/CDD/Query Structures.htm#Reaxys" />
+    </TocEntry>
+    <TocEntry
+      Title="Atom Properties"
+      Link="/Content/CDD/Query Structures.htm#Atom">
+      <TocEntry
+        Title="Assigning Atom Properties"
+        Link="/Content/CDD/Query Structures.htm#Assignin" />
+      <TocEntry
+        Title="Query Indicators"
+        Link="/Content/CDD/Query Structures.htm#Query" />
+    </TocEntry>
+    <TocEntry
+      Title="Bond Properties"
+      Link="/Content/CDD/Query Structures.htm#Bond">
+      <TocEntry
+        Title="Assigning Bond Properties"
+        Link="/Content/CDD/Query Structures.htm#Assignin2" />
+      <TocEntry
+        Title="Viewing Bond Properties"
+        Link="/Content/CDD/Query Structures.htm#Viewing" />
+      <TocEntry
+        Title="Removing Bond Properties"
+        Link="/Content/CDD/Query Structures.htm#Removing"></TocEntry>
+      <TocEntry
+        Title="Bond Property Options"
+        Link="/Content/CDD/Query Structures.htm#Bond2" />
+    </TocEntry>
+    <TocEntry
+      Title="Element Lists"
+      Link="/Content/CDD/Query Structures.htm#Element">
+      <TocEntry
+        Title="Element NOT Lists"
+        Link="/Content/CDD/Query Structures.htm#Element2" />
+    </TocEntry>
+    <TocEntry
+      Title="Polymers"
+      Link="/Content/CDD/Query Structures.htm#Polymers">
+      <TocEntry
+        Title="Setting Bracket Properties"
+        Link="/Content/CDD/Query Structures.htm#Setting" />
+      <TocEntry
+        Title="Bracket Usage"
+        Link="/Content/CDD/Query Structures.htm#Bracket" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Exchanging Structures with External Applications"
+    Link="/Content/CDD/Exchanging Structures with External Applications.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="Loading Chemical Files by Drag and Drop"
+      Link="/Content/CDD/Loading Chemical Files by Drag and Drop.htm" />
+    <TocEntry
+      Title="Loading Chemical Data by Copy and Paste"
+      Link="/Content/CDD/Loading Chemical Data by Copy and Paste.htm">
+      <TocEntry
+        Title="Copying Chemical Data from ChemDraw Desktop without ChemDraw Web Clipboard"
+        Link="/Content/CDD/Loading Chemical Data by Copy and Paste.htm#Copying"
+        StartSection="false" />
+      <TocEntry
+        Title="Copying and Pasting Chemical Data as Text without ChemDraw Web Clipboard"
+        Link="/Content/CDD/Loading Chemical Data by Copy and Paste.htm#Copying2" />
+      <TocEntry
+        Title="Loading Chemical Data with ChemDraw Web Clipboard"
+        Link="/Content/CDD/Loading Chemical Data by Copy and Paste.htm#Loading" />
+    </TocEntry>
+    <TocEntry
+      Title="Copying Chemical Data and Pasting to External Applications"
+      Link="/Content/CDD/Copying Chemical Data and Pasting to External Applications.htm"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue">
+      <TocEntry
+        Title="Copying and Pasting CDXML Text Data without ChemDraw Web Clipboard"
+        Link="/Content/CDD/Copying Chemical Data and Pasting to External Applications.htm#Copying" />
+      <TocEntry
+        Title="Copying Chemical Data with ChemDraw Web Clipboard"
+        Link="/Content/CDD/Copying Chemical Data and Pasting to External Applications.htm#Copying2" />
+      <TocEntry
+        Title="Copying Structures to Microsoft Office Applications"
+        Link="/Content/CDD/Copying Chemical Data and Pasting to External Applications.htm#Copying3" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Activating Extended Copy and Paste Functionality"
+    Link="/Content/CDD/Activating Extended Copy and Paste Functionality.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="System Requirement"
+      Link="/Content/CDD/Activating Extended Copy and Paste Functionality.htm#System" />
+    <TocEntry
+      Title="Determining the Feature State"
+      Link="/Content/CDD/Activating Extended Copy and Paste Functionality.htm#Determin" />
+    <TocEntry
+      Title="Allowing Access to the System Clipboard"
+      Link="/Content/CDD/Activating Extended Copy and Paste Functionality.htm#Allowing" />
+    <TocEntry
+      Title="Installing and Enabling ChemDraw Web Clipboard"
+      Link="/Content/CDD/Activating Extended Copy and Paste Functionality.htm#Installi" />
+  </TocEntry>
+  <TocEntry
+    Title="Tutorials"
+    Link="/Content/CDD/Tutorials.htm#2-Tutorials_129056672_1330909"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="Tutorial 1: Drawing a Structure"
+      Link="/Content/CDD/Tutorial 1_ Drawing a st.htm#2-Tutorials_129056672_1330919" />
+    <TocEntry
+      Title="Tutorial 2: Using Rings"
+      Link="/Content/CDD/Tutorial 2_ Using rings.htm#2-Tutorials_129056672_1330970" />
+    <TocEntry
+      Title="Tutorial 3: Perspective Drawings"
+      Link="/Content/CDD/Tutorial 4_ Perspective.htm#2-Tutorials_129056672_1331099" />
+    <TocEntry
+      Title="Tutorial 4: Stereochemistry"
+      Link="/Content/CDD/Tutorial 3_ Stereochemis.htm#2-Tutorials_129056672_1331298" />
+    <TocEntry
+      Title="Tutorial 5: Templates"
+      Link="/Content/CDD/Tutorial 5_Templates.htm" />
+  </TocEntry>
+</CatapultToc>

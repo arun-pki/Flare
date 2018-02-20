@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="2303" MadCap:lastWidth="907" MadCap:conditions="Primary.DevGuide Only">
+    <head>
+        <meta http-equiv="Content-Style-Type" content="text/css" /><title></title>
+        <style type="text/css">/*<![CDATA[*/
+code
+{
+	white-space: pre;
+}
+
+/*]]>*/</style>
+        <style type="text/css">/*<![CDATA[*/
+div.sourceCode
+{
+	overflow-x: auto;
+}
+table.sourceCode,
+tr.sourceCode,
+td.lineNumbers,
+td.sourceCode
+{
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	border: none;
+}
+table.sourceCode
+{
+	width: 100%;
+	line-height: 100%;
+}
+td.lineNumbers
+{
+	text-align: right;
+	padding-right: 4px;
+	padding-left: 4px;
+	color: #aaaaaa;
+	border-right: 1px solid #aaaaaa;
+}
+td.sourceCode
+{
+	padding-left: 5px;
+}
+code &gt; span.kw
+{
+	color: #007020;
+	font-weight: bold;
+}
+/* Keyword */
+code &gt; span.dt
+{
+	color: #902000;
+}
+/* DataType */
+code &gt; span.dv
+{
+	color: #40a070;
+}
+/* DecVal */
+code &gt; span.bn
+{
+	color: #40a070;
+}
+/* BaseN */
+code &gt; span.fl
+{
+	color: #40a070;
+}
+/* Float */
+code &gt; span.ch
+{
+	color: #4070a0;
+}
+/* Char */
+code &gt; span.st
+{
+	color: #4070a0;
+}
+/* String */
+code &gt; span.co
+{
+	color: #60a0b0;
+	font-style: italic;
+}
+/* Comment */
+code &gt; span.ot
+{
+	color: #007020;
+}
+/* Other */
+code &gt; span.al
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+/* Alert */
+code &gt; span.fu
+{
+	color: #06287e;
+}
+/* Function */
+code &gt; span.er
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+/* Error */
+code &gt; span.wa
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Warning */
+code &gt; span.cn
+{
+	color: #880000;
+}
+/* Constant */
+code &gt; span.sc
+{
+	color: #4070a0;
+}
+/* SpecialChar */
+code &gt; span.vs
+{
+	color: #4070a0;
+}
+/* VerbatimString */
+code &gt; span.ss
+{
+	color: #bb6688;
+}
+/* SpecialString */
+code &gt; span.im
+{
+	
+}
+/* Import */
+code &gt; span.va
+{
+	color: #19177c;
+}
+/* Variable */
+code &gt; span.cf
+{
+	color: #007020;
+	font-weight: bold;
+}
+/* ControlFlow */
+code &gt; span.op
+{
+	color: #666666;
+}
+/* Operator */
+code &gt; span.bu
+{
+	
+}
+/* BuiltIn */
+code &gt; span.ex
+{
+	
+}
+/* Extension */
+code &gt; span.pp
+{
+	color: #bc7a00;
+}
+/* Preprocessor */
+code &gt; span.at
+{
+	color: #7d9029;
+}
+/* Attribute */
+code &gt; span.do
+{
+	color: #ba2121;
+	font-style: italic;
+}
+/* Documentation */
+code &gt; span.an
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Annotation */
+code &gt; span.cv
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* CommentVar */
+code &gt; span.in
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Information */
+
+/*]]>*/</style>
+    </head>
+    <body>
+        <h1 id="overview"><a name="top" xmlns="http://www.w3.org/1999/xhtml"></a>Overview</h1>
+        <div class="Body">ChemDraw JS modularized ChemDraw functionality for the web! Built on JavaScript and HTML5, ChemDraw JS can be plugged into web browsers and internal applications that need to be chemicalized. Inside its lightweight packages, ChemDraw JS carries the core functionality of the ChemDraw family including: your favorite drawing capabilities, advanced Name to Structure, Structure to Name, Hotkeys/Shortcuts, Structure Templates and Structure Query Tools. ChemDraw JS is used within ChemDraw Cloud, Signals Notebook Individual Edition, Lead Discovery and PerkinElmer Signals Lead Discovery to provide a seamless web-based chemical drawing experience.</div>
+        <div class="Body">PerkinElmer offers ChemDraw JS as a Service in the cloud so that you do not need to install and maintain your own ChemDraw JS service.</div>
+        <div class="Body">This guide is designed to instruct developers on the development of web-based applications that uses ChemDraw JS. It describes the procedures for loading and attaching it, as well as API usage and functionality.</div>
+        <h1 id="quick-start" xmlns="http://www.w3.org/1999/xhtml"><a name="Quick" xmlns="http://www.w3.org/1999/xhtml"></a>Quick Start</h1>
+        <h2><a name="prerequisites" xmlns="http://www.w3.org/1999/xhtml"></a>Prerequisites</h2>
+        <p>A valid software license is required to use ChemDraw JS. Contact PerkinElmer to get a valid license file. The file has to be placed to a location where your web application which embeds ChemDraw JS can access. Or the content of the license file can be hard-coded in your script, so that the license content can be passed to ChemDraw JS.</p>
+        <h2 id="starting-with-the-simplest-web-page-with-cdd" xmlns="http://www.w3.org/1999/xhtml"><a name="Starting" xmlns="http://www.w3.org/1999/xhtml"></a>Starting with the Simplest Web Page with ChemDraw JS</h2>
+        <p>The easiest way to get started is to start with the sample code provided below. In the sample code, the URL of the license file should be changed to the actual URL of the license file.</p><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p class="code">&lt;!doctype html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;
+            Get Started with ChemDraw JS
+        &lt;/title&gt;
+        &lt;script
+            src="https://chemdrawdirect.perkinelmer.cloud/js/chemdrawweb/chemdrawweb.js"&gt;
+        &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div
+            id="chemdrawjs-container"
+            style="position: absolute; left:0; top: 0; width: 600px; height: 400px;"&gt;
+        &lt;/div&gt;
+        &lt;script&gt;
+            var chemdrawjsAttached = function (chemdraw) {
+                // do something
+            };
+
+            var chemdrawjsFailed = function (error) {
+                alert(error);
+            };
+
+            perkinelmer.ChemdrawWebManager.attach({
+                id: 'chemdrawjs-container',
+                callback: chemdrawjsAttached,
+                errorCallback: chemdrawjsFailed,
+                licenseUrl: 'https://your-own-url/ChemDraw-JS-License.xml'
+            });
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</p></pre>
+        <p>Save the modified sample code locally and open it with your browser. The ChemDraw JS toolbar and canvas is visible on the web page.</p>
+        <div class="figure" xmlns="http://www.w3.org/1999/xhtml">
+            <img src="images/SimplestWebPage.png" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <div class="Body" xmlns="http://www.w3.org/1999/xhtml">Refer to <strong xmlns="http://www.w3.org/1999/xhtml"><a href="Using APIs.html#creatingandattachingacDDinstance" xmlns="http://www.w3.org/1999/xhtml" style="font-weight: normal;">Creating and Attaching a ChemDraw JS Instance</a></strong> to understand how attaching works.</div>
+        <h2 id="invoking-cdd-apis" xmlns="http://www.w3.org/1999/xhtml"><a name="Invoking" xmlns="http://www.w3.org/1999/xhtml"></a>Invoking ChemDraw JS APIs</h2>
+        <p>ChemDraw JS provides JavaScript APIs for host applications to interact with ChemDraw JS, for example loading existing chemical data to ChemDraw JS.</p><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p class="code">var chemdrawjsAttached = function (chemdraw) {
+  chemdraw.loadSMILES('C1=CC=CC=C1', function (result, error) {
+    if (error) {
+      alert(error);
+    }
+  });
+};</p></pre>
+        <p xmlns="http://www.w3.org/1999/xhtml">In the above code, the <strong xmlns="http://www.w3.org/1999/xhtml">loadSMILES()</strong> API was invoked in the callback function of <strong xmlns="http://www.w3.org/1999/xhtml">perkinelmer.ChemdrawWebManager.attach()</strong>. It loads the SMILES data to ChemDraw JS.</p>
+        <div class="figure" xmlns="http://www.w3.org/1999/xhtml">
+            <img src="images/SMILESAttached.png" MadCap:mediastyle="@media print { max-width: 650px; }" xmlns="http://www.w3.org/1999/xhtml" />
+        </div>
+    </body>
+</html>

@@ -1,0 +1,2193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="24453" MadCap:lastWidth="868" MadCap:conditions="Primary.API Only">
+    <head>
+        <link href="Resources/TableStyles/TableStandard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta http-equiv="Content-Style-Type" content="text/css" /><title></title>
+        <style type="text/css">
+code
+{
+	white-space: pre;
+}
+
+</style>
+        <style type="text/css">
+div.sourceCode
+{
+	overflow-x: auto;
+}
+table.sourceCode,
+tr.sourceCode,
+td.lineNumbers,
+td.sourceCode
+{
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	border: none;
+}
+table.sourceCode
+{
+	width: 100%;
+	line-height: 100%;
+}
+td.lineNumbers
+{
+	text-align: right;
+	padding-right: 4px;
+	padding-left: 4px;
+	color: #aaaaaa;
+	border-right: 1px solid #aaaaaa;
+}
+td.sourceCode
+{
+	padding-left: 5px;
+}
+code &gt; span.kw
+{
+	color: #007020;
+	font-weight: bold;
+}
+/* Keyword */
+code &gt; span.dt
+{
+	color: #902000;
+}
+/* DataType */
+code &gt; span.dv
+{
+	color: #40a070;
+}
+/* DecVal */
+code &gt; span.bn
+{
+	color: #40a070;
+}
+/* BaseN */
+code &gt; span.fl
+{
+	color: #40a070;
+}
+/* Float */
+code &gt; span.ch
+{
+	color: #4070a0;
+}
+/* Char */
+code &gt; span.st
+{
+	color: #4070a0;
+}
+/* String */
+code &gt; span.co
+{
+	color: #60a0b0;
+	font-style: italic;
+}
+/* Comment */
+code &gt; span.ot
+{
+	color: #007020;
+}
+/* Other */
+code &gt; span.al
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+/* Alert */
+code &gt; span.fu
+{
+	color: #06287e;
+}
+/* Function */
+code &gt; span.er
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+/* Error */
+code &gt; span.wa
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Warning */
+code &gt; span.cn
+{
+	color: #880000;
+}
+/* Constant */
+code &gt; span.sc
+{
+	color: #4070a0;
+}
+/* SpecialChar */
+code &gt; span.vs
+{
+	color: #4070a0;
+}
+/* VerbatimString */
+code &gt; span.ss
+{
+	color: #bb6688;
+}
+/* SpecialString */
+code &gt; span.im
+{
+	
+}
+/* Import */
+code &gt; span.va
+{
+	color: #19177c;
+}
+/* Variable */
+code &gt; span.cf
+{
+	color: #007020;
+	font-weight: bold;
+}
+/* ControlFlow */
+code &gt; span.op
+{
+	color: #666666;
+}
+/* Operator */
+code &gt; span.bu
+{
+	
+}
+/* BuiltIn */
+code &gt; span.ex
+{
+	
+}
+/* Extension */
+code &gt; span.pp
+{
+	color: #bc7a00;
+}
+/* Preprocessor */
+code &gt; span.at
+{
+	color: #7d9029;
+}
+/* Attribute */
+code &gt; span.do
+{
+	color: #ba2121;
+	font-style: italic;
+}
+/* Documentation */
+code &gt; span.an
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Annotation */
+code &gt; span.cv
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* CommentVar */
+code &gt; span.in
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Information */
+
+</style>
+    </head>
+    <body>
+        <h1 id="global-objects"><a name="global-objects" xmlns="http://www.w3.org/1999/xhtml"></a>Global Objects</h1>
+        <h2 id="perkinelmer.chemdrawwebmanager"><a name="perkinelmerchemdrawwebmanager" xmlns="http://www.w3.org/1999/xhtml"></a>perkinelmer.ChemdrawWebManager</h2>
+        <p>The singleton global object to manage ChemDraw JS instances.</p>
+        <h3 id="attachoptions-void"><a name="attachoptions--void" xmlns="http://www.w3.org/1999/xhtml"></a>attach(options) : void</h3>
+        <p>Creates a new ChemDraw JS tool and attaches it to the specified DOM node. The attach function may be used to attach several instances of ChemDraw to the DOM and may be called at any time. The ChemDraw instance cannot be used immediately once this functions returns. A callback function can be specified in the input JSON object. Then it can be called after the instance becomes available. Please refer to the Developers Guide for details.</p>
+        <h5 id="parameters">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');border-top-left-radius: 5px;border-top-right-radius: 5px;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;margin-left: 0;margin-right: auto;" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">options</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#attachoptions" xmlns="http://www.w3.org/1999/xhtml">AttachOptions</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">which is object contains some parameters to configure ChemDraw JS</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns">Returns</h5>
+        <p>void</p>
+        <h5 id="example">Example</h5><pre class="prettyprint"><p class="code" xmlns="http://www.w3.org/1999/xhtml">var chemdrawjs;
+function chemDrawAttached(chemdrawweb) {
+  // Implement your own logic here, call API
+  chemdrawjs= chemdrawweb;
+}
+
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: chemDrawAttached
+});</p></pre>
+        <h1 id="classes"><a name="classes" xmlns="http://www.w3.org/1999/xhtml"></a>Classes</h1>
+        <h2 id="chemdrawdirect"><a name="chemdrawdirect" xmlns="http://www.w3.org/1999/xhtml"></a>ChemDrawDirect</h2>
+        <p>Provides APIs to manage the ChemDraw document, canvas and drawings on the canvas.</p>
+        <h3 id="addproductcdxml-number"><a name="addproductcdxml--number" xmlns="http://www.w3.org/1999/xhtml"></a>addProduct(cdxml) : number</h3>
+        <p>Appends a new product to the reaction present in the current drawing. If there are products present, the new product will be added to the right of the right-most product. If no reaction is present, a new arrow will be added to the center of the canvas along with the product.</p>
+        <h5 id="parameters-1">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');border-top-left-radius: 5px;border-top-right-radius: 5px;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;margin-left: 0;margin-right: auto;" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">cdxml</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">the CDXML string</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-1">Returns</h5>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a> the ID of the new product</p>
+        <h5 id="example-1">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs= chemdrawweb;
+  }
+});
+chemdrawjs.addProduct("CDXML content...");</p></pre>
+        <h3 id="addreactantcdxml-number"><a name="addreactantcdxml--number" xmlns="http://www.w3.org/1999/xhtml"></a>addReactant(cdxml) : number</h3>
+        <p>Appends a new reactant to the reaction present in the current drawing. If there are reactants present, the new reactant is added to the left of the left-most reactant. If no reaction is present, a new arrow is added to the center of the canvas along with the reactant.</p>
+        <h5 id="parameters-2">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');border-top-left-radius: 5px;border-top-right-radius: 5px;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;margin-left: 0;margin-right: auto;" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">cdxml</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">the CDXML string</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-2">Returns</h5>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a> the ID of the new reactant</p>
+        <h5 id="example-2">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs= chemdrawweb;
+  }
+});
+
+chemdrawjs.addReactant("CDXML content...");</p></pre>
+        <h3 id="addreagentcdxml-number"><a name="addreagentcdxml--number" xmlns="http://www.w3.org/1999/xhtml"></a>addReagent(cdxml) : number</h3>
+        <p>Appends a new reagent to the reaction present in the current drawing. The reagent is added to the top of the reaction arrow and above the top-most reagent if there are any already. If no reaction is present, a new arrow is added to the center of the canvas, along with the reagent.</p>
+        <h5 id="parameters-3">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">cdxml</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">the CDXML string</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-3">Returns</h5>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a> the ID of the new reagent</p>
+        <h5 id="example-3">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.addReagent("CDXML content...");</p></pre>
+        <h3 id="clear-void"><a name="clear--void" xmlns="http://www.w3.org/1999/xhtml"></a>clear() : void</h3>
+        <p>Clears all drawings on the ChemDraw canvas. This operation is not undoable. And ChemDraw will not prompt the user to confirm the operation.</p>
+        <h5 id="parameters-4">Parameters</h5>
+        <p>None</p>
+        <h5 id="returns-4">Returns</h5>
+        <p>void</p>
+        <h5 id="example-4">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.clear();</p></pre>
+        <h3 id="converttocdxmlcontent-mimetype-callback-void"><a name="converttocdxmlcontent-mimetype-callback--void" xmlns="http://www.w3.org/1999/xhtml"></a>convertToCDXML(content, mimeType, callback) : void</h3>
+        <p>Converts structure string to CDXML format.</p>
+        <h5 id="parameters-5">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');margin-left: 0;margin-right: auto;width: 90%;" class="TableStyle-TableStandard" cellspacing="0">
+            <col style="width: 10%;" class="TableStyle-TableStandard-Column-Column1" />
+            <col style="width: 20%;" class="TableStyle-TableStandard-Column-Column1" />
+            <col style="width: 60%;" class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">content</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">the structure string</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">mimeType</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">the string format type, ex: chemical/x-cdx, chemical/x-mdl-molfile, chemical/x-helm</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">callback</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#gettextcontentcallback" xmlns="http://www.w3.org/1999/xhtml">GetTextContentCallback</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">
+                        the callback function to be called after the result is generated
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-5">Returns</h5>
+        <p>void</p>
+        <h5 id="example-5">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.convertToCDXML("Structure content...", "Structure mine type...", function (cdxml, error) {
+  if (!error) {
+    // deal with result
+  } else {
+    // deal with error
+  }
+});</p></pre>
+        <h3 id="findreactionscallback-void"><a name="findreactionscallback--void" xmlns="http://www.w3.org/1999/xhtml"></a>findReactions(callback) : void</h3>
+        <p>Returns reactions information of the current drawing. This call is asynchronous and a callback function must be provided that is informed when the results are available.</p>
+        <h5 id="parameters-6">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">callback</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#gettextcontentcallback">GetTextContentCallback</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">function when finish loading</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-6">Returns</h5>
+        <p>void</p>
+        <h5 id="example-6">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.findReactions(function (reactions, error) {
+  if (!error) {
+    // deal with result
+  } else {
+    // deal with error
+  }
+});</p></pre>
+        <h3 id="fittocontainer-void"><a name="fittocontainer--void" xmlns="http://www.w3.org/1999/xhtml"></a>fitToContainer() : void</h3>
+        <p>Resizes ChemDraw instance to fit to the container.</p>
+        <h5 id="parameters-7">Parameters</h5>
+        <p>None</p>
+        <h5 id="returns-7">Returns</h5>
+        <p>void</p>
+        <h5 id="example-7">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.fitToContainer();</p></pre>
+        <h3 id="getallfragmentsinfo-arrayfragmentinfo"><a name="getallfragmentsinfooptions--arrayfragmentinfo" xmlns="http://www.w3.org/1999/xhtml"></a>getAllFragmentsInfo([options]) : Array&lt;FragmentInfo&gt;</h3>
+        <p>Gets information of all fragments on the canvas which contains CDXML string and preview PNG picture.</p>
+        <h5 id="parameters-8">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">options</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#getfragmentsinfooptions" xmlns="http://www.w3.org/1999/xhtml">GetFragmentsInfoOptions</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2"><b>Optional</b> the options for getting fragments information</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-8">Returns</h5>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank" xmlns="http://www.w3.org/1999/xhtml">Array</a>&lt;<a href="#fragmentinfo" xmlns="http://www.w3.org/1999/xhtml">FragmentInfo</a>&gt; an array of fragments information which contains CDXML string and preview PNG picture</p>
+        <h5 id="example-8">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+var fragmentsInfo = chemdrawjs.getAllFragmentsInfo();
+var cdxml = fragmentsInfo.cdxml;
+var image = fragmentsInfo.image;
+// ...</p></pre>
+        <h3><a name="getB64CDX()-string" xmlns="http://www.w3.org/1999/xhtml"></a>getB64CDX() : string</h3>
+        <p>Returns a CDX base64 string representing the current drawing.</p>
+        <h5>Parameters</h5>
+        <p>None</p>
+        <h5>Returns</h5>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" xmlns="http://www.w3.org/1999/xhtml">string</a> a CDX base64 string representing the current drawing</p>
+        <h5>Example</h5><pre class="prettyprint" xmlns="http://www.w3.org/1999/xhtml"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+var b64cdx = chemdrawjs.getB64CDX();</p></pre>
+        <h3 id="getcdxml-string"><a name="getcdxml--string" xmlns="http://www.w3.org/1999/xhtml"></a>getCDXML() : string</h3>
+        <p>Returns a CDXML string representing the current drawing.</p>
+        <h5 id="parameters-9">Parameters</h5>
+        <p>None</p>
+        <h5 id="returns-9">Returns</h5>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a> a CDXML string representing the current drawing</p>
+        <h5 id="example-9">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+var cdxml = chemdrawjs.getCDXML();</p></pre>
+        <h3 id="getcanvassize-size"><a name="getcanvassize--size" xmlns="http://www.w3.org/1999/xhtml"></a>getCanvasSize() : Size</h3>
+        <p>Gets ChemDraw JS's current canvas size.</p>
+        <h5 id="parameters-10">Parameters</h5>
+        <p>None</p>
+        <h5 id="returns-10">Returns</h5>
+        <p><a href="#size" xmlns="http://www.w3.org/1999/xhtml">Size</a> ChemDraw JS's current canvas size</p>
+        <h5 id="example-10">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+var size = chemdrawjs.getCanvasSize();
+var width = size.width;
+var height = size.height;</p></pre>
+        <h3 id="getdocumentname-string"><a name="getdocumentname--string" xmlns="http://www.w3.org/1999/xhtml"></a>getDocumentName() : string</h3>
+        <p>Gets the underlying document name which is saved in the CDXML.</p>
+        <h5 id="parameters-11">Parameters</h5>
+        <p>None</p>
+        <h5 id="returns-11">Returns</h5>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a> the underlying document name which is saved in the CDXML</p>
+        <h5 id="example-11">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+var name = chemdrawjs.getDocumentName();</p></pre>
+        <h3 id="geterrors-arraystring"><a name="geterrors--arraystring" xmlns="http://www.w3.org/1999/xhtml"></a>getErrors() : Array&lt;string&gt;</h3>
+        <p>Returns an array of strings describing the chemical errors that are present in the current drawings.</p>
+        <h5 id="parameters-12">Parameters</h5>
+        <p>None</p>
+        <h5 id="returns-12">Returns</h5>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank" xmlns="http://www.w3.org/1999/xhtml">Array</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" xmlns="http://www.w3.org/1999/xhtml">string</a>&gt; an array of strings describing the chemical errors that are present in the current drawings</p>
+        <h5 id="example-12">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+var errors = chemdrawjs.getErrors();</p></pre>
+        <h3 id="getfragmentsinfo-arrayfragmentinfo"><a name="getfragmentsinfooptions--arrayfragmentinfo" xmlns="http://www.w3.org/1999/xhtml"></a>getFragmentsInfo([options]) : Array&lt;FragmentInfo&gt;</h3>
+        <p>Gets fragments information which contains CDXML string and preview PNG picture.</p>
+        <h5 id="parameters-13">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">options</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#getfragmentsinfooptions" xmlns="http://www.w3.org/1999/xhtml">GetFragmentsInfoOptions</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2"><b>Optional</b> the options for getting fragments information</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-13">Returns</h5>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank" xmlns="http://www.w3.org/1999/xhtml">Array</a>&lt;<a href="#fragmentinfo" xmlns="http://www.w3.org/1999/xhtml">FragmentInfo</a>&gt; an array of fragments information which contains CDXML string and preview PNG picture</p>
+        <h5>Deprecated</h5>
+        <h5 id="example-13">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+var fragmentsInfo = chemdrawjs.getFragmentsInfo();
+var cdxml = fragmentsInfo.cdxml;
+var image = fragmentsInfo.image;
+// ...</p></pre>
+        <h3 id="getimgurl-string"><a name="getimgurl--string" xmlns="http://www.w3.org/1999/xhtml"></a>getImgUrl() : string</h3>
+        <p>Returns a URL string which points to a PNG representation of the current drawing. The image contents are encoded in the URL so that it can be used offline.</p>
+        <h5 id="parameters-14">Parameters</h5>
+        <p>None</p>
+        <h5 id="returns-14">Returns</h5>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a> a URL string which points to a PNG representation of the current drawing</p>
+        <h5 id="example-14">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+var imageUrl = chemdrawjs.getImgUrl();</p></pre>
+        <h3 id="getinchicallback-void"><a name="getinchicallback--void" xmlns="http://www.w3.org/1999/xhtml"></a>getInChI(callback) : void</h3>
+        <p>Translates the current drawing into an InChI representation. This call is asynchronous. A callback function can to be provided and it will be invoked after the result is generated.</p>
+        <h5 id="parameters-15">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">callback</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#gettextcontentcallback">GetTextContentCallback</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">the callback function to be called after the result is generated</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-15">Returns</h5>
+        <p>void</p>
+        <h5 id="example-15">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.getInChI(function (inchI, error) {
+  if (!error) {
+    // deal with result
+  } else {
+    // deal with error
+  }
+});</p></pre>
+        <h3 id="getinchikeycallback-void"><a name="getinchikeycallback--void" xmlns="http://www.w3.org/1999/xhtml"></a>getInChIKey(callback) : void</h3>
+        <p>Translates the current drawing into an InChIKey representation. This call is asynchronous. A callback function can to be provided and it will be invoked after the result is generated.</p>
+        <h5 id="parameters-16">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">callback</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#gettextcontentcallback">GetTextContentCallback</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">the callback function to be called after the result is generated</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-16">Returns</h5>
+        <p>void</p>
+        <h5 id="example-16">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.getInChIKey(function (inchIKey, error) {
+  if (!error) {
+    // deal with result
+  } else {
+    // deal with error
+  }
+});</p></pre>
+        <h3 id="getmolcallback-void"><a name="getmolcallback--void" xmlns="http://www.w3.org/1999/xhtml"></a>getMOL(callback) : void</h3>
+        <p>Translates the current drawing into a MOL v2000 representation. This call is asynchronous. A callback function can to be provided and it will be invoked after the result is generated.</p>
+        <h5 id="parameters-17">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">callback</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#gettextcontentcallback">GetTextContentCallback</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">the callback function to be called after the result is generated</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-17">Returns</h5>
+        <p>void</p>
+        <h5 id="example-17">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.getMOL(function (mol, error) {
+  if (!error) {
+    // deal with result
+  } else {
+    // deal with error
+  }
+});</p></pre>
+        <h3 id="getmolv3000callback-void"><a name="getmolv3000callback--void" xmlns="http://www.w3.org/1999/xhtml"></a>getMOLV3000(callback) : void</h3>
+        <p>Translates the current drawing into a MOL v3000 representation. This call is asynchronous. A callback function can to be provided and it will be invoked after the result is generated.</p>
+        <h5 id="parameters-18">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">callback</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#gettextcontentcallback">GetTextContentCallback</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">the callback function to be called after the result is generated</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-18">Returns</h5>
+        <p>void</p>
+        <h5 id="example-18">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.getMOLV3000(function (molv3000, error) {
+  if (!error) {
+    // deal with result
+  } else {
+    // deal with error
+  }
+});</p></pre>
+        <h3 id="getmolecularweightcontent-mimetype-callback-void"><a name="getmolecularweightcontent-mimetype-callback--void" xmlns="http://www.w3.org/1999/xhtml"></a>getMolecularWeight(content, mimeType, callback) : void</h3>
+        <p>Gets molecular weight of the structure.</p>
+        <h5 id="parameters-19">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">content</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">the structure string</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">mimeType</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">the string format type, ex: chemical/x-cdx, chemical/x-mdl-molfile, chemical/x-helm</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">callback</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#getnumbercallback">GetNumberCallback</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">
+                        <p>the callback function to be called after the result is generated</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-19">Returns</h5>
+        <p>void</p>
+        <h5 id="example-19">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.getMolecularWeight("Structure content...", "Structure mine type...", function (weight, error) {
+  if (!error) {
+    // deal with result
+  } else {
+    // deal with error
+  }
+});</p></pre>
+        <h3 id="getpropertiescallback-void"><a name="getpropertiescallback--void" xmlns="http://www.w3.org/1999/xhtml"></a>getProperties(callback) : void</h3>
+        <p>Returns properties of the current drawing. This call is asynchronous.  A callback function can to be provided and it will be invoked after the result is generated.</p>
+        <h5 id="parameters-20">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">callback</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#gettextcontentcallback">GetTextContentCallback</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">the callback function to be called after the result is generated</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-20">Returns</h5>
+        <p>void</p>
+        <h5 id="example-20">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.getProperties(function (props, error) {
+  if (!error) {
+    // deal with result
+  } else {
+    // deal with error
+  }
+});</p></pre>
+        <h3 id="getrxncallback-void"><a name="getrxncallback--void" xmlns="http://www.w3.org/1999/xhtml"></a>getRXN(callback) : void</h3>
+        <p>Translates the current drawing into a RXN v2000 representation. This call is asynchronous. A callback function can to be provided and it will be invoked after the result is generated.</p>
+        <h5 id="parameters-21">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">callback</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#gettextcontentcallback">GetTextContentCallback</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">the callback function to be called after the result is generated</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-21">Returns</h5>
+        <p>void</p>
+        <h5 id="example-21">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.getRXN(function (rxn, error) {
+  if (!error) {
+    // deal with result
+  } else {
+    // deal with error
+  }
+});</p></pre>
+        <h3 id="getrxnv3000callback-void"><a name="getrxnv3000callback--void" xmlns="http://www.w3.org/1999/xhtml"></a>getRXNV3000(callback) : void</h3>
+        <p>Translates the current drawing into a RXN v3000 representation. This call is asynchronous. A callback function can to be provided and it will be invoked after the result is generated.</p>
+        <h5 id="parameters-22">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">callback</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#gettextcontentcallback">GetTextContentCallback</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">the callback function to be called after the result is generated</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-22">Returns</h5>
+        <p>void</p>
+        <h5 id="example-22">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.getRXNV3000(function (rxnv3000, error) {
+  if (!error) {
+    // deal with result
+  } else {
+    // deal with error
+  }
+});</p></pre>
+        <h3 id="getsmilescallback-void"><a name="getsmilescallback--void" xmlns="http://www.w3.org/1999/xhtml"></a>getSMILES(callback) : void</h3>
+        <p>Translates the current drawing into a SMILES representation. This call is asynchronous. A callback function can to be provided and it will be invoked after the result is generated.</p>
+        <h5 id="parameters-23">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">callback</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#gettextcontentcallback">GetTextContentCallback</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">the callback function to be called after the result is generated</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-23">Returns</h5>
+        <p>void</p>
+        <h5 id="example-23">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.getSMILES(function (smiles, error) {
+  if (!error) {
+    // deal with result
+  } else {
+    // deal with error
+  }
+});</p></pre>
+        <h3 id="getsvgcallback-void"><a name="getsvgcallback--void" xmlns="http://www.w3.org/1999/xhtml"></a>getSVG(callback) : void</h3>
+        <p>Translates the current drawing into a SVG representation. This call is asynchronous. A callback function can to be provided and it will be invoked after the result is generated.</p>
+        <h5 id="parameters-24">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">callback</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#gettextcontentcallback">GetTextContentCallback</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">the callback function to be called after the result is generated</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-24">Returns</h5>
+        <p>void</p>
+        <h5 id="example-24">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.getSVG(function (svg, error) {
+  if (!error) {
+    // deal with result
+  } else {
+    // deal with error
+  }
+});</p></pre>
+        <h3 id="getselectedfragmentsinfo-arrayfragmentinfo"><a name="getselectedfragmentsinfooptions--arrayfragmentinfo" xmlns="http://www.w3.org/1999/xhtml"></a>getSelectedFragmentsInfo([options]) : Array&lt;FragmentInfo&gt;</h3>
+        <p>Gets information of the selected fragments on the canvas which contains CDXML string and preview PNG picture.</p>
+        <h5 id="parameters-25">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">options</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#getfragmentsinfooptions" xmlns="http://www.w3.org/1999/xhtml">GetFragmentsInfoOptions</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">Optional the options for getting fragments information</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-25">Returns</h5>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank" xmlns="http://www.w3.org/1999/xhtml">Array</a>&lt;<a href="#fragmentinfo" xmlns="http://www.w3.org/1999/xhtml">FragmentInfo</a>&gt; an array information of the selected fragments on the canvas which contains CDXML string and preview PNG picture</p>
+        <h5 id="example-25">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+var fragmentsInfo = chemdrawjs.getSelectedFragmentsInfo();
+var cdxml = fragmentsInfo.cdxml;
+var image = fragmentsInfo.image;
+// ...</p></pre>
+        <h3 id="getversion-string"><a name="getversion--string" xmlns="http://www.w3.org/1999/xhtml"></a>getVersion() : string</h3>
+        <p>Returns the current version of ChemDraw as a string.</p>
+        <h5 id="parameters-26">Parameters</h5>
+        <p>None</p>
+        <h5 id="returns-26">Returns</h5>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a> the current version of ChemDraw</p>
+        <h5 id="example-26">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+var version = chemdrawjs.getVersion();</p></pre>
+        <h3 id="isblankstructure-boolean"><a name="isblankstructure--boolean" xmlns="http://www.w3.org/1999/xhtml"></a>isBlankStructure() : boolean</h3>
+        <p>Returns true if nothing has been drawn in ChemDraw and false if something has been drawn.</p>
+        <h5 id="parameters-27">Parameters</h5>
+        <p>None</p>
+        <h5 id="returns-27">Returns</h5>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a> true if nothing has been drawn in ChemDraw and false if something has been drawn</p>
+        <h5 id="example-27">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+var isBlank = chemdrawjs.isBlankStructure();</p></pre>
+        <h3 id="issaved-boolean"><a name="issaved--boolean" xmlns="http://www.w3.org/1999/xhtml"></a>isSaved() : boolean</h3>
+        <p>Determines if there is any unsaved change.</p>
+        <h5 id="parameters-28">Parameters</h5>
+        <p>None</p>
+        <h5 id="returns-28">Returns</h5>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a> true if there is any unsaved change, otherwise false</p>
+        <h5 id="example-28">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+var isSaved = chemdrawjs.isSaved();</p></pre>
+        <h3 id="labelfragmentsids-void"><a name="labelfragmentsids--void" xmlns="http://www.w3.org/1999/xhtml"></a>labelFragments(ids) : void</h3>
+        <p>Auto-number the fragments of the reaction with Roman numeral labels. Any existing labels will be replaced with the new ones.</p>
+        <h5 id="parameters-29">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col style="width: 181px;" class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">ids</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">Array</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>&gt;</td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">
+                        <p>the array of the fragments to be labelled</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-29">Returns</h5>
+        <p>void</p>
+        <h5 id="example-29">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.labelFragments([1, 2, 3]);</p></pre>
+        <h3 id="loadb64cdxb64cdx-callback-void"><a name="loadb64cdxb64cdx-callback--void" xmlns="http://www.w3.org/1999/xhtml"></a>loadB64CDX(b64CDX, callback) : void</h3>
+        <p>Reads a BASE64 encoded CDX string and loads its contents into ChemDraw. This call is asynchronous. A callback function can to be provided and it will be invoked after the loading is done.</p>
+        <h5 id="parameters-30">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">b64CDX</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">the CDX base64 encoded string</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">callback</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#loaddocumentcallback">LoadDocumentCallback</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">function when finish loading</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-30">Returns</h5>
+        <p>void</p>
+        <h5 id="example-30">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.loadB64CDX("CDX base64 content...");</p></pre>
+        <h3 id="loadcdxmlcdxml-void"><a name="loadcdxmlcdxml--void" xmlns="http://www.w3.org/1999/xhtml"></a>loadCDXML(cdxml) : void</h3>
+        <p>Reads a CDXML string and loads its contents into ChemDraw.</p>
+        <h5 id="parameters-31">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">cdxml</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">the CDXML string</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-31">Returns</h5>
+        <p>void</p>
+        <h5 id="example-31">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.loadCDXML("CDXML content...");</p></pre>
+        <h3 id="loadconfigconfig-void"><a name="loadconfigconfig--void" xmlns="http://www.w3.org/1999/xhtml"></a>loadConfig(config) : void</h3>
+        <p>Applies a new configuration into ChemDraw.</p>
+        <h5 id="parameters-32">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">config</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a> ¦ <a href="#configuration">Configuration</a></td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">the configuration json object or json string</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-32">Returns</h5>
+        <p>void</p>
+        <h5 id="example-32">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.loadConfig("Configuration JSON string");
+// chemdrawjs.loadConfig({}); or Configuration JSON Object</p></pre>
+        <h3 id="loadconfigfromurlurl-callback-void"><a name="loadconfigfromurlurl-callback--void" xmlns="http://www.w3.org/1999/xhtml"></a>loadConfigFromUrl(url, callback) : void</h3>
+        <p>Applies a new configuration from remote url into ChemDraw.</p>
+        <h5 id="parameters-33">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">url</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">the remote configuration file url</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">callback</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#configloadcallback">ConfigLoadCallback</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">when finished, this function will be called</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-33">Returns</h5>
+        <p>void</p>
+        <h5 id="example-33">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.loadConfigFromUrl("remote configuration file url", function (error) {
+  // if error is undefined configuration is done
+  // if error isn't undefined, it shows the error message during the loading progress
+});</p></pre>
+        <h3 id="loadmolmol-callback-void"><a name="loadmolmol-callback--void" xmlns="http://www.w3.org/1999/xhtml"></a>loadMOL(mol, callback) : void</h3>
+        <p>Reads a MOL string and loads its contents into ChemDraw. This call is asynchronous. A callback function can to be provided and it will be invoked after the loading is done.</p>
+        <h5 id="parameters-34">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">mol</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">the MOL string</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">callback</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#loaddocumentcallback">LoadDocumentCallback</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">function when finish loading</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-34">Returns</h5>
+        <p>void</p>
+        <h5 id="example-34">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.loadMOL("MOL content...", function (cdxml, error) {
+  if (!error) {
+    // deal with result
+  } else {
+    // deal with error
+  }
+});</p></pre>
+        <h3 id="loadsmilessmiles-callback-void"><a name="loadsmilessmiles-callback--void" xmlns="http://www.w3.org/1999/xhtml"></a>loadSMILES(smiles, callback) : void</h3>
+        <p>Reads a SMILES string and loads its contents into ChemDraw. This call is asynchronous. A callback function can to be provided and it will be invoked after the loading is done.</p>
+        <h5 id="parameters-35">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">smiles</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">the SMILES string</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">callback</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#loaddocumentcallback">LoadDocumentCallback</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">function when finish loading</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-35">Returns</h5>
+        <p>void</p>
+        <h5 id="example-35">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.loadSMILES("SMILES content...", function (cdxml, error) {
+  if (!error) {
+    // deal with result
+  } else {
+    // deal with error
+  }
+});</p></pre>
+        <h3 id="markassaved-void"><a name="markassaved--void" xmlns="http://www.w3.org/1999/xhtml"></a>markAsSaved() : void</h3>
+        <p>Sets the dirty flag to indicate the canvas is saved and clean.</p>
+        <h5 id="parameters-36">Parameters</h5>
+        <p>None</p>
+        <h5 id="returns-36">Returns</h5>
+        <p>void</p>
+        <h5 id="example-36">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.markAsSaved();</p></pre>
+        <h3 id="nametostructurename-callback-void"><a name="nametostructurename-callback--void" xmlns="http://www.w3.org/1999/xhtml"></a>nameToStructure(name, callback) : void</h3>
+        <p>Reads a structure name and returns a CDXML string representing the structure.</p>
+        <h5 id="parameters-37">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">name</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">the name of the structure to be converted</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">callback</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#gettextcontentcallback">GetTextContentCallback</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">the callback function to be called after converting is done</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-37">Returns</h5>
+        <p>void</p>
+        <h5 id="example-37">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.nameToStructure("structureName", function (cdxml, error) {
+  if (!error) {
+    // deal with result
+  } else {
+    // deal with error
+  }
+});</p></pre>
+        <h3 id="setcanvassizesize-options-void"><a name="setcanvassizesize-options--void" xmlns="http://www.w3.org/1999/xhtml"></a>setCanvasSize(size[, options]) : void</h3>
+        <p>Sets ChemDraw JS canvas size.</p>
+        <h5 id="parameters-38">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">size</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="#size" target="_blank">Size</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">the new canvas size</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">options</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#setcanvassizeoptions">SetCanvasSizeOptions</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2"><strong>Optional</strong> the options to configure the canvas size</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-38">Returns</h5>
+        <p>void</p>
+        <h5 id="example-38">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+var size = {
+  width: 100,
+  height: 100
+};
+
+var options = {
+  doNotCropDrawings: false
+};
+
+chemdrawjs.setCanvasSize(size, options);</p></pre>
+        <h3 id="setcontentchangedhandlerhandler-void"><a name="setcontentchangedhandlerhandler--void" xmlns="http://www.w3.org/1999/xhtml"></a>setContentChangedHandler(handler) : void</h3>
+        <p>Sets a callback function which will be invoked when user makes any change on the canvas.</p>
+        <h5 id="parameters-39">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">handler</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#contentchangedhandler">ContentChangedHandler</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">the callback function</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-39">Returns</h5>
+        <p>void</p>
+        <h5 id="example-39">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.setContentChangedHandler(function (event) {
+  // Implement your own logic here
+});</p></pre>
+        <h3 id="setdocumentnamename-void"><a name="setdocumentnamename--void" xmlns="http://www.w3.org/1999/xhtml"></a>setDocumentName(name) : void</h3>
+        <p xmlns="">Sets the document name to the resulting CDXML.</p>
+        <h5 id="parameters-40">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">name</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">the document name to set</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-40">Returns</h5>
+        <p>void</p>
+        <h5 id="example-40">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.setDocumentName("document name");</p></pre>
+        <h3 id="setviewonlyviewonly-void"><a name="setviewonlyviewonly--void" xmlns="http://www.w3.org/1999/xhtml"></a>setViewOnly(viewOnly) : void</h3>
+        <p>Sets whether the user is able to interact with ChemDraw.</p>
+        <h5 id="parameters-41">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">viewOnly</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">indicator the ChemDraw JS instance is view only or not</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-41">Returns</h5>
+        <p>void</p>
+        <h5 id="example-41">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.setViewOnly();</p></pre>
+        <h3 id="structuretonamecdxml-callback-void"><a name="structuretonamecdxml-callback--void" xmlns="http://www.w3.org/1999/xhtml"></a>structureToName(cdxml, callback) : void</h3>
+        <p>Reads a CDXML string and returns the name of the structure.</p>
+        <h5 id="parameters-43">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">cdxml</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">the CDXML string to be converted</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">callback</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#gettextcontentcallback">GetTextContentCallback</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">the callback function to be called after converting is done</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 id="returns-43">Returns</h5>
+        <p>void</p>
+        <h5 id="example-43">Example</h5><pre class="prettyprint"><p class="code">var chemdrawjs;
+perkinelmer.ChemdrawwebManager.attach({
+  id: "chemdrawjsContainer",
+  callback: function (chemdrawweb) {
+    chemdrawjs = chemdrawweb;
+  }
+});
+
+chemdrawjs.structureToName("CDXML content...", function (name, error) {
+  if (!error) {
+    // deal with result
+  } else {
+    // deal with error
+  }
+});</p></pre>
+        <h1 id="json-structures"><a name="json-structures" xmlns="http://www.w3.org/1999/xhtml"></a>JSON Structures</h1>
+        <h2 id="applicationproperties"><a name="applicationproperties" xmlns="http://www.w3.org/1999/xhtml"></a>ApplicationProperties</h2>
+        <p>Application properties </p>
+        <h5 id="properties">Properties</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">StyleSheet</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">The name of the default document stylesheet</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">chemservice</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">The end point of the ChemDraw web service</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="attachoptions"><a name="attachoptions" xmlns="http://www.w3.org/1999/xhtml"></a>AttachOptions</h2>
+        <p xmlns="">The options for creating and attaching a new ChemDraw JS instance</p>
+        <h5 id="properties-1">Properties</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">callback</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="#attachcallback">AttachCallback</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2"><strong xmlns="http://www.w3.org/1999/xhtml">Optional</strong> The callback function to be invoked after the new ChemDraw JS instance is attached</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">config</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="#configuration">Configuration</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2"><strong xmlns="http://www.w3.org/1999/xhtml">Optional</strong> The configuration JSON object</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">configUrl</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2"><strong xmlns="http://www.w3.org/1999/xhtml">Optional</strong> The URL to a remote configuration file</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">element</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement" target="_blank">HTMLElement</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2"><strong xmlns="http://www.w3.org/1999/xhtml">Optional</strong> The object of the HTML element to be attached to</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">errorCallback</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="#errorcallback" xmlns="http://www.w3.org/1999/xhtml">ErrorCallback</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2"><b xmlns="http://www.w3.org/1999/xhtml">Optional</b> The callback function when ChemDraw JS is failed to load or attach</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">id</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2"><strong xmlns="http://www.w3.org/1999/xhtml">Optional</strong> The ID of the HTML element to be attached to</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">license</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" xmlns="http://www.w3.org/1999/xhtml">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2"><b>Optional</b> The license file content to initialize ChemDraw JS</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">licenseUrl</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" xmlns="http://www.w3.org/1999/xhtml">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2"><b>Optional</b> The license file URL to initialize ChemDraw JS</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">preservePageInfo</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2"><strong xmlns="http://www.w3.org/1999/xhtml">Optional</strong> Determines the view mode of ChemDraw JS</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">viewonly</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2"><strong xmlns="http://www.w3.org/1999/xhtml">Optional</strong> Determines the initial state of ChemDraw JS (view only or editable)</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="configuration"><a name="configuration" xmlns="http://www.w3.org/1999/xhtml"></a>Configuration</h2>
+        <p xmlns="">The ChemDraw JS configuration</p>
+        <h5 id="properties-2">Properties</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">appProperties</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="#applicationproperties">ApplicationProperties</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Other application properties</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">features</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="#features">Features</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Feature toggles</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">layout</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#toolslayout">ToolsLayout</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">Toolbar layout</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="contentchangedevent"><a name="contentchangedevent" xmlns="http://www.w3.org/1999/xhtml"></a>ContentChangedEvent</h2>
+        <p>The event for content change handler</p>
+        <h5 id="properties-3">Properties</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">action</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">The action name</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="features"><a name="features" xmlns="http://www.w3.org/1999/xhtml"></a>Features</h2>
+        <p>Features</p>
+        <h5 id="properties-4">Properties</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">disabled</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">Array</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>&gt;</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">The list of disabled features</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">enabled</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">Array</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>&gt;</td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">The list of enabled features</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="fragmentinfo"><a name="fragmentinfo" xmlns="http://www.w3.org/1999/xhtml"></a>FragmentInfo</h2>
+        <p>Structure information on the canvas</p>
+        <h5 id="properties-5">Properties</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" style="width: 100px;" />
+            <col class="TableStyle-TableStandard-Column-Column1" style="width: 100px;" />
+            <col class="TableStyle-TableStandard-Column-Column1" style="width: 400px;" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">cdxml</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">The structure CDXML string</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">height</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">The structure height</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">id</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">The fragment id</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">image</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">The structure preview PNG picture encoded in BASE64</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">width</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">The structure width</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">x</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">The structure location x</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">y</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">The structure location y</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="getfragmentsinfooptions" xmlns="http://www.w3.org/1999/xhtml"></a>GetFragmentsInfoOptions</h2>
+        <p>Options for getting fragments information</p>
+        <h5>Properties</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">borderSize</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" xmlns="http://www.w3.org/1999/xhtml">number</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2"><b>Optional</b> The size of the border</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">transparentBackground</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" xmlns="http://www.w3.org/1999/xhtml">boolean</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2"><b>Optional</b> Determines if the background should be transparent or not</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="setcanvassizeoptions"><a name="setcanvassizeoptions" xmlns="http://www.w3.org/1999/xhtml"></a>SetCanvasSizeOptions</h2>
+        <p>The option for setting canvas size</p>
+        <h5 id="properties-6">Properties</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">doNotCropDrawings</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2"><strong xmlns="http://www.w3.org/1999/xhtml">Optional</strong> Determines whether crop the drawing when change the canvas size.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="size"><a name="size" xmlns="http://www.w3.org/1999/xhtml"></a>Size</h2>
+        <p>The size object contains width and height</p>
+        <h5 id="properties-7">Properties</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">height</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">height in pixel</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">width</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">width in pixel</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="tool"><a name="tool" xmlns="http://www.w3.org/1999/xhtml"></a>Tool</h2>
+        <p>Tool </p>
+        <h5 id="properties-8">Properties</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">order</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">Array</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a> ¦ <a href="#toolgroup">ToolGroup</a>&gt;</td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">Configure tool item order, it could be single tool or group tool</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="toolgroup"><a name="toolgroup" xmlns="http://www.w3.org/1999/xhtml"></a>ToolGroup</h2>
+        <p>Group tool instance</p>
+        <h5 id="properties-9">Properties</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">collapse</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">
+                        <p>Collapse mode： "auto", "always", "never"</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">columns</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">The number of columns of the expanded tool group panel</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">group</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">The name of the tool group</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">order</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">Array</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>&gt;</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">The order of the sub tools</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">writingMode</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2"><strong xmlns="http://www.w3.org/1999/xhtml">Optional</strong> The layout mode of the expanded tool group panel:  "horizontal", "vertical"</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="toolslayout"><a name="toolslayout" xmlns="http://www.w3.org/1999/xhtml"></a>ToolsLayout</h2>
+        <p>Tools layout</p>
+        <h5 id="properties-10">Properties</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">orientation</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Toolbar orientation. "Horizontal", "Vertical"</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">tools</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">Array</a>&lt;<a href="#tool">Tool</a>&gt;</td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">The list of tools or tool groups</td>
+                </tr>
+            </tbody>
+        </table>
+        <h1 id="callbacks"><a name="callbacks" xmlns="http://www.w3.org/1999/xhtml"></a>Callbacks</h1>
+        <h2 id="attachcallback"><a name="attachcallback" xmlns="http://www.w3.org/1999/xhtml"></a>AttachCallback</h2>
+        <p>A callback function which is called after ChemDraw JS is attached</p>
+        <h5 id="parameters-44">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">cdd</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#chemdrawdirect">ChemDrawDirect</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">the new instance of ChemDraw JS</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="configloadcallback"><a name="configloadcallback" xmlns="http://www.w3.org/1999/xhtml"></a>ConfigLoadCallback</h2>
+        <p>A callback function which is called after a new configuration is loaded</p>
+        <h5 id="parameters-45">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col style="width: 367px;" class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">error</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2"><strong xmlns="http://www.w3.org/1999/xhtml">Optional</strong> the error message during the loading process</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="contentchangedhandler"><a name="contentchangedhandler" xmlns="http://www.w3.org/1999/xhtml"></a>ContentChangedHandler</h2>
+        <p>The callback function which will return the event</p>
+        <h5 id="parameters-46">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">event</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="#contentchangedevent">ContentChangedEvent</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">the action description when does changes on canvas</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="errorcallback" xmlns="http://www.w3.org/1999/xhtml"></a>ErrorCallback</h2>
+        <p>Callback function indicating error happens.</p>
+        <h5 id="parameters-47" xmlns="http://www.w3.org/1999/xhtml">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0" xmlns="http://www.w3.org/1999/xhtml">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">error</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error" target="_blank" xmlns="http://www.w3.org/1999/xhtml">Error</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">The error detail</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="getnumbercallback"><a name="getnumbercallback" xmlns="http://www.w3.org/1999/xhtml"></a>GetNumberCallback</h2>
+        <p>The callback function which will return the number and error</p>
+        <h5 id="parameters-47">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">value</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">the result number</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">error</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">the error message if any exception occurs</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="gettextcontentcallback"><a name="gettextcontentcallback" xmlns="http://www.w3.org/1999/xhtml"></a>GetTextContentCallback</h2>
+        <p>The callback function which will return the string and error</p>
+        <h5 id="parameters-48">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">content</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">the result string</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">error</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">the error message if some exceptions occur</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="loaddocumentcallback"><a name="loaddocumentcallback" xmlns="http://www.w3.org/1999/xhtml"></a>LoadDocumentCallback</h2>
+        <p>The callback function which will return the CDXML string and error</p>
+        <h5 id="parameters-49">Parameters</h5>
+        <table style="mc-table-style: url('Resources/TableStyles/TableStandard.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStandard" cellspacing="0">
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <col class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Name</th>
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Type</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">cdxmlStr</td>
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">the CDXML string</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">error</td>
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>
+                    </td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">the error message if some exceptions occur</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

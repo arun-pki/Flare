@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="TitlePage"
+    Link="/Content/TitlePage.htm"
+    BreakType="pageLayout"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl"
+    conditions="Primary.PDF Only"
+    PageType="title" />
+  <TocEntry
+    Title="TOC"
+    Link="/Content/TOC.htm"
+    BreakType="chapter"
+    conditions="Primary.PDF Only"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue" />
+  <TocEntry
+    Title="Overview"
+    Link="/Content/Developers Guide/Overview.html"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="reset"
+    ChapterNumber="1"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  <TocEntry
+    Title="Quick Start"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="continue"
+    ChapterNumberReset="reset"
+    ChapterNumber="2"
+    ChapterNumberFormat="decimal"
+    Link="/Content/Developers Guide/Overview.html#Quick">
+    <TocEntry
+      Title="Prerequisites"
+      Link="/Content/Developers Guide/Overview.html#prerequisites" />
+    <TocEntry
+      Title="Starting with the Simplest Web Page with ChemDraw JS"
+      Link="/Content/Developers Guide/Overview.html#Starting" />
+    <TocEntry
+      Title="Invoking ChemDraw JS APIs"
+      Link="/Content/Developers Guide/Overview.html#Invoking" />
+  </TocEntry>
+  <TocEntry
+    Title="Understanding ChemDraw JS Components"
+    Link="/Content/Developers Guide/Understanding CDD Components.html"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="reset"
+    ChapterNumber="3">
+    <TocEntry
+      Title="Components Overview"
+      Link="/Content/Developers Guide/Understanding CDD Components.html#Componen" />
+    <TocEntry
+      Title="ChemDraw JS JavaScript Library"
+      Link="/Content/Developers Guide/Understanding CDD Components.html#ChemDraw" />
+    <TocEntry
+      Title="ChemDraw Web Clipboard"
+      Link="/Content/Developers Guide/Understanding CDD Components.html#ChemDraw2" />
+    <TocEntry
+      Title="ChemDraw Web Service"
+      Link="/Content/Developers Guide/Understanding CDD Components.html#ChemDraw3" />
+  </TocEntry>
+  <TocEntry
+    Title="Understanding the ChemDraw JS View"
+    Link="/Content/Developers Guide/Understanding CDD View.html"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    ChapterNumber="4"
+    ChapterNumberReset="reset"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same">
+    <TocEntry
+      Title="ChemDraw JS View in DOM Tree"
+      Link="/Content/Developers Guide/Understanding CDD View.html#CDD" />
+    <TocEntry
+      Title="ChemDraw JS View Mode"
+      Link="/Content/Developers Guide/Understanding CDD View.html#CDD2">
+      <TocEntry
+        Title="PreservePageInfo Disabled (Default)"
+        Link="/Content/Developers Guide/Understanding CDD View.html#Preserve" />
+      <TocEntry
+        Title="PreservePageInfo Enabled"
+        Link="/Content/Developers Guide/Understanding CDD View.html#Preserve2" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Using APIs"
+    Link="/Content/Developers Guide/Using APIs.html"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    ChapterNumber="5"
+    ChapterNumberReset="reset"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same">
+    <TocEntry
+      Title="Managing ChemDraw JS"
+      Link="/Content/Developers Guide/Using APIs.html#Managing">
+      <TocEntry
+        Title="Creating and Attaching a ChemDraw JS Instance"
+        Link="/Content/Developers Guide/Using APIs.html#Creating" />
+      <TocEntry
+        Title="Loading and Applying Configuration"
+        Link="/Content/Developers Guide/Using APIs.html#Loading"></TocEntry>
+      <TocEntry
+        Title="Retrieving the Version of the Library"
+        Link="/Content/Developers Guide/Using APIs.html#Others" />
+    </TocEntry>
+    <TocEntry
+      Title="Loading and Getting Structure Data"
+      Link="/Content/Developers Guide/Loading and Getting Structure Data.html#Loading2" />
+    <TocEntry
+      Title="Exporting Images"
+      Link="/Content/Developers Guide/Loading and Getting Structure Data.html#Exportin" />
+    <TocEntry
+      Title="Loading and Getting Reaction Data"
+      Link="/Content/Developers Guide/Loading and Getting Reaction Data.html">
+      <TocEntry
+        Title="Loading Reaction Data"
+        Link="/Content/Developers Guide/Loading and Getting Reaction Data.html#Loading4" />
+      <TocEntry
+        Title="Getting Stoichiometry Data of the Reaction"
+        Link="/Content/Developers Guide/Loading and Getting Reaction Data.html#Getting" />
+      <TocEntry
+        Title="Getting Information of each Fragment in the Reaction"
+        Link="/Content/Developers Guide/Loading and Getting Reaction Data.html#Getting2" />
+      <TocEntry
+        Title="Labelling Reaction Fragments"
+        Link="/Content/Developers Guide/Loading and Getting Reaction Data.html#Labellin" />
+    </TocEntry>
+    <TocEntry
+      Title="Managing Document"
+      Link="/Content/Developers Guide/Managing Document.html">
+      <TocEntry
+        Title="Managing Drawings"
+        Link="/Content/Developers Guide/Managing Document.html#Managing3" />
+      <TocEntry
+        Title="Managing the Size of the Canvas or Drawings"
+        Link="/Content/Developers Guide/Managing Document.html#Managing4" />
+      <TocEntry
+        Title="Managing the Metadata of the Document"
+        Link="/Content/Developers Guide/Managing Document.html#Managing5" />
+      <TocEntry
+        Title="Managing the State of the Document"
+        Link="/Content/Developers Guide/Managing Document.html#Managing6" />
+    </TocEntry>
+    <TocEntry
+      Title="Utilities"
+      Link="/Content/Developers Guide/Managing Document.html#Utilitie" />
+  </TocEntry>
+  <TocEntry
+    Title="Configuring ChemDraw JS"
+    Link="/Content/Developers Guide/Configuring ChemDraw Direct.html"
+    BreakType="pageLayout"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    ChapterNumber=""
+    ChapterNumberReset="continue"
+    SectionNumberReset="reset"
+    VolumeNumberReset="same"
+    SectionNumber="5">
+    <TocEntry
+      Title="Loading ChemDraw JS Configuration"
+      Link="/Content/Developers Guide/Configuring ChemDraw Direct.html#Loading5" />
+    <TocEntry
+      Title="Configuration Structure"
+      Link="/Content/Developers Guide/Configuring ChemDraw Direct.html#Configur2" />
+    <TocEntry
+      Title="Features"
+      Link="/Content/Developers Guide/Configuring ChemDraw Direct.html#Features">
+      <TocEntry
+        Title="Chemical Errors Detection"
+        Link="/Content/Developers Guide/Configuring ChemDraw Direct.html#Chemical" />
+      <TocEntry
+        Title="Application Logo"
+        Link="/Content/Developers Guide/Configuring ChemDraw Direct.html#Applicat" />
+      <TocEntry
+        Title="Web Service"
+        Link="/Content/Developers Guide/Configuring ChemDraw Direct.html#Web" />
+      <TocEntry
+        Title="Extended Copy Paste"
+        Link="/Content/Developers Guide/Configuring ChemDraw Direct.html#Extended" />
+    </TocEntry>
+    <TocEntry
+      Title="StyleSheet"
+      Link="/Content/Developers Guide/Configuring ChemDraw Direct.html#StyleShe" />
+  </TocEntry>
+  <TocEntry
+    Title="Customizing User Interface"
+    Link="/Content/Developers Guide/Customizing User Interface.html"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    ChapterNumber="7"
+    ChapterNumberReset="reset"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same">
+    <TocEntry
+      Title="Customizing Toolbar Layout"
+      Link="/Content/Developers Guide/Customizing User Interface.html#Customiz2">
+      <TocEntry
+        Title="Toolbar Orientation"
+        Link="/Content/Developers Guide/Customizing User Interface.html#Toolbar" />
+      <TocEntry
+        Title="Visibility of a Tool or a Tool Group"
+        Link="/Content/Developers Guide/Customizing User Interface.html#Visibili" />
+      <TocEntry
+        Title="Position of a Tool or a Tool Group"
+        Link="/Content/Developers Guide/Customizing User Interface.html#Position" />
+      <TocEntry
+        Title="Collapsing a Tool Group"
+        Link="/Content/Developers Guide/Customizing User Interface.html#Collapsi" />
+    </TocEntry>
+    <TocEntry
+      Title="Customizing Look and Feel of ChemDraw JS Elements"
+      Link="/Content/Developers Guide/Customizing User Interface.html#Customiz3">
+      <TocEntry
+        Title="Overriding a CSS Rule"
+        Link="/Content/Developers Guide/Customizing User Interface.html#Overridi" />
+      <TocEntry
+        Title="Recommended CSS Classes"
+        Link="/Content/Developers Guide/Customizing User Interface.html#Recommen" />
+      <TocEntry
+        Title="Sample Customization Cases"
+        Link="/Content/Developers Guide/Customizing User Interface.html#Sample" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Embedding ChemDraw JS in Web Browser Controls"
+    Link="/Content/Developers Guide/Embedding CDD in Web Browser Controls.html"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    ChapterNumber="8"
+    ChapterNumberReset="reset"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"></TocEntry>
+  <TocEntry
+    Title="Migrating from ChemDraw Direct"
+    Link="/Content/Developers Guide/Migrating from CDD 1.x.html"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    ChapterNumber="9"
+    ChapterNumberReset="reset"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same">
+    <TocEntry
+      Title="Loading Script Change"
+      Link="/Content/Developers Guide/Migrating from CDD 1.x.html#Loading6" />
+    <TocEntry
+      Title="API Change"
+      Link="/Content/Developers Guide/Migrating from CDD 1.x.html#API" />
+    <TocEntry
+      Title="Style Change"
+      Link="/Content/Developers Guide/Migrating from CDD 1.x.html#Style">
+      <TocEntry
+        Title="Deprecated CSS Classes"
+        Link="/Content/Developers Guide/Migrating from CDD 1.x.html#Deprecat" />
+      <TocEntry
+        Title="Theme Support"
+        Link="/Content/Developers Guide/Migrating from CDD 1.x.html#Theme" />
+      <TocEntry
+        Title="Tools Layout"
+        Link="/Content/Developers Guide/Migrating from CDD 1.x.html#Tools" />
+    </TocEntry>
+    <TocEntry
+      Title="Configuration Change"
+      Link="/Content/Developers Guide/Migrating from CDD 1.x.html#Configur3"></TocEntry>
+    <TocEntry
+      Title="Migrating from ChemDraw Direct 2.0"
+      Link="/Content/Developers Guide/Migrating from CDD 1.x.html#Migratin2"
+      StartSection="false" />
+  </TocEntry>
+</CatapultToc>

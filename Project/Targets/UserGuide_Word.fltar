@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="ChemDrawJS 17.1 User Guidev"
+  Type="MsWord"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/Help Guide.fltoc"
+  MasterPageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/Cambridgesoft1.css"
+  ConditionTagExpression="include[&quot;Primary.Help Only&quot; or &quot;Primary.PDF Only&quot;] exclude[&quot;Primary.API Only&quot; or &quot;Primary.DevGuide Only&quot; or Primary.Hardware_Software or Primary.InstallOnly or Primary.Internal_Readme or &quot;Primary.Not in CDW&quot; or Primary.RN] "
+  PatchHeadingLevels="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Variables>
+    <Variable
+      Name="Primary/LastUpdated">December 19, 2017</Variable>
+  </Variables>
+</CatapultTarget>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="ChemDraw JS 17.1 Release Notes"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/RN.fltoc"
+  MasterPageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+  ConditionTagExpression="include[&quot;Primary.PDF Only&quot; or Primary.RN] exclude[&quot;Primary.API Only&quot; or &quot;Primary.DevGuide Only&quot; or Primary.Hardware_Software or &quot;Primary.Help Only&quot; or Primary.InstallOnly or Primary.Internal_Readme or &quot;Primary.Not in CDW&quot;] "
+  PatchHeadingLevels="true"
+  MasterStylesheet="/Content/Resources/Stylesheets/Cambridgesoft1.css"
+  OutputFile="ChemDraw JS 17.1 Release Notes">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="false" />
+  <PDF
+    ImageCompression="Automatic"
+    InitialMagnification="100"
+    PageLayout="OneColumn"
+    TitleBar="DocumentTitle"
+    ShowUsedBookmarks="false" />
+  <DocumentProperties
+    Title="ChemDraw JS 17.1 Release Notes"
+    Author="PKI Documentation Team" />
+  <Variables>
+    <Variable
+      Name="Primary/GuideName">Release Notes</Variable>
+    <Variable
+      Name="Primary/LastUpdated">January 22, 2018</Variable>
+  </Variables>
+</CatapultTarget>

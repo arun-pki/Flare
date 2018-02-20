@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="686" MadCap:lastWidth="627" MadCap:conditions="Primary.Help Only">
+    <head>
+        <link href="../Resources/TableStyles/TableStandard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Chemical Warnings</h1>
+        <p>ChemDraw JS checks chemical syntax as you draw. If it finds an error in your structure, a wavy red box appears around the object.
+Warning boxes indicate errors that you may have in your drawing. For example, if an atom has too many bonds, a red box will appear around the atom. To view the warning message, hover your mouse over the warning box.
+</p>
+        <p>The types of warnings are listed below:</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/TableStandard.css');" class="TableStyle-TableStandard" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Warning</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Valence and Charge Errors</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">An Object drawn has an improper valence or charge. For example, when
+ positive and negative charges have been assigned to the same element, 
+charges have been assigned in more than one way, or a charge has been 
+assigned to a nickname, generic nickname, or alternative group name.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Unbalanced Parentheses</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Parentheses are not matched into nested open-close pairs.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Invalid Isotopes</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Generated for invalid isotopes. For example, this warning is 
+generated for every label that has a numeric superscript immediately 
+preceding an atomic symbol, where the superscripted number does not 
+correspond to a recognized isotope. For example, 24CH3.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Isolated Bonds</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">An unlabeled single bond is not attached to other bonds.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Atoms Near Other Bonds</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">An atom is close to a bond but not attached to it.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Unspecified Stereochemistry</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">An asymmetric center is without attached wedged, hashed, dashed, or bold bonds.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Ambiguous Stereochemistry</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">A stereocenter where the absolute stereochemistry cannot be 
+determined from the structure as drawn. For example, this warning would 
+be generated for a carbon atom attached by bold bonds to four different 
+ligands.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">Stereobond between Chiral Atoms</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">A stereobond connects two stereocenters.</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">Linear Atom</td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">An unlabeled atom is attached to exactly two identical bonds that create a 180 degree angle.</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="1429" MadCap:lastWidth="795" MadCap:conditions="Primary.DevGuide Only">
+    <head>
+        <meta http-equiv="Content-Style-Type" content="text/css" /><title></title>
+        <style type="text/css">/*<![CDATA[*/
+code
+{
+	white-space: pre;
+}
+
+/*]]>*/</style>
+        <style type="text/css">/*<![CDATA[*/
+div.sourceCode
+{
+	overflow-x: auto;
+}
+table.sourceCode,
+tr.sourceCode,
+td.lineNumbers,
+td.sourceCode
+{
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	border: none;
+}
+table.sourceCode
+{
+	width: 100%;
+	line-height: 100%;
+}
+td.lineNumbers
+{
+	text-align: right;
+	padding-right: 4px;
+	padding-left: 4px;
+	color: #aaaaaa;
+	border-right: 1px solid #aaaaaa;
+}
+td.sourceCode
+{
+	padding-left: 5px;
+}
+code &gt; span.kw
+{
+	color: #007020;
+	font-weight: bold;
+}
+/* Keyword */
+code &gt; span.dt
+{
+	color: #902000;
+}
+/* DataType */
+code &gt; span.dv
+{
+	color: #40a070;
+}
+/* DecVal */
+code &gt; span.bn
+{
+	color: #40a070;
+}
+/* BaseN */
+code &gt; span.fl
+{
+	color: #40a070;
+}
+/* Float */
+code &gt; span.ch
+{
+	color: #4070a0;
+}
+/* Char */
+code &gt; span.st
+{
+	color: #4070a0;
+}
+/* String */
+code &gt; span.co
+{
+	color: #60a0b0;
+	font-style: italic;
+}
+/* Comment */
+code &gt; span.ot
+{
+	color: #007020;
+}
+/* Other */
+code &gt; span.al
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+/* Alert */
+code &gt; span.fu
+{
+	color: #06287e;
+}
+/* Function */
+code &gt; span.er
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+/* Error */
+code &gt; span.wa
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Warning */
+code &gt; span.cn
+{
+	color: #880000;
+}
+/* Constant */
+code &gt; span.sc
+{
+	color: #4070a0;
+}
+/* SpecialChar */
+code &gt; span.vs
+{
+	color: #4070a0;
+}
+/* VerbatimString */
+code &gt; span.ss
+{
+	color: #bb6688;
+}
+/* SpecialString */
+code &gt; span.im
+{
+	
+}
+/* Import */
+code &gt; span.va
+{
+	color: #19177c;
+}
+/* Variable */
+code &gt; span.cf
+{
+	color: #007020;
+	font-weight: bold;
+}
+/* ControlFlow */
+code &gt; span.op
+{
+	color: #666666;
+}
+/* Operator */
+code &gt; span.bu
+{
+	
+}
+/* BuiltIn */
+code &gt; span.ex
+{
+	
+}
+/* Extension */
+code &gt; span.pp
+{
+	color: #bc7a00;
+}
+/* Preprocessor */
+code &gt; span.at
+{
+	color: #7d9029;
+}
+/* Attribute */
+code &gt; span.do
+{
+	color: #ba2121;
+	font-style: italic;
+}
+/* Documentation */
+code &gt; span.an
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Annotation */
+code &gt; span.cv
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* CommentVar */
+code &gt; span.in
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Information */
+
+/*]]>*/</style>
+    </head>
+    <body>
+        <h1 id="migrating-from-cdd-1.x"><a name="Migratin" xmlns="http://www.w3.org/1999/xhtml"></a>Migrating from ChemDraw Direct</h1>
+        <div class="Body">Except the requirement on licenses, the APIs of ChemDraw JS 17.1 are backward-compatible with previous versions of ChemDraw Direct. All the functionalities will work properly after the library is upgraded to ChemDraw JS 17.1 with a valid license. However, there are some changes that need your attention when migrating from ChemDraw Direct 1.x.</div>
+        <h2 id="loading-script-change"><a name="Loading6" xmlns="http://www.w3.org/1999/xhtml"></a>Loading Script Change</h2>
+        <div class="Body">In ChemDraw Direct 1.x, the following script tag loads the ChemDraw Direct library. This loading script is now deprecated.</div><pre class="prettyprint"><p class="code">&lt;script type="text/javascript" src="chemdrawweb/chemdrawweb.nocache.js"&gt;
+&lt;/script&gt;
+&lt;script type="text/javascript" src="chemdrawweb/ChemdrawWebManager.js"&gt;
+&lt;/script&gt;</p></pre>
+        <div class="Body">In ChemDraw JS 17.1, if the library is still loaded in the old way, warning messages will show in the browser console, but the library still works.</div>
+        <div class="figure">
+            <img src="images/WarningsLoadLibraryInOldWay.png" MadCap:mediastyle="@media print { max-width: 600px;max-height: 600px; }" />
+        </div>
+        <div class="Body">It is highly recommended to use the new way as shown below to load the library.</div><pre class="prettyprint"><p class="code">&lt;script type="text/javascript" src="chemdrawweb/chemdrawweb.js"&gt;&lt;/script&gt;</p></pre>
+        <div class="Body">The URL to the <i xmlns="http://www.w3.org/1999/xhtml">chemdrawweb.js</i> file needs to be changed for your own deployment. Please refer to the <strong xmlns="http://www.w3.org/1999/xhtml"> ChemDraw JS 17.1 Installation Guide</strong> for details.</div>
+        <h2 id="api-change"><a name="API" xmlns="http://www.w3.org/1999/xhtml"></a>API Change</h2>
+        <div class="Body">The <i xmlns="http://www.w3.org/1999/xhtml">getFragmentsInfo</i> API has been deprecated. It is replaced by two separate APIs <i xmlns="http://www.w3.org/1999/xhtml">getAllFragmentsInfo</i> and <i xmlns="http://www.w3.org/1999/xhtml">getSelectedFragmentsInfo</i>.</div>
+        <h2 id="style-change"><a name="Style" xmlns="http://www.w3.org/1999/xhtml"></a>Style Change</h2>
+        <div class="Body">ChemDraw JS 17.1 re-implemented the whole user interface with modern UI frameworks which are different from the techniques used in ChemDraw Direct 1.x. As a result, almost all of the existing overridden CSS rules will no longer work. Please refer to <strong xmlns="http://www.w3.org/1999/xhtml"><a href="#Deprecat" xmlns="http://www.w3.org/1999/xhtml">Deprecated CSS Classes</a></strong> to find out which CSS classes are still available in the short term.</div>
+        <h3 id="deprecated-css-classes"><a name="Deprecat" xmlns="http://www.w3.org/1999/xhtml"></a>Deprecated CSS Classes</h3>
+        <div class="Body">In order to support few legacy applications, the following CSS classes are added in ChemDraw JS 17.1, but deprecated. They will be removed in future releases.</div>
+        <div class="Bullet1-inner">cdd-panel-group-buttons</div>
+        <div class="Bullet1-inner">cdd-TemplateMenu</div>
+        <div class="Bullet1-inner">cdd-TemplateSubMenu</div>
+        <div class="Bullet1-inner">CDW_Logo</div>
+        <div class="Bullet1-inner">CDW_ClipboardIcon</div>
+        <h3 id="theme-support"><a name="Theme" xmlns="http://www.w3.org/1999/xhtml"></a>Theme Support</h3>
+        <div class="Body">In ChemDraw Direct 1.7, a set of rules could be defined in a <i xmlns="http://www.w3.org/1999/xhtml">theme</i> node which can be specified in ChemDraw Direct's configuration and then loaded when ChemDraw Direct is initialized.</div>
+        <p>Since ChemDraw Direct 2.0, the themes are no longer supported. Please follow the new guide above to customize ChemDraw JS.</p>
+        <h3 id="tools-layout"><a name="Tools" xmlns="http://www.w3.org/1999/xhtml"></a>Tools Layout</h3>
+        <div class="Body">The configuration for tools layout defined in ChemDraw Direct 1.x works in ChemDraw JS 17.1. No changes are needed.</div>
+        <h2 id="configuration-change"><a name="Configur3" xmlns="http://www.w3.org/1999/xhtml"></a>Configuration Change</h2>
+        <div class="Body">The following tools are no longer available in ChemDraw JS 17.1. The related entries in the configuration file can be removed.</div>
+        <div class="Bullet1-inner">Print</div>
+        <div class="Bullet1-inner">Unintegral</div>
+        <div class="Bullet1-inner">MoveCanvas</div>
+        <div class="Body">All the feature entries except <b xmlns="http://www.w3.org/1999/xhtml">Extended Copy Paste</b> are no longer meaningful in ChemDraw JS 17.1. The related entries in the configuration file can be removed.</div>
+        <div class="Body">Please refer to <strong xmlns="http://www.w3.org/1999/xhtml"><a href="Configuring ChemDraw Direct.html#configuringchemDrawdirect" xmlns="http://www.w3.org/1999/xhtml">Configuring ChemDraw JS</a></strong> for details.</div>
+        <h2><a name="Migratin2" xmlns="http://www.w3.org/1999/xhtml"></a>Migrating from ChemDraw Direct 2.0</h2>
+        <p>Since ChemDraw JS 17.1, a valid license file is required when initializing a ChemDraw JS instance. Please contact PerkinElmer to get a license file and refer to <a href="Using APIs.html#Creating" xmlns="http://www.w3.org/1999/xhtml">Creating and Attaching a ChemDraw JS Instance</a> for details about how to create a ChemDraw JS instance with a license file.</p>
+    </body>
+</html>

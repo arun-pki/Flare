@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="2493" MadCap:lastWidth="974" MadCap:conditions="Primary.DevGuide Only">
+    <head>
+        <link href="../Resources/TableStyles/TableStandard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta http-equiv="Content-Style-Type" content="text/css" /><title></title>
+        <style type="text/css">/*<![CDATA[*/
+code
+{
+	white-space: pre;
+}
+
+/*]]>*/</style>
+        <style type="text/css">/*<![CDATA[*/
+div.sourceCode
+{
+	overflow-x: auto;
+}
+table.sourceCode,
+tr.sourceCode,
+td.lineNumbers,
+td.sourceCode
+{
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	border: none;
+}
+table.sourceCode
+{
+	width: 100%;
+	line-height: 100%;
+}
+td.lineNumbers
+{
+	text-align: right;
+	padding-right: 4px;
+	padding-left: 4px;
+	color: #aaaaaa;
+	border-right: 1px solid #aaaaaa;
+}
+td.sourceCode
+{
+	padding-left: 5px;
+}
+code &gt; span.kw
+{
+	color: #007020;
+	font-weight: bold;
+}
+/* Keyword */
+code &gt; span.dt
+{
+	color: #902000;
+}
+/* DataType */
+code &gt; span.dv
+{
+	color: #40a070;
+}
+/* DecVal */
+code &gt; span.bn
+{
+	color: #40a070;
+}
+/* BaseN */
+code &gt; span.fl
+{
+	color: #40a070;
+}
+/* Float */
+code &gt; span.ch
+{
+	color: #4070a0;
+}
+/* Char */
+code &gt; span.st
+{
+	color: #4070a0;
+}
+/* String */
+code &gt; span.co
+{
+	color: #60a0b0;
+	font-style: italic;
+}
+/* Comment */
+code &gt; span.ot
+{
+	color: #007020;
+}
+/* Other */
+code &gt; span.al
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+/* Alert */
+code &gt; span.fu
+{
+	color: #06287e;
+}
+/* Function */
+code &gt; span.er
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+/* Error */
+code &gt; span.wa
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Warning */
+code &gt; span.cn
+{
+	color: #880000;
+}
+/* Constant */
+code &gt; span.sc
+{
+	color: #4070a0;
+}
+/* SpecialChar */
+code &gt; span.vs
+{
+	color: #4070a0;
+}
+/* VerbatimString */
+code &gt; span.ss
+{
+	color: #bb6688;
+}
+/* SpecialString */
+code &gt; span.im
+{
+	
+}
+/* Import */
+code &gt; span.va
+{
+	color: #19177c;
+}
+/* Variable */
+code &gt; span.cf
+{
+	color: #007020;
+	font-weight: bold;
+}
+/* ControlFlow */
+code &gt; span.op
+{
+	color: #666666;
+}
+/* Operator */
+code &gt; span.bu
+{
+	
+}
+/* BuiltIn */
+code &gt; span.ex
+{
+	
+}
+/* Extension */
+code &gt; span.pp
+{
+	color: #bc7a00;
+}
+/* Preprocessor */
+code &gt; span.at
+{
+	color: #7d9029;
+}
+/* Attribute */
+code &gt; span.do
+{
+	color: #ba2121;
+	font-style: italic;
+}
+/* Documentation */
+code &gt; span.an
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Annotation */
+code &gt; span.cv
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* CommentVar */
+code &gt; span.in
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Information */
+
+/*]]>*/</style>
+    </head>
+    <body>
+        <h1 id="configuring-chemdraw-direct"><a name="Configur" xmlns="http://www.w3.org/1999/xhtml"></a><a name="configuringchemDrawdirect" xmlns="http://www.w3.org/1999/xhtml"></a>Configuring ChemDraw JS</h1>
+        <div class="Body">ChemDraw JS allows the host application to configure the ChemDraw JS instances globally using single configuration file or each ChemDraw JS instance with separate configuration object or file.</div>
+        <h2 id="loading-cdd-configuration"><a name="Loading5" xmlns="http://www.w3.org/1999/xhtml"></a>Loading ChemDraw JS Configuration</h2>
+        <div class="Body">By default, ChemDraw JS will load the configuration file named "configuration.json" from the same location with the library. The changes on this configuration file will affect all instances globally.</div>
+        <div class="Body">The default configuration can be overridden by setting the <i>config</i> or <i>configUrl</i> property of the <strong xmlns="http://www.w3.org/1999/xhtml">AttachOptions</strong> in the API <i>attach</i>. The configuration set in the API <i>attach</i> only affects the instance being attached.</div>
+        <div class="Body">After a ChemDraw JS instance is created, the configuration can be updated by calling the APIs <i xmlns="http://www.w3.org/1999/xhtml">loadConfig</i> or <i xmlns="http://www.w3.org/1999/xhtml">loadConfigUrl</i>. The configuration set in the API <i xmlns="http://www.w3.org/1999/xhtml">loadConfig</i> or <i xmlns="http://www.w3.org/1999/xhtml">loadConfigUrl</i> only affects the current instance.</div>
+        <div class="Body">Please refer to the <strong xmlns="http://www.w3.org/1999/xhtml">ChemDraw JS 17.1 API Reference Guide</strong> for more details.</div>
+        <h2 id="configuration-structure"><a name="Configur2" xmlns="http://www.w3.org/1999/xhtml"></a>Configuration Structure</h2>
+        <div class="figure">
+            <img src="images/ConfigurationFileStructure.png" MadCap:mediastyle="@media print { max-width: 650px;max-height: 500px; }" />
+        </div>
+        <div class="Body">The layout property manages the layout of the toolbar including the visibility of the tools.</div>
+        <div class="Body">Please refer to <strong xmlns="http://www.w3.org/1999/xhtml"><a href="Customizing User Interface.html#customizingtoolbarlayout" xmlns="http://www.w3.org/1999/xhtml">Customizing Toolbar Layout</a></strong> for details.</div>
+        <h2 id="features"><a name="Features" xmlns="http://www.w3.org/1999/xhtml"></a>Features</h2>
+        <div class="Body">The following features can be enabled or disabled in the configuration.</div><pre class="prettyprint"><p class="code">...
+  "features": {
+    "enabled": [
+      "ShowWarnValence",
+      "ShowWarnParens",
+      "ShowWarnIsotopes",
+      "ShowWarnStrayBonds",
+      "ShowWarnStrayAtoms",
+      "ShowWarnUndefinedStereo",
+      "ShowWarnAmbigStereo",
+      "ShowWarnStereoBtw",
+      "ShowWarnLinearAtoms",
+      "ShowWarnMisc",
+      "ApplicationLogo",
+      "WebService",
+      "ExtendedCopyPaste"
+    ],
+    "disabled": []
+  }
+...</p></pre>
+        <div class="Body">To enable or disable one feature, move the entry to the array of enabled or disabled property.</div>
+        <h3 id="chemical-errors-detection"><a name="Chemical" xmlns="http://www.w3.org/1999/xhtml"></a>Chemical Errors Detection</h3>
+        <div class="Body">The following chemical errors can be detected. Once an error type is detected on the chemical drawings, ChemDraw JS will show warnings to the end user.</div>
+        <table style="mc-table-style: url('../Resources/TableStyles/TableStandard.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStandard" cellspacing="0">
+            <col style="width: 200px;" class="TableStyle-TableStandard-Column-Column1" />
+            <col style="width: 300px;" class="TableStyle-TableStandard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStandard-Head-Header1">
+                    <th class="TableStyle-TableStandard-HeadE-Column1-Header1" style="font-weight: bold;">Configuration Entry</th>
+                    <th class="TableStyle-TableStandard-HeadD-Column1-Header1" style="font-weight: bold;">Chemical Error</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">ShowWarnValence</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Valence and Charge Errors</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">ShowWarnParens</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Unbalanced Parentheses</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">ShowWarnIsotopes</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Invalid Isotopes</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">ShowWarnStrayBonds</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Isolated Bonds</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">ShowWarnStrayAtoms</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Atoms Near Other Bonds</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">ShowWarnUndefinedStereo</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Unspecified Stereochemistry</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">ShowWarnAmbigStereo</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Ambiguous Stereochemistry</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">ShowWarnStereoBtw</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Stereobond between Chiral Atoms</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyE-Column1-Body2">ShowWarnLinearAtoms</td>
+                    <td class="TableStyle-TableStandard-BodyD-Column1-Body2">Linear Atoms</td>
+                </tr>
+                <tr class="TableStyle-TableStandard-Body-Body2">
+                    <td class="TableStyle-TableStandard-BodyB-Column1-Body2">ShowWarnMisc</td>
+                    <td class="TableStyle-TableStandard-BodyA-Column1-Body2">Miscellaneous Warnings</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 id="application-logo"><a name="Applicat" xmlns="http://www.w3.org/1999/xhtml"></a>Application Logo</h3>
+        <div class="Body">By default, there is always a ChemDraw logo on the bottom-right of the ChemDraw JS workspace.</div>
+        <div class="Body">To hide this logo, move the entry "ApplicationLogo" to the disabled feature array.</div>
+        <h3 id="web-service"><a name="Web" xmlns="http://www.w3.org/1999/xhtml"></a>Web Service</h3>
+        <p>The following tools requires <strong>ChemDraw Web Service</strong>.</p>
+        <div class="Bullet1-inner">Structure to Name</div>
+        <div class="Bullet1-inner">Name to Structure</div>
+        <p>The following APIs requires <strong>ChemDraw Web Service</strong> <![CDATA[ ]]></p>
+        <div class="Bullet1-inner">findReactions</div>
+        <div class="Bullet1-inner">getProperties</div>
+        <div class="Bullet1-inner">getSVG</div>
+        <div class="Bullet1-inner">getMolecularWeight</div>
+        <div class="Bullet1-inner">nameToStructure</div>
+        <div class="Bullet1-inner">structureToName</div>
+        <div class="Body">Once the web service feature is disabled, all the related tools are hidden and the related API fails. To enable the web service feature, the entry "WebService" should exist in the enabled feature array, and the chemservice property needs to be set with the correct URL to the end point of the REST service.</div>
+        <h3 id="extended-copy-paste"><a name="Extended" xmlns="http://www.w3.org/1999/xhtml"></a>Extended Copy Paste</h3>
+        <p>To exchange data with other desktop programs, ChemDraw JS has to access the system clipboard using the <b>ChemDraw Web Clipboard</b>.</p>
+        <div class="Body">If the extended copy paste feature is enabled, there is a clipboard icon on the bottom-left of the workspace to indicate the state of extension. If the feature is disabled, the icon does not appear.</div>
+        <h2 id="stylesheet"><a name="StyleShe" xmlns="http://www.w3.org/1999/xhtml"></a>StyleSheet</h2>
+        <div class="Body">The following stylesheets are supported by ChemDraw JS.</div>
+        <div class="Bullet1-inner">New Document</div>
+        <div class="Bullet1-inner">ACS Document 1996</div>
+        <div class="Body">The name of the stylesheet should be set in the <i>StyleSheet</i> property.</div>
+    </body>
+</html>

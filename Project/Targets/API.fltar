@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="API Reference Guide"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/API Reference.fltoc"
+  MasterStylesheet="/Content/Resources/Stylesheets/API.css"
+  Skin="/Project/Skins/HTML5_API.flskn"
+  InsertMOTW="true"
+  MasterPage="/Content/Resources/MasterPages/APIPage.flmsp"
+  Medium="non-print"
+  OutputFile="API Reference Guide"
+  ConditionTagExpression="include[&quot;Primary.API Only&quot;] exclude[&quot;Primary.DevGuide Only&quot; or Primary.Hardware_Software or &quot;Primary.Help Only&quot; or Primary.InstallOnly or Primary.Internal_Readme or &quot;Primary.Not in CDW&quot; or &quot;Primary.PDF Only&quot; or Primary.RN] ">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Variables>
+    <Variable
+      Name="Primary/LastUpdated">August 16, 2017</Variable>
+    <Variable
+      Name="Primary/ProductName">ChemDraw JS as a Service 17.1</Variable>
+  </Variables>
+</CatapultTarget>

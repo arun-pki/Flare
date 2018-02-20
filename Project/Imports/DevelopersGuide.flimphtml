@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HtmlImport
+  KeepSourceLinks="false"
+  ProjectName="ChemDraw"
+  ProjectFolder="C:\Users\arun.joy\Desktop\WORKING\CDD 2.0 Workspace Local\Source File\"
+  AutoSync="false"
+  SourceFolders=""
+  ImportResources="true"
+  ImportResourcesLocation="RelativeToDocument"
+  ImportTopics="specific"
+  ImportLinkedHtmlFiles="false"
+  LastImport="2017-07-17T16:22:35.2473668+05:30"
+  ImportTopicsLocation="Content/Developers Guide/"
+  ResourceFolder="file:///C:/Users/arun.joy/Desktop/WORKING/CDD 2.0 Workspace Local/Source File/Content/Developers Guide/">
+  <Files>
+    <Url
+      Source="../../../../../../Documents/Pandoc-Test/DevelopersGuide.html"
+      AbsoluteSource="file:///C:/Users/arun.joy/Documents/Pandoc-Test/DevelopersGuide.html" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Developers Guide/DevelopersGuide.html"
+      TimeStamp="17-07-2017 04:22:22 PM" />
+    <Url
+      Source="../TOCs/DevelopersGuide.fltoc"
+      TimeStamp="17-07-2017 04:22:31 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/WarningsLoadLibraryInOldWay.png"
+      TimeStamp="17-07-2017 03:33:50 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/CSSCDDDialogContent.png"
+      TimeStamp="11-07-2017 03:09:21 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/CSSCDDDialogTitle.png"
+      TimeStamp="11-07-2017 03:09:21 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/CSSCDDMessagePresenter.png"
+      TimeStamp="11-07-2017 03:09:21 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/CSSCDDToolImage.png"
+      TimeStamp="11-07-2017 03:09:21 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/CSSCDDClipboardIcon.png"
+      TimeStamp="11-07-2017 03:09:21 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/CSSCDDLogo.png"
+      TimeStamp="11-07-2017 03:09:21 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/CSSProgressIndicator.png"
+      TimeStamp="11-07-2017 03:09:21 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/CSSWorkspaceContainer.png"
+      TimeStamp="11-07-2017 03:09:21 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/CSSToolbarContainer.png"
+      TimeStamp="11-07-2017 03:09:21 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/ConfigurationToolGroupExample.png"
+      TimeStamp="11-07-2017 03:09:21 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/ConfigurationToolGroupExampleUI.png"
+      TimeStamp="11-07-2017 03:09:21 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/ConfigurationFileRemovedAllToolGroups.png"
+      TimeStamp="11-07-2017 03:09:21 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/ConfigurationRemovedAllToolGroups.png"
+      TimeStamp="11-07-2017 03:09:21 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/ConfigurationToolsOrder.png"
+      TimeStamp="11-07-2017 03:09:21 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/Vertical.png"
+      TimeStamp="11-07-2017 03:09:21 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/Horizontal.png"
+      TimeStamp="11-07-2017 03:09:21 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/ConfiguringOrientation.png"
+      TimeStamp="11-07-2017 03:09:21 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/ConfigurationFileStructure.png"
+      TimeStamp="17-07-2017 03:33:50 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/SetViewOnlyTrue.png"
+      TimeStamp="17-07-2017 03:33:50 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/SetViewOnlyFalse.png"
+      TimeStamp="17-07-2017 03:33:50 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/CDDErrors.png"
+      TimeStamp="17-07-2017 03:33:50 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/GetterAndSetterForDocumentName.png"
+      TimeStamp="17-07-2017 03:33:50 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/FitToContainerPreservePageInfoDisabled2.png"
+      TimeStamp="17-07-2017 03:33:50 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/FitToContainerPreservePageInfoDisabled.png"
+      TimeStamp="17-07-2017 03:33:50 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/FitToContainerPreservePageInfo2.png"
+      TimeStamp="17-07-2017 03:33:50 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/FitToContainerPreservePageInfo.png"
+      TimeStamp="17-07-2017 03:33:50 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/LabelFragments.png"
+      TimeStamp="17-07-2017 03:33:50 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/LoadingReactionData.png"
+      TimeStamp="17-07-2017 03:33:50 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/CDDPageInfoPreserved.png"
+      TimeStamp="17-07-2017 03:33:50 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/CDDPageInfoNotPreservedSmall.png"
+      TimeStamp="17-07-2017 03:33:50 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/CDDPageInfoNotPreserved.png"
+      TimeStamp="17-07-2017 03:33:50 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/DskDefaultView.png"
+      TimeStamp="17-07-2017 03:33:50 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/CDDDomView.png"
+      TimeStamp="17-07-2017 03:33:50 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/CDDComponents.png"
+      TimeStamp="17-07-2017 03:33:50 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/SMILESAttached.png"
+      TimeStamp="17-07-2017 03:33:50 PM" />
+    <Url
+      Source="../../Content/Developers Guide/images/SimplestWebPage.png"
+      TimeStamp="17-07-2017 03:33:50 PM" />
+  </GeneratedFiles>
+</HtmlImport>

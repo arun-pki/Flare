@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="4461" MadCap:lastWidth="795" MadCap:conditions="Primary.DevGuide Only">
+    <head>
+        <meta http-equiv="Content-Style-Type" content="text/css" /><title></title>
+        <style type="text/css">/*<![CDATA[*/
+code
+{
+	white-space: pre;
+}
+
+/*]]>*/</style>
+        <style type="text/css">/*<![CDATA[*/
+div.sourceCode
+{
+	overflow-x: auto;
+}
+table.sourceCode,
+tr.sourceCode,
+td.lineNumbers,
+td.sourceCode
+{
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	border: none;
+}
+table.sourceCode
+{
+	width: 100%;
+	line-height: 100%;
+}
+td.lineNumbers
+{
+	text-align: right;
+	padding-right: 4px;
+	padding-left: 4px;
+	color: #aaaaaa;
+	border-right: 1px solid #aaaaaa;
+}
+td.sourceCode
+{
+	padding-left: 5px;
+}
+code &gt; span.kw
+{
+	color: #007020;
+	font-weight: bold;
+}
+/* Keyword */
+code &gt; span.dt
+{
+	color: #902000;
+}
+/* DataType */
+code &gt; span.dv
+{
+	color: #40a070;
+}
+/* DecVal */
+code &gt; span.bn
+{
+	color: #40a070;
+}
+/* BaseN */
+code &gt; span.fl
+{
+	color: #40a070;
+}
+/* Float */
+code &gt; span.ch
+{
+	color: #4070a0;
+}
+/* Char */
+code &gt; span.st
+{
+	color: #4070a0;
+}
+/* String */
+code &gt; span.co
+{
+	color: #60a0b0;
+	font-style: italic;
+}
+/* Comment */
+code &gt; span.ot
+{
+	color: #007020;
+}
+/* Other */
+code &gt; span.al
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+/* Alert */
+code &gt; span.fu
+{
+	color: #06287e;
+}
+/* Function */
+code &gt; span.er
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+/* Error */
+code &gt; span.wa
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Warning */
+code &gt; span.cn
+{
+	color: #880000;
+}
+/* Constant */
+code &gt; span.sc
+{
+	color: #4070a0;
+}
+/* SpecialChar */
+code &gt; span.vs
+{
+	color: #4070a0;
+}
+/* VerbatimString */
+code &gt; span.ss
+{
+	color: #bb6688;
+}
+/* SpecialString */
+code &gt; span.im
+{
+	
+}
+/* Import */
+code &gt; span.va
+{
+	color: #19177c;
+}
+/* Variable */
+code &gt; span.cf
+{
+	color: #007020;
+	font-weight: bold;
+}
+/* ControlFlow */
+code &gt; span.op
+{
+	color: #666666;
+}
+/* Operator */
+code &gt; span.bu
+{
+	
+}
+/* BuiltIn */
+code &gt; span.ex
+{
+	
+}
+/* Extension */
+code &gt; span.pp
+{
+	color: #bc7a00;
+}
+/* Preprocessor */
+code &gt; span.at
+{
+	color: #7d9029;
+}
+/* Attribute */
+code &gt; span.do
+{
+	color: #ba2121;
+	font-style: italic;
+}
+/* Documentation */
+code &gt; span.an
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Annotation */
+code &gt; span.cv
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* CommentVar */
+code &gt; span.in
+{
+	color: #60a0b0;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Information */
+
+/*]]>*/</style>
+    </head>
+    <body>
+        <h1 id="understanding-cdd-view"><a name="Understa2" xmlns="http://www.w3.org/1999/xhtml"></a>Understanding the ChemDraw JS View</h1>
+        <p>Using the <b>ChemDraw JS JavaScript Library</b>, the host application can create and attach a ChemDraw JS instance to the host web page. Understanding ChemDraw JS view is important to manage the size of the ChemDraw JS instance, the canvas and the drawings on the canvas.</p>
+        <h2 id="cdd-view-in-dom-tree"><a name="CDD" xmlns="http://www.w3.org/1999/xhtml"></a>ChemDraw JS View in DOM Tree</h2>
+        <p>After a ChemDraw JS instance is attached to the host web page, a ChemDraw JS root element is inserted into the HTML element specified in ChemDraw JS's attach API as the only child element of the container.</p>
+        <div class="figure">
+            <img src="images/CDDDomView.png" MadCap:mediastyle="@media print { max-width: 650px; }" style="border-left-style: solid;border-left-width: 0px;border-left-color: #696969;border-right-style: solid;border-right-width: 0px;border-right-color: #696969;border-top-style: solid;border-top-width: 0px;border-top-color: #696969;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #696969;" />
+        </div>
+        <div class="Body">The following key elements are managed by ChemDraw JS.</div>
+        <div class="Bullet1-inner">ChemDraw JS Root (class name: cddroot)</div>
+        <div class="Bullet1-inner">ChemDraw JS Toolbar (class name: cdd-toolbar-container)</div>
+        <div class="Bullet1-inner">ChemDraw JS Workspace (class name: cdd-workspace)</div>
+        <div class="Bullet1-inner">ChemDraw JS Canvas (class name: cdd-drawing-panel)</div>
+        <div class="Body">By default, the ChemDraw JS root node fills the whole space of the specified ChemDraw JS container. The ChemDraw JS toolbar and the ChemDraw JS workspace are the two parts inserted into the ChemDraw JS root node. The position and the layout of the ChemDraw JS toolbar is configurable. Please refer to <strong xmlns="http://www.w3.org/1999/xhtml"><a href="Customizing User Interface.html#customizingtoolbarlayout" xmlns="http://www.w3.org/1999/xhtml">Customizing Toolbar Layout</a></strong> for details. The ChemDraw JS toolbar and the ChemDraw JS workspace fills the whole space of the ChemDraw JS root.</div>
+        <div class="Body">The ChemDraw JS canvas node is created within the ChemDraw JS workspace node, but may have different size with the workspace which depends on the view mode of the ChemDraw JS instance.</div>
+        <h2 id="cdd-view-mode"><a name="CDD2" xmlns="http://www.w3.org/1999/xhtml"></a>ChemDraw JS View Mode</h2>
+        <p>In ChemDraw Desktop, similar to ChemDraw JS, the toolbar is around the grey workspace and the actual canvas/document is inside the workspace. The canvas size is always fixed if the scale ratio is fixed. Zooming in/out the canvas or changing the size of the ChemDraw window will not affect the actual document size contained in the result CDX/CDXML data. While in View Mode, page information is preserved.</p>
+        <div class="figure">
+            <img src="images/DskDefaultView.png" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <div class="Body">In this mode, scrollbars will show if the ChemDraw Desktop window is not big enough to show the whole canvas.</div>
+        <p>There is another scenario that the end users do not want to see the grey area, and the page size is not a crucial data to the users. In this scenario, the size of the canvas/document changes when the container size is changed.</p>
+        <p>ChemDraw JS supports two scenarios using one property named <i>preservePageInfo</i> which could be set in the <b>AttachOptions</b> of the attach API.</p>
+        <h3 id="preserve-pageinfo-mode-disabled-default"><a name="Preserve" xmlns="http://www.w3.org/1999/xhtml"></a>PreservePageInfo Disabled (Default)</h3>
+        <div class="Body">If a ChemDraw JS instance is created without the <i>preservePageInfo</i> option, this mode is disabled by default.</div><pre class="prettyprint"><p class="code">perkinelmer.ChemdrawWebManager.attach({
+  id: 'chemdrawjs-container',
+  callback: chemdrawjsAttached,
+  license: 'license content'
+});</p></pre>
+        <div class="Body">The script below is equivalent.</div><pre class="prettyprint"><p class="code">perkinelmer.ChemdrawWebManager.attach({
+  id: 'chemdrawjs-container',
+  callback: chemdrawjsAttached,
+  license: 'license content',
+  preservePageInfo: false
+});</p></pre>
+        <div class="figure">
+            <img src="images/CDDPageInfoNotPreserved.png" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <div class="figure">
+            <img src="images/CDDPageInfoNotPreservedSmall.png" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <p>After loading a ChemDraw document to ChemDraw JS, the original page information is not preserved. The page size data in the resulting CDX/CDXML will be overwritten.</p>
+        <h3 id="preserve-pageinfo-mode-enabled"><a name="Preserve2" xmlns="http://www.w3.org/1999/xhtml"></a>PreservePageInfo Enabled</h3>
+        <div class="Body">The script below creates a ChemDraw JS instance with <i>preservePageInfo</i> mode enabled.</div><pre class="prettyprint"><p class="code">perkinelmer.ChemdrawWebManager.attach({
+  id: 'chemdrawjs-container',
+  callback: chemdrawjsAttached,
+  license: 'license content',
+  preservePageInfo: true
+});</p></pre>
+        <div class="figure">
+            <img src="images/CDDPageInfoPreserved.png" MadCap:mediastyle="@media print { max-width: 650px; }" />
+        </div>
+        <div class="Body">The page information is preserved, and the boundary of the canvas is clear.</div>
+    </body>
+</html>

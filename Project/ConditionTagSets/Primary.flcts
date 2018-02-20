@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    Comment=""
+    Name="DevGuide Only"
+    BackgroundColor="Blue"
+    OriginalName="DevGuide Only" />
+  <ConditionTag
+    Comment=""
+    Name="API Only"
+    BackgroundColor="Red"
+    OriginalName="API Only" />
+  <ConditionTag
+    BackgroundColor="#ff9999"
+    Name="Not in CDW"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="Help Only"
+    Comment=""
+    OriginalName="Help Only" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="PDF Only"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#8b008b"
+    Name="InstallOnly"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#00bfff"
+    Name="Hardware_Software"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#00ff00"
+    Name="Internal_Readme"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#8b4513"
+    Name="RN"
+    Comment="" />
+</CatapultConditionTagSet>
