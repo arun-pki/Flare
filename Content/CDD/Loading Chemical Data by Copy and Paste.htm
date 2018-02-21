@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="ChemDraw JS 17.xml" data-mc-path-to-help-system="../../" data-mc-conditions="Primary.Help Only" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Exchanging Structures with External Applications">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Loading Chemical Data by Copy and Paste</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/Cambridgesoft1.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <h1>Loading Chemical Data by Copy and Paste</h1>
+        <p>The structures drawn on another chemical structure sketcher such as, ChemDraw Desktop, BIOVIA Draw, and Marvin Sketch can be copied and pasted to ChemDraw JS. Due to security policy of web browsers, ChemDraw Web Clipboard needs to be installed and enabled in the web browser to enable ChemDraw JS to have full access to the system clipboard. Otherwise, ChemDraw JS can only load the chemical data which is copied as CDXML text or other chemical text format.</p>
+        <h2><a name="Copying"></a>Copying Chemical Data from ChemDraw Desktop without ChemDraw Web Clipboard</h2>
+        <p>When ChemDraw Web Clipboard is not enabled, the gray clipboard icon <img src="../Resources/Images/gray_clip_21x21.gif" style="width: 21;height: 21;" /> is shown on the bottom-left corner of the canvas. The icon may not show at all if the extended copy and paste feature is not enabled.</p>
+        <table class="AutoNumber_div_numlist1-1st" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 4px;" />
+            <col style="width: 14px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_div_numlist1-1st" valign="top"><span>1. </span>
+                </td>
+                <td class="AutoNumber_div_numlist1-1st" valign="top" data-mc-autonum="1. ">Select the structures to copy in ChemDraw Desktop.<p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Images/CopyDataFromDSKWithoutChemDrawWebClipboard.png"><img class="MCPopupThumbnail img" data-mc-width="690" data-mc-height="501" src="../Resources/Images/CopyDataFromDSKWithoutChemDrawWebClipboard_thumb_0_400.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 400px;border-left-style: solid;border-left-width: 1px;border-left-color: #dcdcdc;border-right-style: solid;border-right-width: 1px;border-right-color: #dcdcdc;border-top-style: solid;border-top-width: 1px;border-top-color: #dcdcdc;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #dcdcdc;" tabindex="" /></a></p></td>
+            </tr>
+        </table>
+        <table class="AutoNumber_div_numlist1-1st" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 4px;" />
+            <col style="width: 14px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_div_numlist1-1st" valign="top"><span>2. </span>
+                </td>
+                <td class="AutoNumber_div_numlist1-1st" valign="top" data-mc-autonum="2. ">Select <b>Edit &gt; Copy As &gt; CDXML Text</b> in ChemDraw Desktop.</td>
+            </tr>
+        </table>
+        <div class="NoteInd" data-mc-autonum="&lt;b&gt;Note: &lt;/b&gt; "><span class="autonumber"><span><b>Note: </b> <![CDATA[ ]]></span></span>Copying as CDXML Text can be done by pressing shortcut key &lt;Ctrl&gt;+D (&lt;Command&gt;+D on macOS).</div>
+        <table class="AutoNumber_div_numlist1-1st" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 4px;" />
+            <col style="width: 14px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_div_numlist1-1st" valign="top"><span>3. </span>
+                </td>
+                <td class="AutoNumber_div_numlist1-1st" valign="top" data-mc-autonum="3. ">Switch to ChemDraw JS canvas.</td>
+            </tr>
+        </table>
+        <div class="NoteInd" data-mc-autonum="&lt;b&gt;Note: &lt;/b&gt; "><span class="autonumber"><span><b>Note: </b> <![CDATA[ ]]></span></span>You may need to click the canvas to let the web browser know that you are focusing on the ChemDraw JS canvas.</div>
+        <table class="AutoNumber_div_numlist1-1st" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 4px;" />
+            <col style="width: 14px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_div_numlist1-1st" valign="top"><span>4. </span>
+                </td>
+                <td class="AutoNumber_div_numlist1-1st" valign="top" data-mc-autonum="4. ">Click the <b>Paste</b> tool or press shortcut key <i>&lt;Ctrl&gt;+V</i> (<i>&lt;Command&gt;+V</i> on macOS) to paste the structure.<p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Images/PasteDataToCDDWithoutChemDrawWebClipboard.png"><img class="MCPopupThumbnail img" data-mc-width="808" data-mc-height="404" src="../Resources/Images/PasteDataToCDDWithoutChemDrawWebClipboard_thumb_0_300.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 300px;border-left-style: solid;border-left-width: 1px;border-left-color: #dcdcdc;border-right-style: solid;border-right-width: 1px;border-right-color: #dcdcdc;border-top-style: solid;border-top-width: 1px;border-top-color: #dcdcdc;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #dcdcdc;" tabindex="" /></a></p></td>
+            </tr>
+        </table>
+        <h2><a name="Copying2"></a>Copying and Pasting Chemical Data as Text without ChemDraw Web Clipboard</h2>
+        <p>The chemical data in text format can be copied and pasted to ChemDraw JS without ChemDraw Web Clipboard. After pasted to ChemDraw JS, the chemical structure is rendered on ChemDraw JS canvas.</p>
+        <p>The following chemical text formats are supported:</p>
+        <div class="Bullet1-inner">CDXML</div>
+        <div class="Bullet1-inner">Molfile, Molfile v3000</div>
+        <div class="Bullet1-inner">SMILES</div>
+        <p>The following is an example of copying data as CDXML text:</p>
+        <table class="AutoNumber_div_numlist1-1st" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 4px;" />
+            <col style="width: 14px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_div_numlist1-1st" valign="top"><span>1. </span>
+                </td>
+                <td class="AutoNumber_div_numlist1-1st" valign="top" data-mc-autonum="1. ">Select the CDXML text to copy.<p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Images/SelectTheCDXMLTextToCopy.png"><img class="MCPopupThumbnail img" data-mc-width="792" data-mc-height="333" src="../Resources/Images/SelectTheCDXMLTextToCopy_thumb_0_300.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 300px;" tabindex="" /></a></p></td>
+            </tr>
+        </table>
+        <table class="AutoNumber_div_numlist1-1st" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 4px;" />
+            <col style="width: 14px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_div_numlist1-1st" valign="top"><span>2. </span>
+                </td>
+                <td class="AutoNumber_div_numlist1-1st" valign="top" data-mc-autonum="2. ">Switch to ChemDraw JS canvas.</td>
+            </tr>
+        </table>
+        <div class="NoteInd" data-mc-autonum="&lt;b&gt;Note: &lt;/b&gt; "><span class="autonumber"><span><b>Note: </b> <![CDATA[ ]]></span></span>You may need to click the canvas to let the web browser know that you are focusing on the ChemDraw JS canvas.</div>
+        <table class="AutoNumber_div_numlist1-1st" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 4px;" />
+            <col style="width: 14px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_div_numlist1-1st" valign="top"><span>3. </span>
+                </td>
+                <td class="AutoNumber_div_numlist1-1st" valign="top" data-mc-autonum="3. ">Click the <b>Paste</b> tool or press shortcut key <i>&lt;Ctrl&gt;+V</i> (<i>&lt;Command&gt;+V</i> on macOS) to paste the structure.</td>
+            </tr>
+        </table>
+        <div class="NoteInd" data-mc-autonum="&lt;b&gt;Note: &lt;/b&gt; "><span class="autonumber"><span><b>Note: </b> <![CDATA[ ]]></span></span>If Extended Copy and Paste is not activated, clicking the <b>Paste</b> tool will pop up a message dialog "These actions are unavailable via the tool" and nothing pastes onto the canvas.</div>
+        <div class="BodyInd">
+            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Images/PasteDataToCDDWithoutChemDrawWebClipboard.png"><img class="MCPopupThumbnail img" data-mc-width="808" data-mc-height="404" src="../Resources/Images/PasteDataToCDDWithoutChemDrawWebClipboard_thumb_0_300.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 300px;border-left-style: solid;border-left-width: 1px;border-left-color: #dcdcdc;border-right-style: solid;border-right-width: 1px;border-right-color: #dcdcdc;border-top-style: solid;border-top-width: 1px;border-top-color: #dcdcdc;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #dcdcdc;" tabindex="" /></a>
+            </p>
+        </div>
+        <h2><a name="Loading"></a>Loading Chemical Data with ChemDraw Web Clipboard</h2>
+        <p>With ChemDraw Web Clipboard enabled, ChemDraw JS has full access to the system clipboard. Hence, it can read the clipboard data put by desktop applications such as ChemDraw Desktop, BIOVIA Draw, and Marvin Sketch.</p>
+        <p>When ChemDraw Web Clipboard is enabled, the green clipboard icon <img src="../Resources/Images/green_icon_22x22.gif" style="width: 22;height: 22;" /> is shown on the bottom-left corner of the canvas.</p>
+        <p>Following is an example of copying data from ChemDraw Desktop.</p>
+        <table class="AutoNumber_div_numlist1-1st" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 4px;" />
+            <col style="width: 14px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_div_numlist1-1st" valign="top"><span>1. </span>
+                </td>
+                <td class="AutoNumber_div_numlist1-1st" valign="top" data-mc-autonum="1. ">Select the structures to copy in ChemDraw Desktop.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_div_numlist1-1st" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 4px;" />
+            <col style="width: 14px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_div_numlist1-1st" valign="top"><span>2. </span>
+                </td>
+                <td class="AutoNumber_div_numlist1-1st" valign="top" data-mc-autonum="2. ">Press shortcut key <i>&lt;Ctrl&gt;+C</i> (<i>&lt;Command&gt;+C</i> on macOS) to copy the selected data.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_div_numlist1-1st" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 4px;" />
+            <col style="width: 14px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_div_numlist1-1st" valign="top"><span>3. </span>
+                </td>
+                <td class="AutoNumber_div_numlist1-1st" valign="top" data-mc-autonum="3. ">Switch to ChemDraw JS canvas and make sure the green clipboard icon shows.</td>
+            </tr>
+        </table>
+        <div class="NoteInd" data-mc-autonum="&lt;b&gt;Note: &lt;/b&gt; "><span class="autonumber"><span><b>Note: </b> <![CDATA[ ]]></span></span>You may need to click the canvas to let the web browser know that you are focusing on the ChemDraw JS canvas.</div>
+        <table class="AutoNumber_div_numlist1-1st" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 4px;" />
+            <col style="width: 14px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_div_numlist1-1st" valign="top"><span>4. </span>
+                </td>
+                <td class="AutoNumber_div_numlist1-1st" valign="top" data-mc-autonum="4. ">Click the <b>Paste</b> tool or press shortcut key <i>&lt;Ctrl&gt;+V</i> (<i>&lt;Command&gt;+V</i> on macOS) to paste the structure.<p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Images/PasteDataToCDDWithChemDrawWebClipboard.png"><img class="MCPopupThumbnail img" data-mc-width="810" data-mc-height="402" src="../Resources/Images/PasteDataToCDDWithChemDrawWebClipboard_thumb_0_300.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 300px;" tabindex="" /></a></p></td>
+            </tr>
+        </table>
+        <div class="Note" data-mc-autonum="&lt;b&gt;Note: &lt;/b&gt; "><span class="autonumber"><span><b>Note: </b> <![CDATA[ ]]></span></span>To enable ChemDraw Web Clipboard, please refer to <a href="Activating Extended Copy and Paste Functionality.htm">Activating Extended Copy and Paste</a> for details.</div>
+        <hr style="font-family: Arial;font-size: 10pt;background-image: url('../Resources/Images/CD_new2.png');border-left-style: inset;border-left-width: 1px;border-right-style: inset;border-right-width: 1px;border-top-style: inset;border-top-width: 1px;border-bottom-style: inset;border-bottom-width: 1px;" />
+        <table style="width: 100%;">
+            <col style="font-family: 'Frutiger LT Std 47 Light Cn';font-size: 9pt;" />
+            <col style="width: 884px;font-family: 'Frutiger LT Std 47 Light Cn';" />
+            <tbody>
+                <tr>
+                    <td style="font-family: 'Frutiger LT Std 47 Light Cn';font-size: 9pt;">&#160;</td>
+                    <td style="text-align: right;font-size: 9pt;">
+                        <img src="../Resources/Images_Common/footer_logo_126x76.png" style="font-family: 'Frutiger LT Std 47 Light Cn';width: 126;height: 76;" />
+                        <br style="font-family: 'Frutiger LT Std 47 Light Cn';" /><span style="font-family: 'Frutiger LT Std 47 Light Cn'; font-size: 9pt;"><span style="font-family: 'Frutiger LT Std 47 Light Cn';">940 Winter Street | Waltham, MA 02451 USA</span></span>
+                        <br style="font-family: 'Frutiger LT Std 47 Light Cn';" /><a href="http://www.perkinelmer.com/informatics/support" style="font-family: 'Frutiger LT Std 47 Light Cn';" target="_blank">www.perkinelmer.com/informatics/support</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

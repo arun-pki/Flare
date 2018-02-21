@@ -1,0 +1,1 @@
+define({r:0.5,st:'Stem',n:1,t:[0],u:['../Content/CDD/Activating Extended Copy and Paste Functionality.htm'],s:['+','mean'],p:[['+',3],['be',0],['curve',16],['heteroatom',3],['node',27],['rotating',16],['the',38]]});
